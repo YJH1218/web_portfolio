@@ -314,7 +314,7 @@ header nav ul li{
     font-weight: bold;
 }
 .pratice .horizon_container .content_box .chrome_img{
-    width: 1280px;
+    width: 960px;
     height: 600px;
     position: absolute;
     top: 10%;
@@ -325,8 +325,8 @@ header nav ul li{
     border-radius: 20px;
 }
 .pratice .horizon_container .content_box .chrome_mob{
-    width: 270px;
-    height: 520px;
+    width: 220px;
+    height: 420px;
     position: absolute;
     bottom: 10%;
     left: 15%;
