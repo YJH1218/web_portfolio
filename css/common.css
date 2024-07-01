@@ -1,16 +1,26 @@
+/* setting */
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: #000;
+    color: #fff;
     font-family: 'pretendard';
 }
+.w_100{
+    width: 100%;
+}
+/* header st */
 header{
     width: 100%;
-    height: 80px;
+    height: 60px;
     position: fixed;
-    top: 0;
+    top: -100px;
     left: 0;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     border-bottom: 1px solid #eee;
+    z-index: 99;
 }
 header nav{
     width: 1440px;
@@ -28,3 +38,326 @@ header nav ul{
 header nav ul li{
     font-size: 20px;
 }
+/* header ed */
+/* section st */
+/* visual st */
+.visual{
+    height: 100vh;
+    margin-bottom: 400px;
+    overflow: hidden;
+}
+.visual .intro_line{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+.visual .intro_line::after{
+    content: " ";
+    width: calc(100vw - 138px);
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    background-color: #fff;
+}
+.visual .tit_box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.visual .tit_box h1{
+    font-family: 'MaziusDisplay-Bold';
+    font-size: 172px;
+}
+.visual .txt_box{
+    width: 100%;
+    padding: 0 120px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+.visual .txt_box .left{
+    padding-left: 102px;
+    position: relative;
+}
+.visual .txt_box .left::before{
+    content: " ";
+    width: 72px;
+    height: 60px;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+.visual .txt_box .left::after{
+    content: " ";
+    width: 2px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 64px;
+    border-radius: 2px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+}
+.visual .txt_box .right{
+    width: 600px;
+}
+/* visual ed */
+/* introduction st */
+.introduction{
+    height: 175vh;
+    background-color: #fff;
+}
+.introduction .bg_b_w{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(#000, #fff);
+}
+.introduction .marquee_box{
+    width: 100%;
+    height: 75vh;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.introduction .marquee_box .marquee_wrap{
+    width: 100%;
+}
+.marquee_text{
+    padding: 40px 0;
+    display: flex;
+    flex: 0 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 4rem;
+    font-weight:bold;
+    color: #fff;
+}
+.marquee_text:hover .marquee,.marquee_text:hover .marquee_r {
+    animation-play-state: paused;
+    cursor: pointer;
+ }
+.marquee{
+  animation: textLoop 10s linear infinite;
+  padding-right: 1vw;
+}
+.marquee_r{
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+.marquee_r{
+    animation: textLoop_r 14s linear infinite;
+    padding-left: 1vw;
+  }
+@keyframes textLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes textLoop_r {
+    0% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+.introduction .marquee_box .marquee_wrap:nth-child(1){
+    background-color: #FA4040;
+}
+.introduction .marquee_box .marquee_wrap:nth-child(2){
+    background-color: #000;
+}
+.introduction .marquee_box .marquee_wrap:nth-child(3){
+    background-color: #FFD159;
+}
+.introduction .bg_w_b{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(#fff, #000);
+}
+/* introduction ed */
+/* works st */
+.works{
+    margin-bottom: 400px;
+}
+.works .tit_box{
+    height: 200px;
+    padding: 40px;
+    text-align: center;
+}
+.works .tit_box h1{
+    font-size: 128px;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    font-weight: bolder;
+}
+.works .content{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.works .content .img_box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+.works .content .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#000, rgba(255,255,255, 0));
+}
+.works .content .info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 100px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.works .content .info .txt_box{
+    width: 50%;
+}
+.works .content .info .txt_box h1{
+    font-size: 96px;
+    margin-bottom: 8px;
+}
+.works .content .info .txt_box h2{
+    font-size: 64px;
+    margin-bottom: 8px;
+} 
+.works .content .info .txt_box p{
+    font-size: 24px;
+}
+.works .content .info .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.works .content .info .right .logo_box{
+    font-size: 64px;
+}
+.works .content .info .right .btn_box{
+    display: flex;
+    justify-content: flex-end;
+}
+.works .content .info .right .btn_box .btn{
+    padding: 12px 20px;
+    margin-left: 28px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #222;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+/* works ed */
+/* pratice st */
+.pratice .tit_box{
+    height: 200px;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+.pratice .tit_box h1{
+    font-size: 128px;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    font-weight: bolder;
+}
+.pratice .horizon_container{
+    width: 1100%;
+    height: 100vh;
+    display: flex;
+}
+
+.pratice .horizon_container .content_box{
+    width: 100%;
+    height: 100%;
+}
+.pratice .horizon_container .content_box .txt_box{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    z-index: 9;
+}
+.pratice .horizon_container .content_box .txt_box h1{
+    font-size: 64px;
+    font-weight: bolder;
+}
+.pratice .horizon_container .content_box .txt_box h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+.pratice .horizon_container .content_box .chrome_img{
+    width: 1280px;
+    height: 600px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #999;
+    border: 2px solid #eee;
+    border-radius: 20px;
+}
+.pratice .horizon_container .content_box .chrome_mob{
+    width: 270px;
+    height: 520px;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    transform: translateX(-50%);
+    background-color: #666;
+    border: 2px solid #eee;
+    border-radius: 20px;
+}
+.pratice .horizon_container .content_box .btn_box{
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    display: flex;
+}
+.pratice .horizon_container .content_box .btn_box .btn{
+    padding: 16px 24px;
+    margin-left: 20px;
+    background-color: #fff;
+    font-size: 20px;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 28px;
+}
+/* pratice ed */
+/* design st */
+.design{
+    height: 100vh;
+}
+/* design ed */
+/* section ed */
+/* footer st */
+
+
+/* footer ed */

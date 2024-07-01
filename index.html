@@ -8,15 +8,17 @@
     <!-- jq, gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/font.css">
     <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="menu">
             <ul>
                 <li>
                     <a href="#visual">
@@ -24,35 +26,363 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#visual">
+                    <a href="#works">
                         Works
                     </a>
                 </li>
                 <li>
-                    <a href="#visual">
+                    <a href="#pratice">
                         Pratice
                     </a>
                 </li>
                 <li>
-                    <a href="#visual">
+                    <a href="#design">
                         Design
                     </a>
                 </li>
                 <li>
-                    <a href="#visual">
+                    <a href="#contact">
                         contact
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <section class="sec visual" id="visual"></section>
-    <section class="sec marquee"></section>
-    <section class="sec works"></section>
-    <section class="sec pratice"></section>
-    <section class="sec design"></section>
-    <footer>
-        <div class="contact">
+    <script>
+          gsap.registerPlugin(ScrollTrigger);
+        gsap.to("header", {
+        scrollTrigger: {
+            trigger: "body",
+            start: "60px",
+            markers:true,  //기준점을 표시해준다.
+            toggleActions: "restart pause resume reverse"
+        },
+        y: 100, duration: 1, })
+    </script>
+    <section class="sec visual w_100" id="visual">
+        <div class="intro_line">
+            intro
+        </div>
+        <div class="tit_box">
+            <h1>
+                POSITIVE
+            </h1>
+        </div>
+        <div class="txt_box">
+            <div class="left">
+                Web Design<br>
+                UI/UX Design<br>
+                Web Publishing
+            </div>
+            <div class="right">
+                I have specialized in developing and managing web content using Html 5, Css and JavaScript.
+I excel in creating intuitive designs and implementing ersponsive web pages that enhance user experience.
+            </div>
+        </div>
+    </section>
+    <section class="sec introduction w_100" id="introduction">
+        <div class="bg_b_w"></div>
+        <div class="marquee_box">
+            <div class="marquee_wrap">
+                <div class="marquee_text">
+                    <div class="marquee">#Web Design #UI/UX Design #Web Publishing </div>
+                    <div class="marquee">#Web Design #UI/UX Design #Web Publishing </div>
+                    <div class="marquee">#Web Design #UI/UX Design #Web Publishing </div>
+                    <div class="marquee">#Web Design #UI/UX Design #Web Publishing </div>
+                </div>
+            </div>
+            <div class="marquee_wrap">
+                <div class="marquee_text">
+                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prosprective</div>
+                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prosprective</div>
+                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prosprective</div>
+                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prosprective</div>
+                </div>
+            </div>
+            <div class="marquee_wrap">
+                <div class="marquee_text">
+                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuray #PhotoShop</div>
+                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuray #PhotoShop</div>
+                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuray #PhotoShop</div>
+                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuray #PhotoShop</div>
+                </div>
+            </div>
+        </div>
+        <div class="bg_w_b"></div>
+    </section>
+    <section class="sec works w_100" id="works">
+        <div class="tit_box">
+            <h1>WORKS</h1>
+        </div>
+        <div class="content">
+            <div class="img_box">
+                <img class="desktop" src="./img/" alt="ㅁㅁㅁ사이트 이미지">
+            </div>
+            <div class="bg"></div>
+            <div class="info">
+                <div class="txt_box">
+                    <h1>SITENAME</h1>
+                    <h2>REDESIGN</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, optio voluptatibus repudiandae deserunt qui quos ducimus suscipit architecto nemo illum sunt similique harum mollitia voluptate eaque fugit, praesentium quam quod!</p>
+                </div>
+                <div class="right">
+                    <div class="logo_box">
+                        LOGO-LOGO
+                    </div>
+                    <div class="btn_box">
+                        <a class="btn" href="#">
+                            사이트 보기
+                        </a>
+                        <a class="btn" href="#">
+                            디자인 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="img_box">
+                <img class="desktop" src="./img/" alt="ㅁㅁㅁ사이트 이미지">
+            </div>
+            <div class="bg"></div>
+            <div class="info">
+                <div class="txt_box">
+                    <h1>SITENAME</h1>
+                    <h2>REDESIGN</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, optio voluptatibus repudiandae deserunt qui quos ducimus suscipit architecto nemo illum sunt similique harum mollitia voluptate eaque fugit, praesentium quam quod!</p>
+                </div>
+                <div class="right">
+                    <div class="logo_box">
+                        LOGO-LOGO
+                    </div>
+                    <div class="btn_box">
+                        <a class="btn" href="#">
+                            사이트 보기
+                        </a>
+                        <a class="btn" href="#">
+                            디자인 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="img_box">
+                <img class="desktop" src="./img/" alt="ㅁㅁㅁ사이트 이미지">
+            </div>
+            <div class="bg"></div>
+            <div class="info">
+                <div class="txt_box">
+                    <h1>SITENAME</h1>
+                    <h2>REDESIGN</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, optio voluptatibus repudiandae deserunt qui quos ducimus suscipit architecto nemo illum sunt similique harum mollitia voluptate eaque fugit, praesentium quam quod!</p>
+                </div>
+                <div class="right">
+                    <div class="logo_box">
+                        LOGO-LOGO
+                    </div>
+                    <div class="btn_box">
+                        <a class="btn" href="#">
+                            사이트 보기
+                        </a>
+                        <a class="btn" href="#">
+                            디자인 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="img_box">
+                <img class="desktop" src="./img/" alt="ㅁㅁㅁ사이트 이미지">
+            </div>
+            <div class="bg"></div>
+            <div class="info">
+                <div class="txt_box">
+                    <h1>SITENAME</h1>
+                    <h2>REDESIGN</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, optio voluptatibus repudiandae deserunt qui quos ducimus suscipit architecto nemo illum sunt similique harum mollitia voluptate eaque fugit, praesentium quam quod!</p>
+                </div>
+                <div class="right">
+                    <div class="logo_box">
+                        LOGO-LOGO
+                    </div>
+                    <div class="btn_box">
+                        <a class="btn" href="#">
+                            사이트 보기
+                        </a>
+                        <a class="btn" href="#">
+                            디자인 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec pratice w_100" id="pratice">
+        <div class="tit_box">
+            <h1>PRATICE</h1>
+        </div>
+        <div class="horizon_container">
+            <div class="content_box blank">
+
+            </div>
+            <div class="content_box">
+                <div class="txt_box">
+                    <h1>
+                        WATCHA
+                    </h1>
+                    <h2>
+                        COPY CODING
+                    </h2>
+                </div>
+                <div class="chrome_img">
+
+                </div>
+                <div class="chrome_mob">
+                    
+                </div>
+                <div class="btn_box">
+                    <a class="btn" href="#">
+                        사이트 방문
+                    </a>
+                    <a class="btn" href="#">
+                        코드 보기
+                    </a>
+                </div>
+            </div>
+            <div class="content_box blank">
+
+            </div>
+            <div class="content_box">
+                <div class="txt_box">
+                    <h1>
+                        WATCHA
+                    </h1>
+                    <h2>
+                        COPY CODING
+                    </h2>
+                </div>
+                <div class="chrome_img">
+
+                </div>
+                <div class="chrome_mob">
+                    
+                </div>
+                <div class="btn_box">
+                    <a class="btn" href="#">
+                        사이트 방문
+                    </a>
+                    <a class="btn" href="#">
+                        코드 보기
+                    </a>
+                </div>
+            </div>
+            <div class="content_box blank">
+
+            </div>
+            <div class="content_box">
+                <div class="txt_box">
+                    <h1>
+                        WATCHA
+                    </h1>
+                    <h2>
+                        COPY CODING
+                    </h2>
+                </div>
+                <div class="chrome_img">
+
+                </div>
+                <div class="chrome_mob">
+                    
+                </div>
+                <div class="btn_box">
+                    <a class="btn" href="#">
+                        사이트 방문
+                    </a>
+                    <a class="btn" href="#">
+                        코드 보기
+                    </a>
+                </div>
+            </div>
+            <div class="content_box blank">
+
+            </div>
+            <div class="content_box">
+                <div class="txt_box">
+                    <h1>
+                        WATCHA
+                    </h1>
+                    <h2>
+                        COPY CODING
+                    </h2>
+                </div>
+                <div class="chrome_img">
+
+                </div>
+                <div class="chrome_mob">
+                    
+                </div>
+                <div class="btn_box">
+                    <a class="btn" href="#">
+                        사이트 방문
+                    </a>
+                    <a class="btn" href="#">
+                        코드 보기
+                    </a>
+                </div>
+            </div>
+            <div class="content_box blank">
+
+            </div>
+            <div class="content_box">
+                <div class="txt_box">
+                    <h1>
+                        WATCHA
+                    </h1>
+                    <h2>
+                        COPY CODING
+                    </h2>
+                </div>
+                <div class="chrome_img">
+
+                </div>
+                <div class="chrome_mob">
+                    
+                </div>
+                <div class="btn_box">
+                    <a class="btn" href="#">
+                        사이트 방문
+                    </a>
+                    <a class="btn" href="#">
+                        코드 보기
+                    </a>
+                </div>
+            </div>
+            <div class="content_box blank">
+
+            </div>
+        </div>
+    </section>
+    <script>     
+    let horizon = gsap.utils.toArray(".content_box");
+
+        gsap.to(horizon, {
+        xPercent: -100 * ( horizon.length -1 ),
+        ease: "none",
+        scrollTrigger: {
+            trigger: '.horizon_container',
+            end: ()=> "+=" + document.querySelector(".horizon_container").offsetWidth,
+            pin: true,
+            scrub: 1,
+        }
+    });
+    </script>
+    <section class="sec design w_100" id="design">
+
+    </section>
+    <footer class="footer w_100">
+        <div class="contact" id="contact">
 
         </div>
     </footer>
