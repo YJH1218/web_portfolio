@@ -54,7 +54,6 @@
         scrollTrigger: {
             trigger: "body",
             start: "60px",
-            markers:true,  //기준점을 표시해준다.
             toggleActions: "restart pause resume reverse"
         },
         y: 100, duration: 1, })
@@ -64,10 +63,17 @@
             intro
         </div>
         <div class="tit_box">
-            <h1>
-                POSITIVE
+            <h1 class="typing">              
             </h1>
         </div>
+        <div class="typing-txt"> 
+            <ul>
+              <li>POSITIVE</li>
+              <li>CREATIVE</li>
+              <li>INTUITIVE</li>
+              <li>OBJECTIVE</li>
+          </ul>          
+        </div> 
         <div class="txt_box">
             <div class="left">
                 Web Design<br>
@@ -80,6 +86,52 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
             </div>
         </div>
     </section>
+    <script>
+        var typingBool = false; 
+        var typingIdx=0; 
+        var liIndex = 0;
+        var liLength = $(".typing-txt>ul>li").length;
+        
+        var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
+        typingTxt=typingTxt.split("");
+        if(typingBool==false){
+            typingBool=true; 
+            var tyInt = setInterval(typing,200);
+        } 
+            
+        function typing(){ 
+        if(typingIdx<typingTxt.length){
+            $(".typing").append(typingTxt[typingIdx]);
+            typingIdx++; 
+        } else{
+            if(liIndex>=liLength-1){
+            liIndex=0;
+            }else{
+            liIndex++; 
+            }
+            
+                typingIdx=0;
+                typingBool = false; 
+                typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
+            
+                clearInterval(tyInt);
+                setTimeout(function(){
+                    $(".typing").html('');
+                tyInt = setInterval(typing,200);
+                },4000);
+            } 
+        }
+        gsap.to(".visual .txt_box .left", {
+        y: -20,
+        opacity: 1,
+        delay:0.5,
+      });
+      gsap.to(".visual .txt_box .right", {
+        y: -20,
+        opacity: 1,
+        delay:1,
+      });
+    </script>
     <section class="sec introduction w_100" id="introduction">
         <div class="bg_b_w"></div>
         <div class="marquee_box">
@@ -218,15 +270,24 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                 </div>
             </div>
         </div>
+        <div class="content"></div>
     </section>
+    <script>
+        gsap.utils.toArray(".content").forEach((div, i) => {
+            ScrollTrigger.create({
+            trigger: div,
+            start: "top top", 
+            pin: true,
+            pinSpacing: false,
+            });
+        });
+    </script>
     <section class="sec pratice w_100" id="pratice">
         <div class="tit_box">
             <h1>PRATICE</h1>
         </div>
         <div class="horizon_container">
-            <div class="content_box blank">
-
-            </div>
+            <div class="content_box blank"></div>
             <div class="content_box">
                 <div class="txt_box">
                     <h1>
@@ -251,9 +312,7 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                     </a>
                 </div>
             </div>
-            <div class="content_box blank">
-
-            </div>
+            <div class="content_box blank"></div>
             <div class="content_box">
                 <div class="txt_box">
                     <h1>
@@ -278,9 +337,7 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                     </a>
                 </div>
             </div>
-            <div class="content_box blank">
-
-            </div>
+            <div class="content_box blank"></div>
             <div class="content_box">
                 <div class="txt_box">
                     <h1>
@@ -305,9 +362,7 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                     </a>
                 </div>
             </div>
-            <div class="content_box blank">
-
-            </div>
+            <div class="content_box blank"></div>
             <div class="content_box">
                 <div class="txt_box">
                     <h1>
@@ -332,9 +387,7 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                     </a>
                 </div>
             </div>
-            <div class="content_box blank">
-
-            </div>
+            <div class="content_box blank"></div>
             <div class="content_box">
                 <div class="txt_box">
                     <h1>
@@ -359,9 +412,7 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                     </a>
                 </div>
             </div>
-            <div class="content_box blank">
-
-            </div>
+            <div class="content_box blank"></div>
         </div>
     </section>
     <script>     
@@ -379,11 +430,127 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
     });
     </script>
     <section class="sec design w_100" id="design">
+        <div class="tit_box">
+            <h1>DESIGN</h1>
+        </div>
+        <div class="item_box">
+            <div class="item item_01"></div>
+            <div class="item item_02"></div>
+            <div class="item item_03"></div>
+            <div class="item item_04"></div>
+            <div class="item item_05"></div>
+            <div class="item item_06"></div>
+        </div>
 
     </section>
+    <script>
+        gsap.to(".item_01", {
+        scrollTrigger: {
+            trigger: ".design",
+            start: "60px",
+            toggleActions: "restart pause resume reverse"
+        },
+        opacity: 1,
+        y: -40,
+    })
+    gsap.to(".item_02", {
+        scrollTrigger: {
+            trigger: ".design",
+            start: "60px",
+            toggleActions: "restart pause resume reverse"
+        },
+        opacity: 1,
+        y: -40,
+        delay: 0.2,
+    })
+    gsap.to(".item_03", {
+        scrollTrigger: {
+            trigger: ".design",
+            start: "60px",
+            toggleActions: "restart pause resume reverse"
+        },
+        opacity: 1,
+        y: -40,
+        delay: 0.4,
+    })
+    gsap.to(".item_04", {
+        scrollTrigger: {
+            trigger: ".design",
+            start: "60px",
+            toggleActions: "restart pause resume reverse"
+        },
+        opacity: 1,
+        y: -40,
+        delay: 0.6,
+    })
+    gsap.to(".item_05", {
+        scrollTrigger: {
+            trigger: ".design",
+            start: "60px",
+            toggleActions: "restart pause resume reverse"
+        },
+        opacity: 1,
+        y: -40,
+        delay: 0.8,
+    })
+    gsap.to(".item_06", {
+        scrollTrigger: {
+            trigger: ".design",
+            start: "60px",
+            toggleActions: "restart pause resume reverse"
+        },
+        opacity: 1,
+        y: -40,
+        delay: 1,
+    })
+    </script>
     <footer class="footer w_100">
         <div class="contact" id="contact">
+            <div class="tit_box">
+                Contact Me
+            </div>
+            <div class="txt_box">
+                <div class="txt">
+                    <h3>
+                        E-mail
+                    </h3>
+                    <h4>
+                        roo1218@naver.com
+                    </h4>
+                </div>
+                <div class="txt">
+                    <h3>
+                        Kakao
+                    </h3>
+                    <h4>
+                        Open chat
+                    </h4>
+                </div>
+                <div class="txt">
+                    <h3>
+                        Github
+                    </h3>
+                    <h4>
+                        https://github.com/YJH1218/web_portfolio.git
+                    </h4>
+                </div>
+            </div>
+            <div class="icon_box">
+                <div class="icon">
 
+                </div>
+                <div class="icon">
+                    
+                </div>
+                <div class="icon">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright 2023. Yoo Ji Hwan. All rights reserved.
+            </p>
         </div>
     </footer>
 </body>

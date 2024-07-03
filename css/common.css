@@ -10,6 +10,9 @@ body{
 .w_100{
     width: 100%;
 }
+.sec{
+    overflow-x: hidden;
+}
 /* header st */
 header{
     width: 100%;
@@ -71,12 +74,26 @@ header nav ul li{
 .visual .tit_box h1{
     font-family: 'MaziusDisplay-Bold';
     font-size: 172px;
+    padding-right: 12px;
+}
+.typing-txt{display: none;}
+.typeing-txt ul{list-style:none;}
+.typing {  
+  display: inline-block; 
+  animation-name: cursor; 
+  animation-duration: 1s;
+  animation-iteration-count: infinite; 
+} 
+@keyframes cursor{ 
+  0%{border-right: 4px solid #fff} 
+  50%{border-right: 4px solid #000} 
+  100%{border-right: 4px solid #fff} 
 }
 .visual .txt_box{
     width: 100%;
     padding: 0 120px;
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -86,6 +103,7 @@ header nav ul li{
 .visual .txt_box .left{
     padding-left: 102px;
     position: relative;
+    opacity: 0;
 }
 .visual .txt_box .left::before{
     content: " ";
@@ -110,6 +128,7 @@ header nav ul li{
 }
 .visual .txt_box .right{
     width: 600px;
+    opacity: 0;
 }
 /* visual ed */
 /* introduction st */
@@ -290,13 +309,13 @@ header nav ul li{
     font-weight: bolder;
 }
 .pratice .horizon_container{
-    width: 1100%;
+    width: 21120px;
     height: 100vh;
     display: flex;
 }
 
 .pratice .horizon_container .content_box{
-    width: 100%;
+    width: 1920px;
     height: 100%;
 }
 .pratice .horizon_container .content_box .txt_box{
@@ -314,8 +333,8 @@ header nav ul li{
     font-weight: bold;
 }
 .pratice .horizon_container .content_box .chrome_img{
-    width: 960px;
-    height: 600px;
+    width: 1280px;
+    height: 720px;
     position: absolute;
     top: 10%;
     left: 50%;
@@ -352,12 +371,90 @@ header nav ul li{
 }
 /* pratice ed */
 /* design st */
-.design{
-    height: 100vh;
+.design .tit_box{
+    height: 200px;
+    padding: 40px;
+    text-align: center;
+    margin: 200px 0;
 }
+.design .tit_box h1{
+    font-size: 128px;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    font-weight: bolder;
+}
+.design .item_box{
+    width: calc(100% - 200px);
+    margin: 0 auto 520px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.design .item_box .item{
+    width: calc((100% - 64px)/3);
+    border-radius: 12px;
+    aspect-ratio: 4/3;
+    background-color: #fff;
+    opacity: 0;
+}
+
+
 /* design ed */
 /* section ed */
 /* footer st */
+footer{
+    width: 100%;
+    background-color: #111;
+    border-top: 1px solid #fff;
+}
+footer .contact{
+    width: 100%;
+    height: 400px;
+    padding: 80px 200px 140px 200px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .contact .tit_box{
+    font-size: 32px;
+    font-weight: bolder;
+}
+footer .contact .txt_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer .contact .txt_box .txt{
+    display: flex;
+}
+footer .contact .txt_box .txt h3{
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+}
+footer .contact .txt_box .txt h4{
+    padding-top: 2px;
+    font-size: 18px;
+}
+footer .contact .icon_box{
+    display: flex;
+}
+footer .contact .icon_box .icon{
+    width: 80px;
+    height: 80px;
+    margin-left: 32px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+footer .copyright{
+    width: 100%;
+    height: 200px;
+    padding: 0 200px;
+    display: flex;
+    align-items: center;
+}
+
+
+
 
 
 /* footer ed */
