@@ -47,15 +47,61 @@
                 </li>
             </ul>
         </nav>
+        <div class="mob_hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="X_mark">
+            <div class="X_line left"></div>
+            <div class="X_line right"></div>
+        </div>
     </header>
+    <div class="mob_menu">
+        <div class="bg"></div>
+        <ul>
+            <li>
+                <a href="#visual">
+                    HOME
+                </a>
+            </li>
+            <li>
+                <a href="#works">
+                    Works
+                </a>
+            </li>
+            <li>
+                <a href="#pratice">
+                    Pratice
+                </a>
+            </li>
+            <li>
+                <a href="#design">
+                    Design
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    contact
+                </a>
+            </li>
+        </ul>
+    </div>
     <script>
+            $('.mob_hamburger').click(function(){
+            $('.mob_menu, .X_mark, .mob_hamburger').addClass("active");
+        });
+        $('.mob_menu .bg, .mob_menu ul li, .X_mark').click(function(){
+            $('.mob_menu, .X_mark, .mob_hamburger').removeClass("active");
+        });
         gsap.to("header", {
         scrollTrigger: {
             trigger: "body",
             start: "60px",
-            toggleActions: "restart pause resume reverse"
+            toggleActions: "restart pause resume reverse",
+            toggleClass:{targets:'header',className:'active'},
         },
-        y: 100, duration: 1, })
+        })
     </script>
     <section class="sec visual w_100" id="visual">
         <div class="intro_line">
