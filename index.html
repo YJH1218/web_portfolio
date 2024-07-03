@@ -49,7 +49,6 @@
         </nav>
     </header>
     <script>
-          gsap.registerPlugin(ScrollTrigger);
         gsap.to("header", {
         scrollTrigger: {
             trigger: "body",
@@ -121,6 +120,7 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                 },4000);
             } 
         }
+
         gsap.to(".visual .txt_box .left", {
         y: -20,
         opacity: 1,
@@ -131,6 +131,7 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
         opacity: 1,
         delay:1,
       });
+
     </script>
     <section class="sec introduction w_100" id="introduction">
         <div class="bg_b_w"></div>
@@ -168,7 +169,7 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
         </div>
         <div class="content">
             <div class="img_box">
-                <img class="desktop" src="./img/" alt="ㅁㅁㅁ사이트 이미지">
+                <img class="desktop" src="./img/caffe-pascucci-co-kr-2024-06-26-15_50_27 1.png" alt="ㅁㅁㅁ사이트 이미지">
             </div>
             <div class="bg"></div>
             <div class="info">
@@ -194,7 +195,7 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
         </div>
         <div class="content">
             <div class="img_box">
-                <img class="desktop" src="./img/" alt="ㅁㅁㅁ사이트 이미지">
+                <img class="desktop" src="./img/hybecorp-kor-main-2024-06-26-16_30_27 2.png" alt="ㅁㅁㅁ사이트 이미지">
             </div>
             <div class="bg"></div>
             <div class="info">
@@ -220,7 +221,7 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
         </div>
         <div class="content">
             <div class="img_box">
-                <img class="desktop" src="./img/" alt="ㅁㅁㅁ사이트 이미지">
+                <img class="desktop" src="./img/caffe-pascucci-co-kr-2024-06-26-15_50_27 1.png" alt="ㅁㅁㅁ사이트 이미지">
             </div>
             <div class="bg"></div>
             <div class="info">
@@ -246,7 +247,7 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
         </div>
         <div class="content">
             <div class="img_box">
-                <img class="desktop" src="./img/" alt="ㅁㅁㅁ사이트 이미지">
+                <img class="desktop" src="./img/hybecorp-kor-main-2024-06-26-16_30_27 2.png" alt="ㅁㅁㅁ사이트 이미지">
             </div>
             <div class="bg"></div>
             <div class="info">
@@ -270,9 +271,19 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                 </div>
             </div>
         </div>
-        <div class="content"></div>
+        <div class="content blank"></div>
     </section>
     <script>
+        gsap.to(".works .tit_box", {
+        scrollTrigger: {
+            trigger: ".works",
+            start: "0% 50%",
+            toggleActions: "restart pause resume reverse"
+        },
+        y: -40,
+        opacity: 1,
+        duration: 0.5,
+        })
         gsap.utils.toArray(".content").forEach((div, i) => {
             ScrollTrigger.create({
             trigger: div,
@@ -298,10 +309,10 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                     </h2>
                 </div>
                 <div class="chrome_img">
-
+                    <img src="./img/chrome_img.png" alt="ㅁㅁㅁ 웹 사이트">
                 </div>
                 <div class="chrome_mob">
-                    
+                    <img src="./img/chrome__mob_img.png" alt="ㅁㅁㅁ 모바일 사이트">
                 </div>
                 <div class="btn_box">
                     <a class="btn" href="#">
@@ -323,10 +334,10 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                     </h2>
                 </div>
                 <div class="chrome_img">
-
+                    <img src="./img/chrome_img.png" alt="ㅁㅁㅁ 웹 사이트">
                 </div>
                 <div class="chrome_mob">
-                    
+                    <img src="./img/chrome__mob_img.png" alt="ㅁㅁㅁ 모바일 사이트">
                 </div>
                 <div class="btn_box">
                     <a class="btn" href="#">
@@ -348,10 +359,10 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                     </h2>
                 </div>
                 <div class="chrome_img">
-
+                    <img src="./img/chrome_img.png" alt="ㅁㅁㅁ 웹 사이트">
                 </div>
                 <div class="chrome_mob">
-                    
+                    <img src="./img/chrome__mob_img.png" alt="ㅁㅁㅁ 모바일 사이트">
                 </div>
                 <div class="btn_box">
                     <a class="btn" href="#">
@@ -373,10 +384,10 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                     </h2>
                 </div>
                 <div class="chrome_img">
-
+                    <img src="./img/chrome_img.png" alt="ㅁㅁㅁ 웹 사이트">
                 </div>
                 <div class="chrome_mob">
-                    
+                    <img src="./img/chrome__mob_img.png" alt="ㅁㅁㅁ 모바일 사이트">
                 </div>
                 <div class="btn_box">
                     <a class="btn" href="#">
@@ -398,10 +409,10 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                     </h2>
                 </div>
                 <div class="chrome_img">
-
+                    <img src="./img/chrome_img.png" alt="ㅁㅁㅁ 웹 사이트">
                 </div>
                 <div class="chrome_mob">
-                    
+                    <img src="./img/chrome__mob_img.png" alt="ㅁㅁㅁ 모바일 사이트">
                 </div>
                 <div class="btn_box">
                     <a class="btn" href="#">
@@ -415,7 +426,17 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
             <div class="content_box blank"></div>
         </div>
     </section>
-    <script>     
+    <script>
+    gsap.to(".pratice .tit_box", {
+        scrollTrigger: {
+            trigger: ".pratice",
+            start: "0% 50%",
+            toggleActions: "restart pause resume reverse"
+        },
+        y: -40,
+        opacity: 1,
+        duration: 0.5,
+        })     
     let horizon = gsap.utils.toArray(".content_box");
 
         gsap.to(horizon, {
@@ -444,6 +465,16 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
 
     </section>
     <script>
+        gsap.to(".design .tit_box", {
+        scrollTrigger: {
+            trigger: ".design",
+            start: "0% 50%",
+            toggleActions: "restart pause resume reverse"
+        },
+        y: -40,
+        opacity: 1,
+        duration: 0.5,
+        })     
         gsap.to(".item_01", {
         scrollTrigger: {
             trigger: ".design",
@@ -536,15 +567,15 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                 </div>
             </div>
             <div class="icon_box">
-                <div class="icon">
-
-                </div>
-                <div class="icon">
-                    
-                </div>
-                <div class="icon">
-                    
-                </div>
+                <a class="icon icon_01" href="#">
+                    <img src="./img/icon_Email.png" alt="이메일">
+                </a>
+                <a class="icon icon_02" href="#">
+                    <img src="./img/icon_kakaoTalk.png" alt="카카오 오픈 채팅">
+                </a>
+                <a class="icon icon_03" href="https://github.com/YJH1218/web_portfolio.git" target="_blank">
+                    <img src="./img/icon_github.png" alt="깃허브">
+                </a>
             </div>
         </div>
         <div class="copyright">
@@ -553,6 +584,9 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
             </p>
         </div>
     </footer>
+    <script>
+
+    </script>
 </body>
 <!-- js -->
 <script src="./js/main.js"></script>

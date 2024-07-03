@@ -221,18 +221,21 @@ header nav ul li{
 .works .tit_box{
     height: 200px;
     padding: 40px;
+    margin: 200px 0;
     text-align: center;
+    opacity: 0;
 }
 .works .tit_box h1{
     font-size: 128px;
     color: transparent;
     -webkit-text-stroke: 2px #fff;
-    font-weight: bolder;
+    font-weight: 900;
 }
 .works .content{
     width: 100%;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 .works .content .img_box{
     width: 100%;
@@ -241,6 +244,9 @@ header nav ul li{
     top: 0;
     left: 0;
     background-color: #fff;
+}
+.works .content .img_box img{
+    width: 100%;
 }
 .works .content .bg{
     width: 100%;
@@ -301,12 +307,13 @@ header nav ul li{
     padding: 40px;
     text-align: center;
     margin-bottom: 200px;
+    opacity: 0;
 }
 .pratice .tit_box h1{
     font-size: 128px;
     color: transparent;
     -webkit-text-stroke: 2px #fff;
-    font-weight: bolder;
+    font-weight: 900;
 }
 .pratice .horizon_container{
     width: 21120px;
@@ -339,9 +346,12 @@ header nav ul li{
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #999;
     border: 2px solid #eee;
     border-radius: 20px;
+    overflow: hidden;
+}
+.pratice .horizon_container .content_box .chrome_img img{
+    width: 100%;
 }
 .pratice .horizon_container .content_box .chrome_mob{
     width: 220px;
@@ -350,9 +360,12 @@ header nav ul li{
     bottom: 10%;
     left: 15%;
     transform: translateX(-50%);
-    background-color: #666;
     border: 2px solid #eee;
     border-radius: 20px;
+    overflow: hidden;
+}
+.pratice .horizon_container .content_box .chrome_mob img{
+    width: 100%;
 }
 .pratice .horizon_container .content_box .btn_box{
     position: absolute;
@@ -376,12 +389,13 @@ header nav ul li{
     padding: 40px;
     text-align: center;
     margin: 200px 0;
+    opacity: 0;
 }
 .design .tit_box h1{
     font-size: 128px;
     color: transparent;
     -webkit-text-stroke: 2px #fff;
-    font-weight: bolder;
+    font-weight: 900;
 }
 .design .item_box{
     width: calc(100% - 200px);
@@ -394,8 +408,27 @@ header nav ul li{
     width: calc((100% - 64px)/3);
     border-radius: 12px;
     aspect-ratio: 4/3;
-    background-color: #fff;
     opacity: 0;
+    background:cover center no-repeat;
+    cursor: pointer;
+}
+.design .item_box .item_01{
+    background: url(../img/design_sns_01.png);
+}
+.design .item_box .item_02{
+    background: url(../img/design_sns_02.png);
+}
+.design .item_box .item_03{
+    background: url(../img/design_sns_01.png);
+}
+.design .item_box .item_04{
+    background: url(../img/design_sns_02.png);
+}
+.design .item_box .item_05{
+    background: url(../img/design_sns_01.png);
+}
+.design .item_box .item_06{
+    background: url(../img/design_sns_02.png);
 }
 
 
@@ -436,14 +469,19 @@ footer .contact .txt_box .txt h4{
     font-size: 18px;
 }
 footer .contact .icon_box{
+    padding-top: 40px;
     display: flex;
 }
 footer .contact .icon_box .icon{
     width: 80px;
     height: 80px;
     margin-left: 32px;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-radius: 8px;
+    opacity: 0;
+}
+footer .contact .icon_box .icon img{
+    width: 100%;
 }
 footer .copyright{
     width: 100%;
