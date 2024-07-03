@@ -26,7 +26,7 @@ header{
     z-index: 99;
 }
 header nav{
-    width: 1440px;
+    max-width: 1440px;
     height: 100%;
     margin: 0 auto;
 }
@@ -142,8 +142,8 @@ header nav ul li{
     background: linear-gradient(#000, #fff);
 }
 .introduction .marquee_box{
-    width: 100%;
-    height: 75vh;
+    width: 150%;
+    height: 50vh;
     padding: 60px 0;
     display: flex;
     justify-content: space-between;
@@ -201,12 +201,15 @@ header nav ul li{
   }
 .introduction .marquee_box .marquee_wrap:nth-child(1){
     background-color: #FA4040;
+    transform: rotate(5deg) translateX(-25%);
 }
 .introduction .marquee_box .marquee_wrap:nth-child(2){
     background-color: #000;
+    transform: rotate(-2deg) translate(-25%, -25%);
 }
 .introduction .marquee_box .marquee_wrap:nth-child(3){
     background-color: #FFD159;
+    transform: rotate(1.5deg) translateX(-25%);
 }
 .introduction .bg_w_b{
     width: 100%;
@@ -250,7 +253,7 @@ header nav ul li{
 }
 .works .content .bg{
     width: 100%;
-    height: 100%;
+    height: 60%;
     position: absolute;
     top: 0;
     left: 0;
@@ -266,40 +269,40 @@ header nav ul li{
     display: flex;
     justify-content: space-between;
 }
-.works .content .info .txt_box{
+.works .content .info .left{
+    display: flex;
+    flex-direction: column;
+}
+.works .content .info .left .txt_box{
     width: 50%;
 }
-.works .content .info .txt_box h1{
+.works .content .info .left .txt_box h1{
     font-size: 96px;
     margin-bottom: 8px;
 }
-.works .content .info .txt_box h2{
+.works .content .info .left .txt_box h2{
     font-size: 64px;
     margin-bottom: 8px;
 } 
-.works .content .info .txt_box p{
+.works .content .info .left .txt_box p{
     font-size: 24px;
 }
-.works .content .info .right{
+.works .content .info .left .btn_box{
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    gap: 28px;
 }
-.works .content .info .right .logo_box{
-    font-size: 64px;
-}
-.works .content .info .right .btn_box{
-    display: flex;
-    justify-content: flex-end;
-}
-.works .content .info .right .btn_box .btn{
+.works .content .info .left .btn_box .btn{
     padding: 12px 20px;
-    margin-left: 28px;
-    border: 1px solid #ccc;
+    border: 2px solid #999;
     border-radius: 8px;
     color: #222;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255);
 }
+.works .content .info .right .logo{
+    font-size: 64px;
+}
+
 /* works ed */
 /* pratice st */
 .pratice .tit_box{
@@ -316,19 +319,19 @@ header nav ul li{
     font-weight: 900;
 }
 .pratice .horizon_container{
-    width: 21120px;
+    width: 15840px;
     height: 100vh;
     display: flex;
 }
 
 .pratice .horizon_container .content_box{
-    width: 1920px;
+    width: 1440px;
     height: 100%;
 }
 .pratice .horizon_container .content_box .txt_box{
     position: absolute;
     top: 10%;
-    left: 5%;
+    left: 0;
     z-index: 9;
 }
 .pratice .horizon_container .content_box .txt_box h1{
@@ -344,8 +347,7 @@ header nav ul li{
     height: 720px;
     position: absolute;
     top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 0;
     border: 2px solid #eee;
     border-radius: 20px;
     overflow: hidden;
@@ -358,7 +360,7 @@ header nav ul li{
     height: 420px;
     position: absolute;
     bottom: 10%;
-    left: 15%;
+    left: 10%;
     transform: translateX(-50%);
     border: 2px solid #eee;
     border-radius: 20px;
@@ -370,7 +372,7 @@ header nav ul li{
 .pratice .horizon_container .content_box .btn_box{
     position: absolute;
     bottom: 10%;
-    right: 15%;
+    right: 0;
     display: flex;
 }
 .pratice .horizon_container .content_box .btn_box .btn{
@@ -388,7 +390,7 @@ header nav ul li{
     height: 200px;
     padding: 40px;
     text-align: center;
-    margin: 200px 0;
+    margin: 200px 0 40px 0;
     opacity: 0;
 }
 .design .tit_box h1{
@@ -442,7 +444,7 @@ footer{
 }
 footer .contact{
     width: 100%;
-    height: 400px;
+    max-height: 400px;
     padding: 80px 200px 140px 200px;
     display: flex;
     justify-content: space-between;
@@ -471,11 +473,11 @@ footer .contact .txt_box .txt h4{
 footer .contact .icon_box{
     padding-top: 40px;
     display: flex;
+    gap: 32px;
 }
 footer .contact .icon_box .icon{
     width: 80px;
     height: 80px;
-    margin-left: 32px;
     border: 2px solid #fff;
     border-radius: 8px;
     opacity: 0;
