@@ -222,10 +222,10 @@ h2{
 }
 @media screen and (max-width: 768px){
     h1{
-        font-size: 40px;
+        font-size: 38px;
     }
     h2{
-        font-size: 40px;
+        font-size: 38px;
         -webkit-text-stroke: 0.5px #fff;
     }
     .web_portfolio h1{
