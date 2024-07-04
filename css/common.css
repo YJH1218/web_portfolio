@@ -343,6 +343,9 @@ header .X_mark .X_line.right{
 .works .content .img_box img{
     width: 100%;
 }
+.works .content .img_box .mobile{
+    display: none;
+}
 .works .content .bg{
     width: 100%;
     height: 60%;
@@ -479,6 +482,96 @@ header .X_mark .X_line.right{
     border-radius: 28px;
 }
 /* pratice ed */
+/* mob_pratice st */
+.mob_pratice{
+    display: none;
+    margin-bottom: 120px;
+}
+.mob_pratice .tit_box{
+    height: 200px;
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    opacity: 0;
+}
+.mob_pratice .tit_box h1{
+    color: transparent;
+    font-weight: 900;
+}
+.mob_pratice .content_box{
+    width: 100%;
+    margin-bottom: 240px;
+    position: relative;
+    aspect-ratio: 1;
+}
+.mob_pratice .content_box:last-child{
+    margin-bottom: 0;
+}
+.mob_pratice .content_box .txt_box{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 9;
+}
+.mob_pratice .content_box .txt_box h1{
+    font-size: 36px;
+    font-weight: bolder;
+}
+.mob_pratice .content_box .txt_box h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.mob_pratice .content_box .chrome_img{
+    width: 70%;
+    position: absolute;
+    top: 15%;
+    right: 20px;
+    aspect-ratio: 16/9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.mob_pratice .content_box .chrome_img img{
+    width: 100%;
+}
+.mob_pratice .content_box .chrome_mob{
+    position: absolute;
+    aspect-ratio: 15/31;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+.mob_pratice .content_box .chrome_mob img{
+    width: 100%;
+}
+.mob_pratice .content_box .chrome_mob_01{
+    width: 15%;
+    bottom: 5%;
+    left: 50%;
+    transform: rotate(-30deg);
+}
+.mob_pratice .content_box .chrome_mob_02{
+    width: 20%;
+    bottom: 15%;
+    right: 10px;
+    transform: rotate(15deg);
+}
+.mob_pratice .content_box .btn_box{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.mob_pratice .content_box .btn_box .btn{
+    padding: 6px 34px;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+/* mob_pratice ed */
 /* design st */
 .design .tit_box{
     height: 200px;
@@ -505,8 +598,8 @@ header .X_mark .X_line.right{
     border-radius: 12px;
     aspect-ratio: 4/3;
     opacity: 0;
-    background:cover center no-repeat;
     cursor: pointer;
+    transition: all 0.5s;
 }
 .design .item_box .item_01{
     background: url(../img/design_sns_01.png);
@@ -526,10 +619,86 @@ header .X_mark .X_line.right{
 .design .item_box .item_06{
     background: url(../img/design_sns_02.png);
 }
-
-
+.design .item_box .item{
+    background-size: 100%;
+    background-position: center;
+}
+.design .item_box .item:hover{
+    background-size: 110%;
+}
 /* design ed */
 /* section ed */
+/* pop_up st */
+.pop_up_wrap{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 999;
+}
+.pop_up_wrap.active{
+    visibility: visible;
+    opacity: 1;
+}
+.pop_up_wrap .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.pop_up_wrap .pop_up{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: none;
+    background-color: #fff;
+    color: #000;
+}
+.pop_up_wrap .pop_up.active{
+    display: block;
+}
+.pop_up_wrap .pop_up::-webkit-scrollbar {
+    display: none;
+}
+.pop_up_wrap .X_mark{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 40px;
+    transform: translate(-50%, -50%);
+}
+.pop_up_wrap .X_mark .X_line{
+    width: 44px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 4px;
+}
+.pop_up_wrap .X_mark .X_line.left{
+    transform: rotate(-45deg);
+}
+.pop_up_wrap .X_mark .X_line.right{
+    transform: rotate(45deg);
+}
+.pop_up_wrap .pop_up img{
+    width: 100%;
+}
+/* pop_up ed */
 /* footer st */
 footer{
     width: 100%;
@@ -586,9 +755,4 @@ footer .copyright{
     display: flex;
     align-items: center;
 }
-
-
-
-
-
 /* footer ed */
