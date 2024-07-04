@@ -150,6 +150,21 @@ header .X_mark .X_line.right{
     left: 60px;
     transform: translate(-50%, -50%);
     font-size: 24px;
+    opacity: 0;
+    animation-name: animation_intro_txt;
+    animation-duration: 1.2s;
+    animation-delay: 0.5s;
+    animation-fill-mode:forwards;
+}
+@keyframes animation_intro_txt{
+    0%{
+        top: 70px;
+        opacity: 0;
+    }
+    100%{
+        top: 60px;
+        opacity: 1;
+    }
 }
 .visual .intro_line::after{
     content: " ";
@@ -159,6 +174,19 @@ header .X_mark .X_line.right{
     top: 50%;
     left: 80px;
     background-color: #fff;
+    opacity: 0;
+    animation-name: animation_line;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode:forwards;
+}
+@keyframes animation_line{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .visual .tit_box{
     position: absolute;
@@ -624,7 +652,7 @@ header .X_mark .X_line.right{
     background-position: center;
 }
 .design .item_box .item:hover{
-    background-size: 110%;
+    background-size: 105%;
 }
 /* design ed */
 /* section ed */

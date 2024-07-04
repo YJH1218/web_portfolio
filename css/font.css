@@ -4,3 +4,27 @@
     font-weight: 400;
     src: url('../font/MaziusDisplay-Bold.woff');
 }
+@font-face{
+    font-family: 'Revamped';
+    font-size: 'bold';
+    font-weight: 400;
+    src: url('../font/Revamped.wotf');
+}
+@font-face{
+    font-family: 'cocogoose';
+    font-size: 'bold';
+    font-weight: 400;
+    src: url('../font/Cocogoose-Pro-Bold-trial.woff');
+}
+@font-face{
+    font-family: 'Jua';
+    font-size: 'normal';
+    font-weight: 400;
+    src: url('../font/Jua-Regular.woff');
+}
+@font-face{
+    font-family: 'PaulSlab-Bold-Trail';
+    font-size: 'bold';
+    font-weight: 400;
+    src: url('../font/PaulSlab-Bold-Trail.woff');
+}
