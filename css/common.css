@@ -444,19 +444,19 @@ header .X_mark .X_line.right{
     font-weight: 900;
 }
 .pratice .horizon_container{
-    width: 15840px;
+    width: 14080px;
     height: 100vh;
     display: flex;
 }
 
 .pratice .horizon_container .content_box{
-    width: 1440px;
+    width: 1280px;
     height: 100%;
 }
 .pratice .horizon_container .content_box .txt_box{
     position: absolute;
     top: 10%;
-    left: 0;
+    left: -10%;
     z-index: 9;
 }
 .pratice .horizon_container .content_box .txt_box h1{
@@ -485,7 +485,7 @@ header .X_mark .X_line.right{
     height: 420px;
     position: absolute;
     bottom: 10%;
-    left: 10%;
+    left: 0%;
     transform: translateX(-50%);
     border: 2px solid #eee;
     border-radius: 20px;

@@ -42,12 +42,12 @@ h2{
     opacity: 0;
 }
 .web_portfolio h1:nth-child(1){
-    animation-name: animation_06; 
+    animation-name: animation_01; 
     animation-duration: 0.5s;
     animation-delay: 0.5s;
     animation-fill-mode:forwards;
 }
-@keyframes animation_06{
+@keyframes animation_01{
     0%{
         opacity: 0;
     }
@@ -56,12 +56,12 @@ h2{
     }
 }
 .web_portfolio h1:nth-child(2){
-    animation-name: animation_07; 
+    animation-name: animation_02; 
     animation-duration: 0.5s;
     animation-delay: 1s;
     animation-fill-mode:forwards;
 }
-@keyframes animation_07{
+@keyframes animation_02{
     0%{
         opacity: 0;
     }
@@ -75,12 +75,12 @@ h2{
     mix-blend-mode: normal;
 }
 .web_portfolio h2:nth-child(3){
-    animation-name: animation_08; 
+    animation-name: animation_03; 
     animation-duration: 0.5s;
     animation-delay: 1.5s;
     animation-fill-mode:forwards;
 }
-@keyframes animation_08{
+@keyframes animation_03{
     0%{
         opacity: 0;
     }
@@ -89,12 +89,12 @@ h2{
     }
 }
 .web_portfolio h2:nth-child(4){
-    animation-name: animation_09; 
+    animation-name: animation_04; 
     animation-duration: 0.5s;
     animation-delay: 2s;
     animation-fill-mode:forwards;
 }
-@keyframes animation_09{
+@keyframes animation_04{
     0%{
         opacity: 0;
     }
@@ -103,12 +103,12 @@ h2{
     }
 }
 .web_portfolio{
-    animation-name: animation_10; 
+    animation-name: animation_5; 
     animation-duration: 2s;
     animation-delay: 4.5s;
     animation-fill-mode:forwards;
 }
-@keyframes animation_10{
+@keyframes animation_5{
     0%{
         opacity: 1;
     }
@@ -125,12 +125,12 @@ h2{
 }
 .left_box{
     left: 100%;
-    animation-name: animation_11; 
+    animation-name: animation_6; 
     animation-duration: 2s;
     animation-delay: 2.5s;
     animation-fill-mode:forwards;
 }
-@keyframes animation_11{
+@keyframes animation_6{
     0%{
         left: 100%;
     }
@@ -149,12 +149,12 @@ h2{
 }
 .right_box{
     right: 100%;
-    animation-name: animation_12; 
+    animation-name: animation_7; 
     animation-duration: 2s;
     animation-delay: 2.5s;
     animation-fill-mode:forwards;
 }
-@keyframes animation_12{
+@keyframes animation_7{
     0%{
         right: 100%;
     }
