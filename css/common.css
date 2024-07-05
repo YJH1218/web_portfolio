@@ -648,11 +648,17 @@ header .X_mark .X_line.right{
     background: url(../img/design_sns_02.png);
 }
 .design .item_box .item{
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
 }
-.design .item_box .item:hover{
-    background-size: 105%;
+.design .item_box .item .bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+}
+.design .item_box .item:hover .bg{
+    background-color: rgba(0, 0, 0, 0.3);
 }
 /* design ed */
 /* section ed */
