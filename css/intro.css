@@ -129,7 +129,6 @@ h2{
     opacity: 0;
 }
 .web_portfolio h1:nth-child(1){
-    font-family: 'MaziusDisplay-Bold';
     animation-name: animation_06; 
     animation-duration: 0.5s;
     animation-delay: 5.5s;
@@ -144,7 +143,7 @@ h2{
     }
 }
 .web_portfolio h1:nth-child(2){
-    font-family: 'cocogoose';
+    font-family: 'MaziusDisplay-Bold';
     animation-name: animation_07; 
     animation-duration: 0.5s;
     animation-delay: 6s;
@@ -164,6 +163,7 @@ h2{
     mix-blend-mode: normal;
 }
 .web_portfolio h2:nth-child(3){
+    font-family: 'cocogoose';
     animation-name: animation_08; 
     animation-duration: 0.5s;
     animation-delay: 6.5s;
