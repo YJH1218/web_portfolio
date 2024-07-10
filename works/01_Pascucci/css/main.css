@@ -1,0 +1,31 @@
+/* section st */
+section{
+    width: 100%;
+    margin-bottom: 150px;
+}
+/* visual st */
+.visual{
+    height: 100vh;
+}
+.visual .slide_container{
+    width: 100%;
+    height: 100%;
+}
+.visual .slide_container .swiper-wrapper .swiper-slide img{
+    width: 100%;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: 40px;
+}
+.swiper-pagination-bullet-active{
+    background-color: #fff;
+}
+/* visual ed */
+
+
+
+
+
+
+
+/* section ed */

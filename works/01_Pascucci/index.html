@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.css"/>
+    <!-- jq, swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"/>
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>CAFFE PASCUCCI</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="menu">
+                <li class="logo">
+                    <a href="#">
+                        <img src="./img/Logo.svg" alt="로고">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Espresso Bar
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Menu
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        News
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        SNS
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="sec sec_01 visual">
+        <div class="swiper slide_container">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="desk" src="./img/visual_slide_01.png" alt="비주얼 슬라이드 01">
+            </div>
+            <div class="swiper-slide">
+                <img class="desk" src="./img/visual_slide_02.png" alt="비주얼 슬라이드 02">
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <script>
+        const swiper = new Swiper('.slide_container', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+                },
+            pagination: {
+            el: '.swiper-pagination',
+            },      
+      });
+    </script>
+    <section class="sec sec_02 introduce">
+        <div class="container">
+
+        </div>
+        <div class="img_box">
+            
+        </div>
+    </section>
+    <section class="sec sec_03 choice">
+
+    </section>
+    <section class="sec sec_04 img_list">
+
+    </section>
+    <section class="sec sec_05 espresso_bar">
+
+    </section>
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer_logo">
+                <a href="#">
+                    <img src="./img/Logo_O_White.svg" alt="푸터 로고">
+                </a>
+            </div>
+            <ul class="site_list">
+                <li>
+                    <a href="#">
+                        해피포인트
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        개인 정보 처리방침
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        안전보건경영방침 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        영상정보처리기기운영-관리방침
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        이용약관
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        윤리신고센터
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        거래 희망 사전등록
+                    </a>
+                </li>
+            </ul>
+            <ul class="info_list">
+                <li>
+                    (주) 파리크라상
+                </li>
+                <li>
+                    사업자 등록 번호 : 123-12-12345
+                </li>
+            </ul>
+            <ul class="address_cell">
+                <li>
+                    ㅁㅁ시 ㅁㅁ구 ㅁㅁㅁ로 1234
+                </li>
+                <li>
+                    FAX. 1234- 123-1234
+                </li>
+                <li>
+                    고객상담센터 080-123-1234
+                </li>
+            </ul>
+            <div class="copyright">
+                이 페이지는 포트폴리오용으로 제작되었습니다.<br>
+                Copyright 2024. 유지환. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+</html>
