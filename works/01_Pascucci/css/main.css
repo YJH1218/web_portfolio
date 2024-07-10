@@ -21,9 +21,231 @@ section{
     background-color: #fff;
 }
 /* visual ed */
+/* introduction st */
+.introduction{
+    height: 100vh;
+    position: relative;
+}
+.introduction .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.introduction .container .content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.introduction .container .content:nth-child(1){
+    background-image: url(../img/introduction_01.png);
+}
+.introduction .container .content:nth-child(2){
+    background-image: url(../img/introduction_02.png);
+}
+.introduction .container .content{
+    background-size: cover;
+    background-position: center;
+}
+.introduction .container .content .txt_box{
+    text-align: center;
+}
+.introduction .container .content:nth-child(1) .txt_box{
+    color: #fff;
+}
+.introduction .container .content .txt_box h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+.introduction .container .content .txt_box h1{
+    padding: 20px 0;
+    font-family: 'Jua';
+    font-size: 64px;
+}
+.introduction .container .content .txt_box h3{
+    padding-top: 16px;
+    font-size: 20px;
+}
+.introduction .container .content .btn{
+    padding: 20px 30px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 32px;
+    background-color: #fff;
+    border: 2px solid #999;
+    transition: all 0.5s;
+}
+.introduction .container .content .btn h3{
+    padding-right: 20px;
+    position: relative;
+}
+.introduction .container .content .btn h3::after{
+    content: " ";
+    width: 2px;
+    height: 75%;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    background-color: #222;
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+.introduction .container .content .btn h3::before{
+    content: " ";
+    width: 2px;
+    height: 75%;
+    position: absolute;
+    top: -10%;
+    right: 0;
+    background-color: #222;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+}
+.introduction .container .content .btn:hover{
+    background-color: #E1002B;
+    border: 2px solid #fff;
+}
+.introduction .container .content .btn:hover h3::after{
+    background-color: #fff;
+}
+.introduction .container .content .btn:hover h3::before{
+    background-color: #fff;
+}
+.introduction .container .content .btn:hover h3{
+    color: #fff;
+}
+.introduction .container .content:nth-child(2) .btn{
+    background-color: #E1002B;
+    border: 2px solid #fff;
+}
+.introduction .container .content:nth-child(2) .btn h3{
+    color: #fff;
+}
+.introduction .container .content:nth-child(2) .btn h3::after{
+    background-color: #fff;
+}
+.introduction .container .content:nth-child(2) .btn h3::before{
+    background-color: #fff;
+}
+.introduction .container .content:nth-child(2) .btn:hover{
+    background-color: #fff;
+    border: 2px solid #999;
+}
+.introduction .container .content:nth-child(2) .btn:hover h3{
+    color: #222;
+}
+.introduction .container .content:nth-child(2) .btn:hover h3::after{
+    background-color: #222;
+}
+.introduction .container .content:nth-child(2) .btn:hover h3::before{
+    background-color: #222;
+}
+.introduction .img_box{
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.introduction .img_box img{
+    width: 100%;
+}
+/* introduction ed */
+/* choice st */
+.choice .tit_box{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.choice .tit_box h1{
+    font-size: 64px;
+    font-weight: 900;
+}
+.choice .content_wrap{
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    gap: 32px;
+}
+.choice .content_wrap .content_container{
+    width: calc((100% - 32px)/2);
+    display: flex;
+    gap: 32px;
+}
+.choice .content_wrap .content_container .content_box{
+    width: calc((100% - 32px)/2);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.choice .content_wrap .content_container .content_box .content{
+    width: 100%;
+    position: relative;
+    margin-bottom: 80px;
+    background: linear-gradient(#efefef,rgba(255, 255, 255, 0) 40%);
+}
+.choice .content_wrap .content_container .content_box .content:hover{
+    background: linear-gradient(#eeefff,rgba(255, 255, 255, 0) 40%);
+}
+.choice .content_wrap .content_container .content_box .content img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.choice .content_wrap .content_container .content_box .content.small{
+    aspect-ratio: 1/1;
+}
+.choice .content_wrap .content_container .content_box .content.large{
+    aspect-ratio: 1/1.25;
+}
+.choice .content_wrap .content_container .content_box .content .txt_box{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    border-bottom: 4px solid #ddd;
+}
+.choice .content_wrap .content_container .content_box .content .txt_box h2{
+    padding: 8px 0 8px 12px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+}
+.choice .content_wrap .content_container .content_box .content .txt_box h2::before{
+    content: " ";
+    width: 4px;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #E1002B;
+}
+.choice .content_wrap .content_container .content_box .content .txt_box p{
+    font-size: 16px;
+}
+
+/* choice ed */
+/* img list st */
+.img_list{
+    height: 100vh;
+    background-color: #eee;
+}
+.img_list .img_container
 
 
 
+
+/* img list ed */
 
 
 

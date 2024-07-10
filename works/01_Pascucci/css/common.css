@@ -26,9 +26,8 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
-.header nav .menu .logo a{
-    display: inline-block;
-    max-width: 260px;
+.header nav .menu .logo{
+    width: 15%;
 }
 .header nav .menu .logo a img{
     width: 100%;
