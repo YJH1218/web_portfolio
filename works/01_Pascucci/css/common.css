@@ -5,6 +5,9 @@ body{
     color: 222;
     font-family: 'pretendard';
 }
+.mobile{
+    display: none;
+}
 /* header st */
 .header{
     width: 100%;
@@ -32,7 +35,116 @@ body{
 .header nav .menu .logo a img{
     width: 100%;
 }
+/* 모바일 헤더 메뉴 */
+.header .mobile{
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    visibility: hidden;
+}
+.header .mobile .logo{
+    width: 200px;
+    display: inline-block;
+}
+.header .mobile .logo img{
+    width: 100%;
+}
+.header .mobile .hamburger{
+    width: 28px;
+    height: 20px;
+    position: relative;
+}
+.header .mobile .hamburger span{
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #222;
+    border-radius: 2px;
+}
+.header .mobile .hamburger span:nth-child(1){
+    top: 0%;
+}
+.header .mobile .hamburger span:nth-child(2){
+    top: 50%;
+}
+.header .mobile .hamburger span:nth-child(3){
+    top: 100%;
+}
 /* header ed */
+/* 모바일 메뉴 */
+.mob_menu_wrap{
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #E1002B;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+    z-index: 999;
+}
+.mob_menu_wrap.active{
+    visibility: visible;
+    opacity: 1;
+}
+.mob_menu_wrap .mob_menu_header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #E1002B;
+}
+.mob_menu_wrap .mob_menu_header .logo{
+    width: 200px;
+    display: inline-block;
+}
+.mob_menu_wrap .mob_menu_header .logo img{
+    width: 100%;
+    fill: #fff;
+}
+.mob_menu_wrap .mob_menu_header .X_mark{
+    width: 28px;
+    height: 28px;
+    position: relative;
+}
+.mob_menu_wrap .mob_menu_header .X_mark span{
+    width: 120%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 2px;
+}
+.mob_menu_wrap .mob_menu_header .X_mark span:nth-child(1){
+    transform: rotate(45deg);
+}
+.mob_menu_wrap .mob_menu_header .X_mark span:nth-child(2){
+    transform: rotate(-45deg);
+}
+.mob_menu_wrap .mob_menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.mob_menu_wrap .mob_menu li a{
+    width: 100%;
+    padding: 28px 0;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+}
 /* footer st */
 footer{
     width: 100%;

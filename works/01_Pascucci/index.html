@@ -19,10 +19,10 @@
 </head>
 <body>
     <header class="header">
-        <nav>
+        <nav class="desk">
             <ul class="menu">
                 <li class="logo">
-                    <a href="#">
+                    <a href="./index.html">
                         <img src="./img/Logo.svg" alt="로고">
                     </a>
                 </li>
@@ -53,15 +53,73 @@
                 </li>
             </ul>
         </nav>
+        <div class="mobile">
+            <a class="logo" href="./index.html">                
+                <img src="./img/Logo.svg" alt="로고">
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
+    <div class="mob_menu_wrap">
+        <div class="mob_menu_header">
+            <a class="logo" href="./index.html">
+                <img src="./img/Logo_White.svg" alt="로고">
+            </a>
+            <div class="btn X_mark">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="mob_menu">
+            <li>
+                <a href="#">
+                    Espresso Bar
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Menu
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    News
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Store
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    SNS
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $('.hamburger').click(function(){
+            $('.mob_menu_wrap').addClass("active");
+        });
+        $('.mob_menu_header .X_mark').click(function(){
+            $('.mob_menu_wrap').removeClass("active");
+        });
+    </script>
     <section class="sec sec_01 visual">
         <div class="swiper slide_container">
             <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img class="desk" src="./img/visual_slide_01.png" alt="비주얼 슬라이드 01">
+                <img class="mobile" src="./img/visual_slide_01_mob.png" alt="비주얼 슬라이드 01 모바일">
             </div>
             <div class="swiper-slide">
                 <img class="desk" src="./img/visual_slide_02.png" alt="비주얼 슬라이드 02">
+                <img class="mobile" src="./img/visual_slide_02_mob.png" alt="비주얼 슬라이드 02 모바일">
             </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -131,7 +189,7 @@
                 </a>
             </div>
         </div>
-        <div class="img_box">
+        <div class="img_box desk">
             <img src="./img/Espresso.png" alt="에스프레소">
         </div>
     </section>
@@ -211,7 +269,19 @@
                 </div>
             </div>
         </div>
+        <div class="btm_container">
+            <div class="btn more">
+                <h3>
+                    더보기
+                </h3>
+            </div>
+        </div>
     </section>
+    <script>
+        $('.choice .btm_container .btn').click(function(){
+            $('.choice .btm_container, .choice .content_wrap .content_container:nth-child(2)').addClass("active");
+        });
+    </script>
     <section class="sec sec_04 img_list">
         <div class="wrap">            
             <div class="img_container">
@@ -285,7 +355,7 @@
                     <img src="./img/Logo_O_White.svg" alt="푸터 로고">
                 </a>
             </div>
-            <ul class="site_list">
+            <ul class="desk site_list">
                 <li>
                     <a href="#">
                         해피포인트
@@ -322,6 +392,49 @@
                     </a>
                 </li>
             </ul>
+            <div class="mobile site_list">
+                <ul>
+                    <li>
+                        <a href="#">
+                            해피포인트
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            개인 정보 처리방침
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            안전보건경영방침 
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            영상정보처리기기운영-관리방침
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            이용약관
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            윤리신고센터
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            거래 희망 사전등록
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <ul class="info_list">
                 <li>
                     (주) 파리크라상
