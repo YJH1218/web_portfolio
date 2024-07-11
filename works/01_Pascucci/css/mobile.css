@@ -27,6 +27,11 @@
     .choice .content_wrap .content_container .content_box .content .txt_box p{
         font-size: 12px;
     }
+    /* footer */
+    footer .wrap ul li{
+        padding: 0 6px;
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 768px){
     .desk{
@@ -157,7 +162,6 @@
         padding-top: 12px;
     }
     footer .wrap ul li{
-        padding: 0 6px;
         font-size: 12px;
     }
     .site_list.desk{
