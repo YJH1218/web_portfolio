@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jq, gsap, swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"/>
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>NAVER</title>
+</head>
+<body>
+    <header class="header header_wrap">
+        <div class="menu_bar">
+            <ul class="menu left">
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>                
+            </ul>
+            <ul class="menu right">
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>         
+                <li>
+                    <a href="#"></a>
+                </li>                
+            </ul>
+        </div>
+        <div class="search_box">
+            <a class="logo" href="./index.html">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path></svg>
+            </a>
+            <div class="input_box">
+                <input id="search" type="search" class="search_input" title="검색어를 입력해 주세요." placeholder=" " onfocus="this.placeholder = '검색어를 입력해 주세요.'" autocomplete="off" >
+            </div>
+            <div class="btn_keyboard btn"></div>
+            <div class="btn_arrow btn"></div>
+            <div class="search_mark">
+                <div class="btn_search">
+                    <svg id="search-btn" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" style="fill: #03c75a">
+                        <path d="M22.13.5c11.378 0 20.632 9.256 20.632 20.63 0 4.699-1.566 9.155-4.439 12.782l10.164 10.165a2.41 2.41 0 0 1-1.706 4.115 2.412 2.412 0 0 1-1.706-.705L33.31 35.719a2.41 2.41 0 0 1 0-3.41 15.71 15.71 0 0 0 4.628-11.178c0-8.718-7.09-15.808-15.807-15.808-8.718 0-15.808 7.09-15.808 15.808 0 7.15 4.817 13.43 11.714 15.273a2.41 2.41 0 0 1 1.705 2.954 2.41 2.41 0 0 1-2.95 1.705C7.788 38.658 1.5 30.46 1.5 21.131 1.5 9.756 10.756.5 22.13.5zm4.716 34.746a3.483 3.483 0 1 1 0 6.966 3.483 3.483 0 0 1 0-6.966z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="icon_container">
+            <ul class="icon_list">
+                <li>
+                    <a href="#">
+                        <div class="img_box">
+                        </div>
+                        <div class="txt_box">
+                            <p>메일</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_box">
+                        </div>
+                        <div class="txt_box">
+                            <p>카페</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_box">
+                        </div>
+                        <div class="txt_box">
+                            <p>블로그</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_box">
+                        </div>
+                        <div class="txt_box">
+                            <p>쇼핑</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_box">
+                        </div>
+                        <div class="txt_box">
+                            <p>뉴스</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_box">
+                        </div>
+                        <div class="txt_box">
+                            <p>증권</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_box">
+                        </div>
+                        <div class="txt_box">
+                            <p>부동산</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_box">
+                        </div>
+                        <div class="txt_box">
+                            <p>지도</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_box">
+                        </div>
+                        <div class="txt_box">
+                            <p>웹툰</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_box">
+                        </div>
+                        <div class="txt_box">
+                            <p>치지직</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_box">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_box">
+                        </div>
+                        <div class="txt_box">
+                            <p>서울디지털대</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        $('.btn_arrow').click(function(){
+            $('.btn_arrow').toggleClass("active");
+        })
+    </script>
+    <div class="main_wrap wrap">
+        <div class="main_con con_container">
+            <section class="sec sec_01 AD_box">
+                <a class="AD img_box" href="#">
+                    <img src="./img/AD_banner_main.jpg" alt="광고">
+                </a>
+            </section>
+            <section class="sec sec_02 News"></section>
+            <section class="sec sec_03 shopping"></section>
+            <section class="sec sec_04 choice"></section>
+        </div>
+        <aside class="side_con con_container">
+            <div class="sticky_wrap">
+                <section class="sec sec_01 log_in"></section>
+                <section class="sec sec_02 AD"></section>
+                <section class="sec sec_03 Daily"></section>
+                <section class="sec sec_04 Daily"></section>
+                <section class="sec sec_05 banner"></section>
+                <section class="sec sec_06 widget"></section>
+                <section class="sec sec_07 banner whale"></section>
+            </div>
+        </aside>
+    </div>
+    <footer class="footer">
+        <div class="footer_wrap wrap">
+            <div class="banner_box">
+                <a class="banner" href="#">
+                    <div class="img_box"></div>
+                    <div class="txt_box">
+                        <h3>
+                            밀알복지제단
+                        </h3>
+                        <h4>
+                            긴급의료비 지원
+                        </h4>
+                        <p>                            
+                            희귀병으로 광대뼈가 없이<br>
+                            태어난 하랑이를 지켜주세요
+                        </p>
+                    </div>
+                </a>
+                <a class="banner" href="#">
+                    <div class="img_box"></div>
+                    <div class="txt_box">
+                        <h3>
+                            네이버 커넥트재단
+                        </h3>
+                        <h4>
+                            연구 과제 공모
+                        </h4>
+                        <p>                            
+                            공모에 선정된 연구자에게<br>
+                            교육 데이터와 연구비 지원
+                        </p>
+                    </div>
+                </a>
+                <a class="banner" href="#">
+                    <div class="img_box"></div>
+                    <div class="txt_box">
+                        <h3>
+                            장마철 안전운전 정보
+                        </h3>
+                        <h4>
+                            긴급 우회도로 반영 안내
+                        </h4>
+                        <p>                            
+                            전남자치경찰위원회가<br>
+                            신속히 알려드립니다
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="notice_box">
+                <ul>
+                    <li>
+                        <a href="#">
+                            공지사항
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            서비스 전체보기
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list_box">
+                <div class="partner_box">
+                    <ul class="pratner_list">
+                        <li>
+                            <strong>
+                                Partners
+                            </strong>
+                        </li>
+                        <li>
+                            <a href="#">
+                                프로젝트 꽃
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                네이버 비즈니스
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                네이버 비즈니스 스쿨
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                네이버 광고
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                스토어 개설
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                지역업체 등록
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                엑스퍼트 등록
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="pratner_list">
+                        <li>
+                            <strong>
+                                Developers
+                            </strong>
+                        </li>
+                        <li>
+                            <a href="#">
+                                네이버 개발자 센터
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                오픈 API
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                오픈소스
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                네이버 D2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                네이버 D2SF
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                네이버 랩스
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="service_box">
+                    <div class="service whale">
+                        <ul class="txt_box">
+                            <li>
+                                <strong>
+                                    웨일 브라우저
+                                </strong>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    이용안내
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="img_box" href="#">
+                            <img src="./img/whale_logo.png" alt="웨일로고">
+                        </a>
+                    </div>
+                    <div class="service business">
+                        <ul class="txt_box">
+                            <li>
+                                <strong>
+                                    기업 사이트
+                                </strong>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    바로가기
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="img_box" href="#">
+                            <img src="./img/naver_logo_dark.png" alt="네이버 기업">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="info_list">
+                <ul>
+                    <li>
+                        <a href="#">
+                            회사소개
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            인재채용
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            제휴제안
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            이용약관
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <strong>
+                                개인정보처리방침
+                            </strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            청소년보호정책
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            네이버 정책
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            고객센터
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <strong>
+                                ⓒ NAVER Corp.
+                            </strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

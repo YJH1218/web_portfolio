@@ -1,0 +1,387 @@
+.wrap{
+    width: 1340px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+/* header */
+
+/* 검색 영역 */
+.header_wrap{
+    width: 1340px;
+    margin: 0 auto 30px auto;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+/* 상단 아이콘 */
+.header_wrap .menu_bar{
+    width: 1340px;
+    padding: 0 22px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.header_wrap .menu_bar .menu{
+    padding-top: 6px;
+    display: flex;
+    gap: 8px;
+}
+.header_wrap .menu_bar .menu li a{
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    display: inline-block;
+    border-radius: 24px;
+    position: relative;
+}
+.header_wrap .menu_bar .menu li:hover a{
+    background-color: #f5f7f8;
+}
+.header_wrap .menu_bar .menu li a::after{
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header_wrap .menu_bar .menu.left li:nth-child(1) a::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -285px -214px;
+}
+.header_wrap .menu_bar .menu.left li:nth-child(2) a::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -326px -33px;
+}
+.header_wrap .menu_bar .menu.right li:nth-child(1) a::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -326px -165px;
+}
+.header_wrap .menu_bar .menu.right li:nth-child(2) a::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -246px -229px;
+}
+.header_wrap .menu_bar .menu.right li:nth-child(3) a::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -326px -99px;
+}
+/* 검색 바 */
+.header_wrap .search_box{
+    width: 708px;
+    height: 60px;
+    border: 1px solid #03c75a;
+    border-radius: 33px;
+    box-sizing: border-box;
+    display: flex;
+}
+.header_wrap .search_box:hover{
+    box-shadow: 0 0px 0px rgba(0,0,0,0.25), 0 3px 5px rgba(0,0,0,0.10);
+}
+.header_wrap .search_box .logo svg{
+    padding: 17px 16px 17px 27px;
+    width: 24px;
+    height: 24px;
+    display: block;
+    fill: #03c75a;
+}
+.header_wrap .search_box .input_box{
+    width: 480px;
+    height: 58px;
+}
+input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+input::-ms-clear { display: none; }
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+input::-ms-clear,
+input::-ms-reveal{
+	display:none;width:0;height:0;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+	display:none;
+}
+.header_wrap .search_box .input_box .search_input{
+    width: 100%;
+    height: 58px;
+    color: #000;
+    padding: 17px 0;
+    box-sizing: border-box;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+.header_wrap .search_box .input_box .search_input::placeholder{
+    color: transparent;
+}
+.header_wrap .search_box .input_box .search_input:focus::placeholder{
+    color: #ddd;
+    font-size: 20px;
+    font-weight: normal;
+}
+.header_wrap .search_box .btn_keyboard{
+    width: 30px;
+    height: 58px;
+    margin-left: 48px;
+    position: relative;
+    cursor: pointer;
+}
+.header_wrap .search_box .btn_keyboard::before{
+    content: " ";
+    width: 24px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -240px -270px;
+}
+.header_wrap .search_box .btn_keyboard:hover::before{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -215px -270px;
+}
+.header_wrap .search_box .btn_arrow{
+    width: 22px;
+    height: 58px;
+    position: relative;
+    cursor: pointer;
+    padding: 26px 6px;
+    box-sizing: border-box;
+}
+.header_wrap .search_box .btn_arrow::before{
+    content: " ";
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -123px -98px;
+}
+.header_wrap .search_box .btn_arrow.active::before{
+    transform: translate(-50%, -50%) rotate(-180deg);
+}
+.header_wrap .search_box .search_mark .btn_search{
+    width: 28px;
+    height: 28px;
+    padding: 16px 27px 15px 10px;
+    display: block;
+    fill: #03c75a;
+    cursor: pointer;
+}
+/* 아이콘 */
+.header_wrap .icon_container .icon_list{
+    margin-top: 8px;
+    display: flex;
+}
+.header_wrap .icon_container .icon_list li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header_wrap .icon_container .icon_list li a .img_box{
+    width: 40px;
+    height: 40px;
+    margin:  0 7px;
+    position: relative;
+}
+.header_wrap .icon_container .icon_list li a .img_box::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: -3px;
+    background-image: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -193px 0px;
+    background-repeat: no-repeat;
+}
+.header_wrap .icon_container .icon_list li:hover a .img_box::before{
+    background-image: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -102px -107px;
+}
+.header_wrap .icon_container .icon_list li a .img_box::after{
+    content: " ";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header_wrap .icon_container .icon_list li:nth-child(1) a .img_box::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -241px -40px;
+}
+.header_wrap .icon_container .icon_list li:nth-child(2) a .img_box::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -83px -183px;
+}
+.header_wrap .icon_container .icon_list li:nth-child(3) a .img_box::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -42px -183px;
+}
+.header_wrap .icon_container .icon_list li:nth-child(4) a .img_box::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -161px -228px;
+}
+.header_wrap .icon_container .icon_list li:nth-child(5) a .img_box::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -79px -228px;
+}
+.header_wrap .icon_container .icon_list li:nth-child(6) a .img_box::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -282px 1px;
+}
+.header_wrap .icon_container .icon_list li:nth-child(7) a .img_box::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -123px -228px;
+}
+.header_wrap .icon_container .icon_list li:nth-child(8) a .img_box::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -241px -80px;
+}
+.header_wrap .icon_container .icon_list li:nth-child(9) a .img_box::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -282px -40px;
+}
+.header_wrap .icon_container .icon_list li:nth-child(10) a .img_box::after{
+    background: url(../img/chzzk_logo.png);
+    background-size: 100%;
+    background-position: 2px 2px;
+}
+.header_wrap .icon_container .icon_list li:nth-child(11) a .img_box::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -38px -228px;
+}
+.header_wrap .icon_container .icon_list li:nth-child(11):hover a .img_box::after{
+    background: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: 3px -228px;
+}
+.header_wrap .icon_container .icon_list li a .txt_box{
+    margin: 8px 0 0 5px;
+    width: 48px;
+    text-align: center;
+    font-size: 13.65px;
+}
+.header_wrap .icon_container .icon_list li:last-child a .img_box{
+    margin: 0 21px 0 35px;
+}
+.header_wrap .icon_container .icon_list li:nth-child(12) a .img_box::after{
+    background: url(../img/SDU_icon.png);
+    background-size: cover;
+    background-position: center;
+}
+.header_wrap .icon_container .icon_list li:last-child a .txt_box{
+    width: 82px;
+    margin-left: 14px;
+    text-align: center;
+    font-size: 13.65px;
+}
+/* 메인 영역 */
+.main_wrap{
+    margin-bottom: 58px;
+    display: flex;
+    gap: 30px;
+}
+.sec{
+    width: 100%;
+    margin-top: 16px;
+    background-color: #333;
+    border: 1px solid #E3E5E8;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.sec:first-child{
+    margin-top: 0;
+}
+/* 메인 콘텐츠 영역 */
+.main_con{
+    width: 830px;
+}
+/* 광고 영역 */
+.main_con .AD_box{
+    height: 130px;
+    overflow: hidden;
+}
+.main_con .AD_box img{
+    width: 100%;
+}
+
+
+.main_con .News{
+    height: 426px;
+}
+.main_con .shopping{
+    height: 560px;
+}
+.main_con .choice{
+    height: 2449px;
+}
+
+/* 사이드 컨텐츠 */
+.side_con{
+    width: 420px;
+    background-color: #ddd;
+}
+.side_con .log_in{
+    height: 164px;
+}
+.side_con .AD{
+    height: 240px;
+}
+.side_con .Daily{
+    height: 236px;
+}
+.side_con .banner{
+    height: 80px;
+}
+.side_con .sticky_wrap{
+    position: sticky;
+    top: -1000px;
+}
+.side_con .widget{
+    height: 806px;
+}
+
+
+

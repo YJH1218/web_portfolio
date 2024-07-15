@@ -1,0 +1,195 @@
+strong{
+    font-weight: bold;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 432px;
+    background-color: #F5F6F7;
+    font-size: 13.65px;
+}
+footer ul li{
+    padding: 0 9px;
+    position: relative;
+}
+footer ul li::after{
+    content: " ";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    background-color: #d3d5d7;
+}
+footer ul li:last-child:after{
+    content: none;
+}
+footer ul li:first-child{
+    padding-left: 0;
+}
+footer ul li:last-child{
+    padding-right: 0;
+}
+footer ul li:hover{
+    text-decoration: underline;
+}
+.footer_wrap{
+    height: 100%;
+}
+/* 배너 */
+.footer_wrap .banner_box{
+    width: 100%;
+    height: 100px;
+    padding: 30px 0;
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+.footer_wrap .banner_box .banner{
+    width: calc(1240px / 3);
+    height: 100%;
+    display: flex;
+}
+.footer_wrap .banner_box .banner .img_box{
+    width: 160px;
+    height: 100px;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    transition: all 0.2s;
+    position: relative;
+}
+.footer_wrap .banner_box .banner:nth-child(1) .img_box{
+    background: url(../img/footer_banner_01.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.footer_wrap .banner_box .banner:nth-child(1) .img_box::after{
+    content: " ";
+    width: 25px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: url(../img/AD.svg);
+}
+.footer_wrap .banner_box .banner:nth-child(2) .img_box{
+    background: url(../img/footer_banner_02.png);
+    background-position: center;
+    background-size: 100%;
+}
+.footer_wrap .banner_box .banner:nth-child(3) .img_box{
+    background: url(../img/footer_banner_03.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.footer_wrap .banner_box .banner:hover .img_box{
+    background-size: 105%;
+}
+.footer_wrap .banner_box .banner .txt_box{
+    padding: 5px 3px 0 18px;
+}
+.footer_wrap .banner_box .banner .txt_box h3{
+    padding: 4px 6px;
+    display: inline-block;
+    background-color: #a0adb2;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+.footer_wrap .banner_box .banner .txt_box h4{
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.footer_wrap .banner_box .banner .txt_box p{
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.footer_wrap .banner_box .banner:hover .txt_box h4{
+    text-decoration: underline;
+}
+/* 공지사항 */
+.footer_wrap .notice_box ul{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebebeb;
+}
+.footer_wrap .notice_box ul li{
+    padding: 22px 0;
+    font-weight: bold;
+}
+.footer_wrap .notice_box ul li:first-child::after{
+    content: none;
+}
+.footer_wrap .notice_box ul li:last-child{
+    padding-right: 20px;
+}
+.footer_wrap .notice_box ul li:last-child::after{
+    content: " ";
+    width: 8px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F5F6F7;
+    background-image: url(../img/sp_main.png);
+    background-size: 458px 444px;
+    background-position: -404px -388px;
+    background-repeat: no-repeat;
+}
+/* 리스트 */
+.footer_wrap .list_box{
+    width: 100%;
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebebeb;
+}
+.footer_wrap .list_box .partner_box{
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer_wrap .list_box .partner_box ul{
+    display: flex;
+}
+.footer_wrap .list_box .partner_box ul li:first-child{
+    width: 80px;
+}
+.footer_wrap .list_box ul li:first-child::after{
+    content: none;
+}
+.footer_wrap .list_box ul li:first-child:hover{
+    text-decoration: none;
+}
+.footer_wrap .list_box .service_box{
+    height: 48px;
+    display: flex;
+    gap: 30px;
+}
+.footer_wrap .list_box .service_box .service{
+    display: flex;
+    gap: 8px;
+}
+.footer_wrap .list_box .service_box .service .txt_box li{
+    padding: 8px 0 0 0;
+}
+.footer_wrap .list_box .service_box .service .img_box{
+    width: 48px;
+}
+.footer_wrap .list_box .service_box .service .img_box img{
+    width: 100%;
+}
+/* 정보 리스트 */
+.footer_wrap .info_list ul{
+    padding-top: 26px;
+    display: flex;
+    justify-content: center;
+}
+
