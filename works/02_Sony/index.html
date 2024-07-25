@@ -59,44 +59,196 @@
             </li>
         </ul>
     </header>
-    <section class="sec sec_01 visual">
+    <div class="visual">
         <div class="swiper visual_slide">
             <div class="swiper-wrapper">
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
+            <div class="swiper-slide">
+                <img class="desk" src="./img/visual_desk_01.jpg" alt="비주얼 이미지">
+                <div class="txt_box">
+                    <h1>
+                        기록의 완성
+                    </h1>
+                    <h3>
+                        브이로그용 카메라 ZV-E10 II
+                    </h3>
+                    <a class="btn direct" href="#">
+                        자세히 보기 ->
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/visual_desk_02.jpg" alt="비주얼 이미지">
+                <div class="txt_box">
+                    <h1>
+                        스터디 헤드폰
+                    </h1>
+                    <h3>
+                        WH-1000XM5
+                    </h3>
+                    <a class="btn direct" href="#">
+                        자세히 보기 ->
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/visual_desk_03.jpg" alt="비주얼 이미지">
+                <div class="txt_box">
+                    <h1>
+                        ULT FIELD 1
+                    </h1>
+                    <h3>
+                        가볍고 튼튼한 최고의 캠핑요 스피커
+                    </h3>
+                    <a class="btn direct" href="#">
+                        자세히 보기 ->
+                    </a>
+                </div>
+            </div>
             </div>
             <div class="swiper-pagination"></div>            
-            <div class="swiper-scrollbar"></div>
         </div>
-    </section>
+    </div>
     <script>
         const swiper = new Swiper('.visual_slide', {
-        direction: 'vertical',
+        direction: 'horizontal',
         loop: true,
+        autoplay: {
+            delay: 5000,
+        },
         pagination: {
             el: '.swiper-pagination',
         },
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
         });
     </script>
-    <section class="sec sec_02">
+    <div class="wrap">
+        <section class="sec sec_01 brand">
+            <div class="contents_box">
+                <div class="txt_box">
+                    <h3>
+                        Brand
+                    </h3>
+                    <h1>
+                        <strong>
+                            Sony's Purpose
+                        </strong>
+                    </h1>
+                    <h2>
+                        <strong>
+                            Businesses & Products
+                        </strong>
+                    </h2>
+                    <p class="bottom">
+                        기술의 힘으로 크리에이터의 꿈을 지원하고, 많은 마음을
+                        움직이는 경험을 만들어 주변 사람들에게 전달합니다.
+                    </p>
+                    <p>
+                        소니코리아는 제품과 서비스를 통해 전 세계 사람들의
+                        삶을 감동으로 가득 채웁니다.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <div class="img_box desk"></div>
+                    <div class="img_box">
+                        <img src="./img/brand_img_01.png" alt="sound 이미지">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/brand_img_02.png" alt="playstation 이미지">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/brand_img_03.png" alt="pictures 이미지">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec sec_02 latest">
+            <div class="tit">
+                <h1>
+                    <strong>
+                        THE LATEST
+                    </strong>
+                </h1>
+            </div>
+            <div class="swiper latest_slide">
+                <div class="swiper-wrapper">                  
+                  <div class="swiper-slide">
+                    <div class="img_box"></div>
+                    <div class="txt_box">
+                        <div class="txt">
+                            <h3>
+                                ULT WEAR
+                            </h3>
+                            <h4>
+                                WH-ULT900N
+                            </h4>
+                        </div>
+                        <div class="btn icon icon_heart">
+                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                            <img src="./img/icon_heart_max.png" alt="하트">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img_box"></div>
+                    <div class="txt_box"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img_box"></div>
+                    <div class="txt_box"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img_box"></div>
+                    <div class="txt_box"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img_box"></div>
+                    <div class="txt_box"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img_box"></div>
+                    <div class="txt_box"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img_box"></div>
+                    <div class="txt_box"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img_box"></div>
+                    <div class="txt_box"></div>
+                  </div>
+                                    
+                </div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+        </section>
+        <script>
+            new Swiper('.latest_slide', {
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 4,
+            spaceBetween: 20,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            });
 
-    </section>
-    <section class="sec sec_03">
+            $('.icon_heart').click(function(){
+                $('.icon_heart, .icon_heart img').toggleClass("active");
+            });
+        
+        </script>
+        <section class="sec sec_03">
 
-    </section>
-    <section class="sec sec_04">
+        </section>
+        <section class="sec sec_04">
 
-    </section>
-    <section class="sec sec_05">
+        </section>
+        <section class="sec sec_05">
 
-    </section>
-    <section class="sec sec_06">
-
-    </section>
+        </section>        
+    </div>
     <footer>
         <div class="wrap footer_wrap">
             <div class="txt_box">
