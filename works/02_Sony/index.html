@@ -22,7 +22,7 @@
         <ul class="menu">
             <li class="logo">
                 <a href="#">
-                    <svg width="1280" height="225.28" version="1.1" viewBox="0 0 338.67 59.605" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="1280" version="1.1" viewBox="0 0 338.67 59.605" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
                         <g transform="translate(647.97 -300.06)" fill="#ffffff" stroke-width=".677">
                           <path d="M-390.37 303.388v6.623h6.469c2.824 0 4.68 1.782 5.737 2.933.847.948 19.474 22.068 19.92 22.623.448.556.448.562.448.915v10.465a7.41 7.41 0 0 1-.143 1.429 2.283 2.283 0 0 1-1.435 1.274 14.78 14.78 0 0 1-1.843.115l-6.475-.008v6.624h36.318v-6.624h-6.834a13.39 13.39 0 0 1-1.83-.116 2.256 2.256 0 0 1-1.428-1.273 7.45 7.45 0 0 1-.148-1.429V336.48a1.422 1.422 0 0 1 .243-.975l20.15-22.988c1.85-2.06 2.812-2.507 5.237-2.507h6.685v-6.624h-29.931v6.61h4.517a1.267 1.267 0 0 1 1.084 2.033c-.095.135-12.531 14.759-12.687 14.901-.156.142-.256.108-.372-.047-.115-.156-12.402-14.854-12.402-14.854-.867-1.064-.19-2.032.827-2.032h4.402v-6.61z"/>
                           <path d="M-479.445 303.388v6.623h5.797c4.186 0 4.471 2.331 4.471 4.363v31.002c0 1.855.108 4.402-2.56 4.402h-7.154v6.617h30.542v-6.617h-7.45c-2.974 0-3.11-1.36-3.143-4.253v-26.559l41.947 37.43h10.668l-.563-42.273c.055-3.089.244-4.118 3.441-4.118h6.685v-6.617h-31.157v6.617h6.842c3.143 0 3.67 1.212 3.71 4.118l.374 22.122-36.414-32.857z"/>
@@ -32,38 +32,43 @@
                     </svg>
                 </a>
             </li>
-            <li>
+            <li class="desk">
                 <a href="#">
                     Store
                 </a>
             </li>
-            <li>
+            <li class="desk">
                 <a href="#">
                     PlayStation
                 </a>
             </li>
-            <li>
+            <li class="desk">
                 <a href="#">
                     Sustainability
                 </a>
             </li>
-            <li>
+            <li class="desk">
                 <a href="#">
                     Support
                 </a>
             </li>
-            <li class="mobile">
+            <li class="mobile btn hamburger">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </li>
         </ul>
     </header>
+    <div class="mobile_menu_container">
+        <div class="mobile_menu_wrap">
+        </div>
+    </div>
     <div class="visual">
         <div class="swiper visual_slide">
             <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img class="desk" src="./img/visual_desk_01.jpg" alt="비주얼 이미지">
+                <img class="mobile" src="./img/visual_mobile_01.jpg" alt="비주얼 모바일 이미지">
                 <div class="txt_box">
                     <h1>
                         기록의 완성
@@ -77,7 +82,8 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <img src="./img/visual_desk_02.jpg" alt="비주얼 이미지">
+                <img class="desk" src="./img/visual_desk_02.jpg" alt="비주얼 이미지">
+                <img class="mobile" src="./img/visual_mobile_02.jpg" alt="비주얼 모바일 이미지">
                 <div class="txt_box">
                     <h1>
                         스터디 헤드폰
@@ -91,7 +97,8 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <img src="./img/visual_desk_03.jpg" alt="비주얼 이미지">
+                <img class="desk" src="./img/visual_desk_03.jpg" alt="비주얼 이미지">
+                <img class="mobile" src="./img/visual_mobile_03.jpg" alt="비주얼 모바일 이미지">
                 <div class="txt_box">
                     <h1>
                         ULT FIELD 1
@@ -120,524 +127,551 @@
         },
         });
     </script>
-    <div class="wrap">
-        <section class="sec sec_01 brand">
-            <div class="contents_box">
-                <div class="txt_box">
-                    <h3>
-                        Brand
-                    </h3>
-                    <h1>
-                        <strong>
-                            Sony's Purpose
-                        </strong>
-                    </h1>
-                    <h2>
-                        <strong>
-                            Businesses & Products
-                        </strong>
-                    </h2>
-                    <p class="bottom">
-                        기술의 힘으로 크리에이터의 꿈을 지원하고, 많은 마음을
-                        움직이는 경험을 만들어 주변 사람들에게 전달합니다.
-                    </p>
-                    <p>
-                        소니코리아는 제품과 서비스를 통해 전 세계 사람들의
-                        삶을 감동으로 가득 채웁니다.
-                    </p>
-                </div>
-                <div class="img_container">
-                    <div class="img_box desk"></div>
-                    <a class="img_box" href="#">
-                        <img src="./img/brand_img_01.png" alt="sound 이미지">
-                        <div class="bg"></div>
-                        <div class="txt">                            
-                            SOUND                            
-                        </div>
-                    </a>
-                    <a class="img_box" href="#">
-                        <img src="./img/brand_img_02.png" alt="playstation 이미지">
-                        <div class="bg"></div>
-                        <div class="txt">
-                            PLAY STATION
-                        </div>
-                    </a>
-                    <a class="img_box" href="#">
-                        <img src="./img/brand_img_03.png" alt="pictures 이미지">
-                        <div class="bg"></div>
-                        <div class="txt">
-                            PICTURES
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="sec sec_02 latest">
-            <div class="tit">
-                <h1>
-                    <strong>
-                        THE LATEST
-                    </strong>
-                </h1>
-            </div>
-            <div class="swiper latest_slide">
-                <div class="swiper-wrapper">                  
-                  <div class="swiper-slide slide_01">
-                    <div class="img_box">
-                        <img src="./img/latest_contents_01.png" alt="상품 이미지">
-                        <img class="on" src="./img/latest_contents_01_on.png" alt="상품 사진">
-                    </div>
-                    <div class="txt_box">
-                        <a class="txt" href="#">
-                            <h3>
-                                ULT WEAR
-                            </h3>
-                            <h4>
-                                WH-ULT900N
-                            </h4>
-                        </a>
-                        <div class="btn icon icon_heart">
-                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
-                            <img src="./img/icon_heart_max.png" alt="하트">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide slide_02">
-                    <div class="img_box">
-                        <img src="./img/latest_contents_02.png" alt="상품 이미지">
-                        <img class="on" src="./img/latest_contents_02_on.png" alt="상품 사진">
-                    </div>
-                    <div class="txt_box">
-                        <a class="txt" href="#">
-                            <h3>
-                                FE 24-50mm F2.8 G
-                            </h3>
-                            <h4>
-                                SEL2450G
-                            </h4>
-                        </a>
-                        <div class="btn icon icon_heart">
-                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
-                            <img src="./img/icon_heart_max.png" alt="하트">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide slide_03">
-                    <div class="img_box">
-                        <img src="./img/latest_contents_03.png" alt="상품 이미지">
-                        <img class="on" src="./img/latest_contents_03_on.png" alt="상품 사진">
-                    </div>
-                    <div class="txt_box">
-                        <a class="txt" href="#">
-                            <h3>
-                                INZONE 이어버드
-                            </h3>
-                            <h4>
-                                INZONE Buds
-                            </h4>
-                        </a>
-                        <div class="btn icon icon_heart">
-                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
-                            <img src="./img/icon_heart_max.png" alt="하트">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide slide_04">
-                    <div class="img_box">
-                        <img src="./img/latest_contents_04.png" alt="상품 이미지">
-                        <img class="on" src="./img/latest_contents_04_on.png" alt="상품 사진">
-                    </div>
-                    <div class="txt_box">
-                        <a class="txt" href="#">
-                            <h3>
-                                α9 III
-                            </h3>
-                            <h4>
-                                ILCE-9M3
-                            </h4>
-                        </a>
-                        <div class="btn icon icon_heart">
-                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
-                            <img src="./img/icon_heart_max.png" alt="하트">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide slide_05">
-                    <div class="img_box">
-                        <img src="./img/latest_contents_05.png" alt="상품 이미지">
-                        <img class="on" src="./img/latest_contents_05_on.png" alt="상품 사진">
-                    </div>
-                    <div class="txt_box">
-                        <a class="txt" href="#">
-                            <h3>
-                                이것은 작게 진화한 헤드폰
-                            </h3>
-                            <h4>
-                                WF-1000XM5
-                            </h4>
-                        </a>
-                        <div class="btn icon icon_heart">
-                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
-                            <img src="./img/icon_heart_max.png" alt="하트">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide slide_06">
-                    <div class="img_box">
-                        <img src="./img/latest_contents_06.webp" alt="상품 이미지">
-                        <img class="on" src="./img/latest_contents_06_on.png" alt="상품 사진">
-                    </div>
-                    <div class="txt_box">
-                        <a class="txt" href="#">
-                            <h3>
-                                브이로깅을 위한 모든 것
-                            </h3>
-                            <h4>
-                                ZV-1 II
-                            </h4>
-                        </a>
-                        <div class="btn icon icon_heart">
-                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
-                            <img src="./img/icon_heart_max.png" alt="하트">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide slide_07">
-                    <div class="img_box">
-                        <img src="./img/latest_contents_07.png" alt="상품 이미지">
-                        <img class="on" src="./img/latest_contents_07_on.png" alt="상품 사진">
-                    </div>
-                    <div class="txt_box">
-                        <a class="txt" href="#">
-                            <h3>
-                                무선 노이즈 캔슬링 헤드폰
-                            </h3>
-                            <h4>
-                                WH-1000XM5
-                            </h4>
-                        </a>
-                        <div class="btn icon icon_heart">
-                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
-                            <img src="./img/icon_heart_max.png" alt="하트">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide slide_08">
-                    <div class="img_box">
-                        <img src="./img/latest_contents_08.webp" alt="상품 이미지">
-                        <img class="on" src="./img/latest_contents_08_on.png" alt="상품 사진">
-                    </div>
-                    <div class="txt_box">
-                        <a class="txt" href="#">
-                            <h3>
-                                컴팩트 풀프레임
-                            </h3>
-                            <h4>
-                                α7CR 61.0 MP
-                            </h4>
-                        </a>
-                        <div class="btn icon icon_heart">
-                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
-                            <img src="./img/icon_heart_max.png" alt="하트">
-                        </div>
-                    </div>
-                  </div>      
-                </div>
-                <div class="swiper-scrollbar"></div>
-              </div>
-        </section>
-        <script>
-            new Swiper('.latest_slide', {
-            direction: 'horizontal',
-            loop: false,
-            slidesPerView: 4,
-            spaceBetween: 20,
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-            });
-
-            $('.icon_heart').click(function(){
-                $(this).toggleClass("active");
-                $(this).children("img").toggleClass("active");
-            });
-        
-        </script>
-        <section class="sec sec_03 hit_item">
-            <div class="tit">
-                <h1>
-                    <strong>
-                        WHAT'S HOT
-                    </strong>
-                </h1>
-            </div>
-            <div class="contents_container">
-                <div class="img_container">
-                    <a class="contents" href="#">
-                        <div class="img_box">
-                            <img src="./img/hit_item_01.png" alt="히트 상품 이미지">
-                        </div>
-                        <div class="txt_box">
-                            <h2>
-                                <strong>
-                                    WH-1000XM5
-                                </strong>
-                            </h2>
-                            <h4>
-                                무선 노이즈 캔슬링 헤드폰
-                            </h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="img_container">
-                    <a class="contents" href="#">
-                        <div class="img_box">
-                            <img src="./img/hit_item_02.png" alt="히트 상품 이미지">
-                        </div>
-                        <div class="txt_box">
-                            <h2>
-                                <strong>
-                                    플로트 런 Float Run
-                                </strong>
-                            </h2>
-                            <h4>
-                                달리면서 느끼는 진정한 자유로움
-                            </h4>
-                        </div>
-                    </a>
-                    <a class="contents square" href="#">
-                        <div class="img_box">
-                            <img src="./img/hit_item_03.png" alt="히트 상품 이미지">
-                        </div>
-                        <div class="txt_box">
-                            <h2>
-                                <strong>
-                                    ZV-1M2
-                                </strong>
-                            </h2>
-                            <h4>
-                                올인원 브이로그 카메라
-                            </h4>
-                        </div>
-                    </a>
-                    <a class="contents square" href="#">
-                        <div class="img_box">
-                            <img src="./img/hit_item_04.png" alt="히트 상품 이미지">
-                        </div>
-                        <div class="txt_box">
-                            <h2>
-                                <strong>
-                                    SRS-XE300
-                                </strong>
-                            </h2>
-                            <h4>
-                                언제 어디서든 콘서트 사운드
-                            </h4>
-                        </div>
-                    </a>
-                    <a class="contents" href="#">
-                        <div class="img_box">
-                            <img src="./img/hit_item_05.png" alt="히트 상품 이미지">
-                        </div>
-                        <div class="txt_box">
-                            <h2>
-                                <strong>
-                                    SEL1635GM2
-                                </strong>
-                            </h2>
-                            <h4>
-                                광각 렌즈의 새로운 기준
-                            </h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="sec sec_04 playstation">
-            <div class="marquee_container">
-                <div class="swiper marquee_slide marquee_01" dir="ltr">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_01_01.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_01_02.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_01_03.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_01_04.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_01_05.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_01_06.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_01_07.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_01_08.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_01_09.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_01_10.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_01_11.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_01_12.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_01_13.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_01_14.png" alt="게임 이미지">
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper marquee_slide marquee_02" dir="rtl">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_02_01.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_02_02.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_02_03.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_02_04.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_02_05.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_02_06.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_02_07.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_02_08.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_02_09.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_02_10.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_02_11.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_02_12.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_02_13.png" alt="게임 이미지">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/marquee_slide_02_14.png" alt="게임 이미지">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bg"></div>
-            <div class="img_box">
-                <img src="./img/playstation5_img.png" alt="플레이스테이션 5">
-                <div class="bg"></div>
-            </div>
+    <section class="sec sec_01 brand wrap">
+        <div class="contents_box">
             <div class="txt_box">
+                <h3>
+                    Brand
+                </h3>
                 <h1>
                     <strong>
-                        Play<br>
-                        Station 5
+                        Sony's Purpose
                     </strong>
                 </h1>
                 <h2>
                     <strong>
-                        한 번도 경험해보지 못한 플레이
+                        Businesses & Products
                     </strong>
                 </h2>
-                <a class="btn store" href="#">
-                    <strong>
-                        공식 스토어 ->
-                    </strong>
+                <p class="bottom">
+                    기술의 힘으로 크리에이터의 꿈을 지원하고, 많은 마음을
+                    움직이는 경험을 만들어 주변 사람들에게 전달합니다.
+                </p>
+                <p>
+                    소니코리아는 제품과 서비스를 통해 전 세계 사람들의
+                    삶을 감동으로 가득 채웁니다.
+                </p>
+            </div>
+            <div class="img_container">
+                <div class="img_box desk"></div>
+                <a class="img_box large" href="#">
+                    <img class="desk" src="./img/brand_img_01.png" alt="sound 이미지">
+                    <img class="mobile" src="./img/brand_img_01_mobile.png" alt="sound 모바일 이미지">
+                    <div class="bg"></div>
+                    <div class="txt">                            
+                        SOUND                            
+                    </div>
+                </a>
+                <a class="img_box" href="#">
+                    <img src="./img/brand_img_02.png" alt="playstation 이미지">
+                    <div class="bg"></div>
+                    <div class="txt">
+                        PLAY STATION
+                    </div>
+                </a>
+                <a class="img_box" href="#">
+                    <img src="./img/brand_img_03.png" alt="pictures 이미지">
+                    <div class="bg"></div>
+                    <div class="txt">
+                        PICTURES
+                    </div>
                 </a>
             </div>
-        </section>
-        <script>
-            new Swiper('.marquee_slide', {
-            direction: 'vertical',
-            loop:  true,
-            autoplay: {
-            delay: 0,
+        </div>
+    </section>
+    <section class="sec sec_02 latest wrap">
+        <div class="tit">
+            <h1>
+                <strong>
+                    THE LATEST
+                </strong>
+            </h1>
+        </div>
+        <div class="swiper latest_slide">
+            <div class="swiper-wrapper">                  
+                <div class="swiper-slide slide_01">
+                <div class="img_box">
+                    <img src="./img/latest_contents_01.png" alt="상품 이미지">
+                    <img class="on" src="./img/latest_contents_01_on.png" alt="상품 사진">
+                </div>
+                <div class="txt_box">
+                    <a class="txt" href="#">
+                        <h3>
+                            ULT WEAR
+                        </h3>
+                        <h4>
+                            WH-ULT900N
+                        </h4>
+                    </a>
+                    <div class="btn icon icon_heart">
+                        <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                        <img src="./img/icon_heart_max.png" alt="하트">
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide slide_02">
+                <div class="img_box">
+                    <img src="./img/latest_contents_02.png" alt="상품 이미지">
+                    <img class="on" src="./img/latest_contents_02_on.png" alt="상품 사진">
+                </div>
+                <div class="txt_box">
+                    <a class="txt" href="#">
+                        <h3>
+                            FE 24-50mm F2.8 G
+                        </h3>
+                        <h4>
+                            SEL2450G
+                        </h4>
+                    </a>
+                    <div class="btn icon icon_heart">
+                        <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                        <img src="./img/icon_heart_max.png" alt="하트">
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide slide_03">
+                <div class="img_box">
+                    <img src="./img/latest_contents_03.png" alt="상품 이미지">
+                    <img class="on" src="./img/latest_contents_03_on.png" alt="상품 사진">
+                </div>
+                <div class="txt_box">
+                    <a class="txt" href="#">
+                        <h3>
+                            INZONE 이어버드
+                        </h3>
+                        <h4>
+                            INZONE Buds
+                        </h4>
+                    </a>
+                    <div class="btn icon icon_heart">
+                        <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                        <img src="./img/icon_heart_max.png" alt="하트">
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide slide_04">
+                <div class="img_box">
+                    <img src="./img/latest_contents_04.png" alt="상품 이미지">
+                    <img class="on" src="./img/latest_contents_04_on.png" alt="상품 사진">
+                </div>
+                <div class="txt_box">
+                    <a class="txt" href="#">
+                        <h3>
+                            α9 III
+                        </h3>
+                        <h4>
+                            ILCE-9M3
+                        </h4>
+                    </a>
+                    <div class="btn icon icon_heart">
+                        <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                        <img src="./img/icon_heart_max.png" alt="하트">
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide slide_05">
+                <div class="img_box">
+                    <img src="./img/latest_contents_05.png" alt="상품 이미지">
+                    <img class="on" src="./img/latest_contents_05_on.png" alt="상품 사진">
+                </div>
+                <div class="txt_box">
+                    <a class="txt" href="#">
+                        <h3>
+                            이것은 작게 진화한 헤드폰
+                        </h3>
+                        <h4>
+                            WF-1000XM5
+                        </h4>
+                    </a>
+                    <div class="btn icon icon_heart">
+                        <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                        <img src="./img/icon_heart_max.png" alt="하트">
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide slide_06">
+                <div class="img_box">
+                    <img src="./img/latest_contents_06.webp" alt="상품 이미지">
+                    <img class="on" src="./img/latest_contents_06_on.png" alt="상품 사진">
+                </div>
+                <div class="txt_box">
+                    <a class="txt" href="#">
+                        <h3>
+                            브이로깅을 위한 모든 것
+                        </h3>
+                        <h4>
+                            ZV-1 II
+                        </h4>
+                    </a>
+                    <div class="btn icon icon_heart">
+                        <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                        <img src="./img/icon_heart_max.png" alt="하트">
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide slide_07">
+                <div class="img_box">
+                    <img src="./img/latest_contents_07.png" alt="상품 이미지">
+                    <img class="on" src="./img/latest_contents_07_on.png" alt="상품 사진">
+                </div>
+                <div class="txt_box">
+                    <a class="txt" href="#">
+                        <h3>
+                            무선 노이즈 캔슬링 헤드폰
+                        </h3>
+                        <h4>
+                            WH-1000XM5
+                        </h4>
+                    </a>
+                    <div class="btn icon icon_heart">
+                        <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                        <img src="./img/icon_heart_max.png" alt="하트">
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide slide_08">
+                <div class="img_box">
+                    <img src="./img/latest_contents_08.webp" alt="상품 이미지">
+                    <img class="on" src="./img/latest_contents_08_on.png" alt="상품 사진">
+                </div>
+                <div class="txt_box">
+                    <a class="txt" href="#">
+                        <h3>
+                            컴팩트 풀프레임
+                        </h3>
+                        <h4>
+                            α7CR 61.0 MP
+                        </h4>
+                    </a>
+                    <div class="btn icon icon_heart">
+                        <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                        <img src="./img/icon_heart_max.png" alt="하트">
+                    </div>
+                </div>
+                </div>      
+            </div>
+            <div class="swiper-scrollbar"></div>
+            </div>
+    </section>
+    <script>
+        new Swiper('.latest_slide', {
+        direction: 'horizontal',
+        loop: false,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        slidesPerView: 2,
+        spaceBetween: 20,
+        // 반응형 옵션
+        breakpoints: {
+            769: {
+            slidesPerView: 3,
+            spaceBetween: 20
             },
-            speed: 5000,
-            slidesPerView: 4.8,
-            spaceBetween: 20,
-            allowTouchMove: false,
-            });
-        </script>
-        <section class="sec sec_05 about">
-            <div class="contents_box">
-                <a class="img_box" href="#">
-                    <img src="./img/about_img_01.png" alt="이미지">
+            1025: {
+            slidesPerView: 4,
+            spaceBetween: 20
+            }
+        }
+        });
+
+
+
+        $('.icon_heart').click(function(){
+            $(this).toggleClass("active");
+            $(this).children("img").toggleClass("active");
+        });
+    
+    </script>
+    <section class="sec sec_03 hit_item wrap">
+        <div class="tit">
+            <h1>
+                <strong>
+                    WHAT'S HOT
+                </strong>
+            </h1>
+        </div>
+        <div class="contents_container">
+            <div class="img_container">
+                <a class="contents" href="#">
+                    <div class="img_box">
+                        <img src="./img/hit_item_01.png" alt="히트 상품 이미지">
+                    </div>
+                    <div class="txt_box">
+                        <h2>
+                            <strong>
+                                WH-1000XM5
+                            </strong>
+                        </h2>
+                        <h4>
+                            무선 노이즈 캔슬링 헤드폰
+                        </h4>
+                    </div>
                 </a>
-                <div class="txt_box">
-                    <a href="#">
-                        <strong>
-                            About Sony korea
-                        </strong>
-                        <img src="./img/icon_arrow.svg" alt=">">
-                    </a>
-                    <p>
-                        기술의 힘으로 크리에이터의 꿈을 지원하고, 많은 마음을 움직이는 경험을 만들어 주변 사람들에게 전달합니다. 소니는 제품과 서비스를 통해 전 세계 사람들의 삶을 감동으로 가득 채웁니다.
-                    </p>
+            </div>
+            <div class="img_container">
+                <a class="contents" href="#">
+                    <div class="img_box">
+                        <img src="./img/hit_item_02.png" alt="히트 상품 이미지">
+                    </div>
+                    <div class="txt_box">
+                        <h2>
+                            <strong>
+                                플로트 런 Float Run
+                            </strong>
+                        </h2>
+                        <h4>
+                            달리면서 느끼는 진정한 자유로움
+                        </h4>
+                    </div>
+                </a>
+                <a class="contents square" href="#">
+                    <div class="img_box">
+                        <img src="./img/hit_item_03.png" alt="히트 상품 이미지">
+                    </div>
+                    <div class="txt_box">
+                        <h2>
+                            <strong>
+                                ZV-1M2
+                            </strong>
+                        </h2>
+                        <h4>
+                            올인원 브이로그 카메라
+                        </h4>
+                    </div>
+                </a>
+                <a class="contents square" href="#">
+                    <div class="img_box">
+                        <img src="./img/hit_item_04.png" alt="히트 상품 이미지">
+                    </div>
+                    <div class="txt_box">
+                        <h2>
+                            <strong>
+                                SRS-XE300
+                            </strong>
+                        </h2>
+                        <h4>
+                            언제 어디서든 콘서트 사운드
+                        </h4>
+                    </div>
+                </a>
+                <a class="contents" href="#">
+                    <div class="img_box">
+                        <img src="./img/hit_item_05.png" alt="히트 상품 이미지">
+                    </div>
+                    <div class="txt_box">
+                        <h2>
+                            <strong>
+                                SEL1635GM2
+                            </strong>
+                        </h2>
+                        <h4>
+                            광각 렌즈의 새로운 기준
+                        </h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="sec sec_04 playstation">
+        <div class="marquee_container wrap">
+            <div class="swiper marquee_slide marquee_01" dir="ltr">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_01_01.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_01_02.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_01_03.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_01_04.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_01_05.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_01_06.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_01_07.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_01_08.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_01_09.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_01_10.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_01_11.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_01_12.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_01_13.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_01_14.png" alt="게임 이미지">
+                    </div>
                 </div>
             </div>
-            <div class="contents_box">
-                <a class="img_box" href="#">
-                    <img src="./img/about_img_02.png" alt="이미지">
-                </a>
-                <div class="txt_box">
-                    <a href="#">
-                        <strong>
-                            Sony korea NEWs
-                        </strong>
-                        <img src="./img/icon_arrow.svg" alt=">">
-                    </a>
-                    <p>
-                        소니 코리아의 새소식을 만나보세요.<br>
-                        이벤트 & 할인 소식을 안내해드립니다.
-                    </p>
+            <div class="swiper marquee_slide marquee_02" dir="rtl">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_02_01.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_02_02.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_02_03.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_02_04.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_02_05.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_02_06.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_02_07.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_02_08.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_02_09.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_02_10.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_02_11.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_02_12.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_02_13.png" alt="게임 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/marquee_slide_02_14.png" alt="게임 이미지">
+                    </div>
                 </div>
             </div>
-            <div class="contents_box">
-                <a class="img_box" href="#">
-                    <img src="./img/about_img_03.png" alt="이미지">
+        </div>
+        <div class="bg"></div>
+        <div class="img_box">
+            <img src="./img/playstation5_img.png" alt="플레이스테이션 5">
+            <div class="bg"></div>
+        </div>
+        <div class="txt_box">
+            <h1>
+                <strong>
+                    Play<br>
+                    Station 5
+                </strong>
+            </h1>
+            <h2>
+                <strong>
+                    한 번도 경험해보지 못한 플레이
+                </strong>
+            </h2>
+            <a class="btn store" href="#">
+                <strong>
+                    공식 스토어 ->
+                </strong>
+            </a>
+        </div>
+    </section>
+    <script>
+        new Swiper('.marquee_slide', {
+        direction: 'horizontal',
+        loop:  true,
+        autoplay: {
+        delay: 0,
+        },
+        speed: 10000,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        allowTouchMove: false,
+        breakpoints: {
+            769: {
+                speed: 7500,
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            1025: {
+                direction: 'vertical',
+                slidesPerView: 4.8,
+                spaceBetween: 20,
+                speed: 5000,
+            }
+        }
+        });
+    </script>
+    <section class="sec sec_05 about">
+        <div class="wrap">
+        <div class="contents_box">
+            <a class="img_box" href="#">
+                <img src="./img/about_img_01.png" alt="이미지">
+            </a>
+            <div class="txt_box">
+                <a href="#">
+                    <strong>
+                        About Sony korea
+                    </strong>
+                    <img src="./img/icon_arrow.svg" alt=">">
                 </a>
-                <div class="txt_box">
-                    <a href="#">
-                        <strong>
-                            Sony Store
-                        </strong>
-                        <img src="./img/icon_arrow.svg" alt=">">
-                    </a>
-                    <p>
-                        소니 전 제품 체험과 컨설팅, 할인 혜택도 받을 수 있는 
-                        소니스토어 직영점을 방문해 보세요!
-                    </p>
-                </div>
+                <p>
+                    기술의 힘으로 크리에이터의 꿈을 지원하고, 많은 마음을 움직이는 경험을 만들어 주변 사람들에게 전달합니다. 소니는 제품과 서비스를 통해 전 세계 사람들의 삶을 감동으로 가득 채웁니다.
+                </p>
             </div>
-        </section>        
-    </div>
+        </div>
+        <div class="contents_box">
+            <a class="img_box" href="#">
+                <img src="./img/about_img_02.png" alt="이미지">
+            </a>
+            <div class="txt_box">
+                <a href="#">
+                    <strong>
+                        Sony korea NEWs
+                    </strong>
+                    <img src="./img/icon_arrow.svg" alt=">">
+                </a>
+                <p>
+                    소니 코리아의 새소식을 만나보세요.<br>
+                    이벤트 & 할인 소식을 안내해드립니다.
+                </p>
+            </div>
+        </div>
+        <div class="contents_box">
+            <a class="img_box" href="#">
+                <img src="./img/about_img_03.png" alt="이미지">
+            </a>
+            <div class="txt_box">
+                <a href="#">
+                    <strong>
+                        Sony Store
+                    </strong>
+                    <img src="./img/icon_arrow.svg" alt=">">
+                </a>
+                <p>
+                    소니 전 제품 체험과 컨설팅, 할인 혜택도 받을 수 있는 
+                    소니스토어 직영점을 방문해 보세요!
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>        
     <footer>
         <div class="wrap footer_wrap">
             <div class="txt_box">
@@ -713,7 +747,7 @@
                     Copyright 2024. 유지환. All rights reserved.
                 </div>
             </div>
-            <div class="site_box">
+            <div class="site_box desk">
                 <a class="btn site" href="#" target="_blank">
                     <p>
                         Sony Group Portal Site
