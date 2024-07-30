@@ -126,10 +126,23 @@ section{
 .brand .img_container .img_box:hover .bg{
     background-color: rgba(0, 0, 0, .2);
 }
+.brand .img_container .img_box .txt{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 12px;
+    text-align: center;
+    font-family: 'bookman_old_style-Bold';
+    font-size: 28px;
+}
 /* brand ed */
 /* latest st */
 .latest{
-    height: 100vh;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
 }
 .tit{
     height: 120px;
@@ -145,8 +158,28 @@ section{
 }
 .latest .latest_slide .swiper-wrapper .swiper-slide .img_box{
     aspect-ratio: 1/1;
+    position: relative;
     background-color: #111;
-    cursor: pointer;
+    overflow: hidden;
+    cursor: pointer;    
+}
+.latest .latest_slide .swiper-wrapper .swiper-slide .img_box img{
+    transition: all 0.5s;
+}
+.latest .latest_slide .swiper-wrapper .swiper-slide .img_box:hover img{
+    opacity: 0;
+}
+.latest .latest_slide .swiper-wrapper .swiper-slide .img_box .on{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: #fff;
+}
+.latest .latest_slide .swiper-wrapper .swiper-slide .img_box:hover .on{
+    opacity: 1;
 }
 .latest .latest_slide .swiper-wrapper .swiper-slide .txt_box{
     padding: 16px 10px;
@@ -195,5 +228,203 @@ section{
 .latest .latest_slide .swiper-scrollbar .swiper-scrollbar-drag{
     background-color: #666;
 }
+/* latest ed */
+/* hit_item st */
+.hit_item{
+    margin-top: 200px;
+}
+.hit_item .contents_container{
+    display: flex;
+    gap: 24px;
+}
+.hit_item .contents_container .img_container{
+    width: calc(50% - 12px);
+    aspect-ratio: 1/0.75;
+    overflow: hidden;
+}
+.hit_item .contents_container .img_container .contents{
+    position: relative;
+    overflow: hidden;
+}
+.hit_item .contents_container .img_container .contents .img_box{    
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;    
+}
+.hit_item .contents_container .img_container .contents .img_box img{
+    object-position: 0 0;
+    transition: all 0.5s;
+}
+.hit_item .contents_container .img_container .contents:hover .img_box img{
+    width: calc(100% + 16px);
+    object-position: -8px -4px;
+}
+.hit_item .contents_container .img_container .contents .txt_box{
+    width: 100%;
+    padding: 8px 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .4);
+}
+.hit_item .contents_container .img_container .contents .txt_box h2{
+    font-size: 28px;
+}
+.hit_item .contents_container .img_container .contents .txt_box h4{
+    padding-top: 4px;
+    font-size: 20px;
+}
+.hit_item .contents_container .img_container:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.hit_item .contents_container .img_container:nth-child(2) .contents{
+    width: calc(62.5% - 12px);
+    height: calc(50% - 12px);
+}
+.hit_item .contents_container .img_container:nth-child(2) .contents.square{
+    width: calc(37.5% - 12px);
+}
+/* hit_item ed */
+/* playstation st */
+.playstation{
+    margin-top: 400px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.marquee_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.playstation .marquee_slide{
+    margin: 0;
+    width: 320px;
+    height: 940px;
+    overflow: visible;
+}
+.playstation .marquee_slide .swiper-wrapper{
+    transition-timing-function: linear;
+}
+.playstation .marquee_slide .swiper-wrapper .swiper-slide{
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.marquee_02{
+    transform: rotate(180deg);
+}
+.marquee_02 .swiper-wrapper .swiper-slide{
+    transform: rotate(180deg);
+}
+.playstation > .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 1) 0% ,rgba(0, 0, 0, 0) 40%,rgba(0, 0, 0, 0) 60% ,rgba(0, 0, 0, 1) 100%);
+    z-index: 9;
+}
+.playstation .img_box{
+    width: 400px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 97;
+    cursor: pointer;
+}
+.playstation .img_box .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .8) 100%);
+}
+.playstation .txt_box{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 98;
+    cursor: pointer;
+}
+.playstation .txt_box h1{
+    font-size: 96px;
+}
+.playstation .txt_box h2{
+    padding-top: 20px;
+    font-size: 52px;
+}
+.playstation .txt_box .store{
+    margin-top: 120px;
+    display: inline-block;
+    padding: 24px 70px;
+    border: 4px solid #fff;
+    border-radius: 44px;
+    font-size: 32px;
+    transition: all 0.5s;
+}
+.playstation .txt_box .store:hover{
+    background-color: #fff;
+    color: #000;
+}
 
 
+/* playstation ed */
+/* about st */
+.about{
+    margin: 400px 0;
+}
+.about .contents_box{
+    margin-top: 120px;
+    display: flex;
+    gap: 80px;
+}
+.about .contents_box:nth-child(1){
+    margin-top: 0;
+}
+.about .contents_box:nth-child(2){
+    flex-direction: row-reverse;
+}
+.about .contents_box .img_box{
+    width: calc(50% - 40px);
+    aspect-ratio: 8/4.8;
+    overflow: hidden;
+}
+.about .contents_box .img_box img{
+    object-position: 0 0;
+    transition: all 0.5s;
+}
+.about .contents_box .img_box:hover img{
+    width: calc(100% + 16px);
+    object-position: -8px -4px;
+}
+.about .contents_box .txt_box{
+    width: calc(50% - 40px);
+}
+.about .contents_box .txt_box a{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 64px;
+}
+.about .contents_box .txt_box a img{
+    width: 24px;
+}
+.about .contents_box .txt_box p{
+    padding-top: 40px;    
+    line-height: 40px;
+    font-size: 32px;
+}
+
+
+/* about ed */
