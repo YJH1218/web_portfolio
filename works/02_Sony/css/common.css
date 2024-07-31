@@ -49,6 +49,9 @@ header .menu .hamburger{
     height: 24px;
     position: relative;
 }
+header .menu .hamburger.active{
+    display: none;
+}
 header .menu .hamburger .line{
     width: 100%;
     height: 4px;
@@ -67,21 +70,60 @@ header .menu .hamburger .line:nth-child(2){
 header .menu .hamburger .line:nth-child(3){
     bottom: 0;
 }
+header .menu .X-mark{
+    width: 32px;
+    height: 32px;
+    position: relative;
+    display: none;
+}
+header .menu .X-mark.active{
+    display: block;
+}
+header .menu .X-mark .line{
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-color: #fff;
+    border-radius: 2px;
+}
+header .menu .X-mark .line:nth-child(1){
+    transform: translateY(-50%) rotate(45deg);
+}
+header .menu .X-mark .line:nth-child(2){
+    transform: translateY(-50%) rotate(-45deg);
+}
 /* header ed */
 /* mobile menu st */
 .mobile_menu_container{
     width: 100%;
     height: 100%;
+    padding-left: 60px;
     position: fixed;
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    /* display: none; */
+    display: none;
     z-index: 99;
 }
-
-
-
+.mobile_menu_container.active{
+    display: block;
+}
+.mobile_menu_container .mobile_menu_wrap{
+    width: calc(100% - 60px);
+    height: 100%;
+    padding-top: 60px;
+    background-color: #000;
+}
+.mobile_menu_container .mobile_menu_wrap .mobile_menu li a{
+    width: 100%;
+    padding: 28px 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
 /* mobile menu ed */
 /* footer st */
 footer{

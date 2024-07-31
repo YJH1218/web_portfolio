@@ -57,12 +57,48 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </li>
+            <li class="X-mark">
+                <div class="line"></div>
+                <div class="line"></div>
+            </li>
         </ul>
     </header>
     <div class="mobile_menu_container">
         <div class="mobile_menu_wrap">
+            <ul class="mobile_menu">
+                <li class="mobile">
+                    <a href="#">
+                        Store
+                    </a>
+                </li>
+                <li class="mobile">
+                    <a href="#">
+                        PlayStation
+                    </a>
+                </li>
+                <li class="mobile">
+                    <a href="#">
+                        Sustainability
+                    </a>
+                </li>
+                <li class="mobile">
+                    <a href="#">
+                        Support
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
+    <script>
+        $('header .menu .hamburger').click(function(){
+            $('header .menu .hamburger, header .menu .X-mark, .mobile_menu_container').addClass("active")
+
+        });
+        $('header .menu .X-mark').click(function(){
+            $('header .menu .hamburger, header .menu .X-mark, .mobile_menu_container').removeClass("active")
+
+        });
+    </script>
     <div class="visual">
         <div class="swiper visual_slide">
             <div class="swiper-wrapper">
