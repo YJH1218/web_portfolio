@@ -28,3 +28,11 @@
     font-weight: 400;
     src: url('../font/PaulSlab-Bold-Trail.woff');
 }
+@font-face {
+    font-family: 'bookman_old_style-Bold';
+    src: url('../font/BOOKOSB.woff') format('opentype');
+}
+@font-face {
+    font-family: 'bookman_old_style';
+    src: url('../font/BOOKOS.woff') format('opentype');
+}

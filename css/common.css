@@ -404,6 +404,14 @@ header .X_mark .X_line.right{
     margin-bottom: 8px;
     font-weight: bold;
 }
+/* 타이틀 폰트 st */
+.works .pascucci .info .left .txt_box h1{
+    font-family: 'cocogoose';
+}
+.works .sony .info .left .txt_box h1{
+    font-family: 'bookman_old_style-Bold';
+}
+/* 타이틀 폰트 ed */
 .works .content .info .left .txt_box h2{
     font-size: 64px;
     margin-bottom: 8px;
@@ -411,6 +419,7 @@ header .X_mark .X_line.right{
 } 
 .works .content .info .left .txt_box p{
     font-size: 24px;
+    line-height: 28px;
 }
 .works .content .info .left .btn_box{
     margin-top: 20px;
@@ -425,9 +434,11 @@ header .X_mark .X_line.right{
     background-color: rgba(255, 255, 255);
 }
 .works .content .info .right .logo{
-    font-size: 64px;
+    height: 60px;
 }
-
+.works .content .info .right .logo img{
+    height: 100%;
+}
 /* works ed */
 /* pratice st */
 .pratice .tit_box{
