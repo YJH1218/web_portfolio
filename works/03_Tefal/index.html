@@ -13,21 +13,544 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <title>Tefal</title>
 </head>
 <body>
     <header class="header">
-        <div class="header_wrap">
-            
+        <div class="header_wrap wrap">
+            <ul class="left_menu">
+                <li class="logo">
+                    <a href="#">
+                        <img src="./img/tefal_logo.svg" alt="로고">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        전체상품
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        SALE
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        주방용품
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        주방가전
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        생활가전
+                    </a>
+                </li>
+            </ul>
+            <ul class="right_menu">
+                <li>
+                    <a href="#">
+                        로그인
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        장바구니
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        주문조회
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        고객센터
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
-    <section class="sec sec_01 visual"></section>
-    <section class="sec sec_02 best"></section>
-    <section class="sec sec_03 sale"></section>
-    <section class="sec sec_04 global"></section>
-    <section class="sec sec_05 products"></section>
-    <section class="sec sec_06 tema"></section>
-    <section class="sec sec_07 SNS"></section>
+    <section class="sec sec_01 visual">
+        <div class="swiper visual_slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-swiper-autoplay="20000">
+                    <video src="./video/visual_desk_01.mp4" muted autoplay playsinline loop=""></video>                    
+                </div>
+                <div class="swiper-slide">
+                    <img class="desk" src="./img/visual_desk_02.png" alt="비주얼 이미지">
+                    <!-- <img class="mobile" src="./img/visual_mobile_03.jpg" alt="비주얼 모바일 이미지"> -->
+                </div>                
+                <div class="swiper-slide" data-swiper-autoplay="23000">
+                    <video src="./video/visual_desk_03.mp4" muted autoplay playsinline loop=""></video>                    
+                </div>
+                <div class="swiper-slide">
+                    <img class="desk" src="./img/visual_desk_04.jpg" alt="비주얼 이미지">
+                    <!-- <img class="mobile" src="./img/visual_mobile_03.jpg" alt="비주얼 모바일 이미지"> -->
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="26000">
+                    <video src="./video/visual_desk_05.mp4" muted autoplay playsinline loop=""></video>                    
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>            
+        </div>
+    </section>
+    <script>
+        const swiper = new Swiper('.visual_slide', {
+        direction: 'horizontal',
+        loop: true,
+        allowTouchMove: false,
+        autoplay: {
+            delay: 5000,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        });
+    </script>
+    <section class="sec sec_02 best wrap">
+        <div class="tit">
+            Best Products
+        </div>
+        <div class="contents_container">
+            <div class="contents_box mobile"></div>
+            <div class="contents_box">
+                <div class="contents large">
+                    <img src="./img/best_img_02.png" alt="이미지">
+                    <div class="bg"></div>
+                    <div class="txt_box">
+                        테팔 인덕션 티타늄 1X 에센스쿡<br>
+                        2X 데일리쉐프 프라이팬 20cm
+                    </div>
+                </div>
+                <div class="contents small">
+                    <img src="./img/best_img_03.png" alt="이미지">
+                    <div class="bg"></div>
+                    <div class="txt_box">
+                        테팔 인지니오 조리도구
+                    </div>
+                </div>
+            </div>
+            <div class="contents_box desk">
+                <div class="contents">
+                    <img src="./img/best_img_01_desk.jpg" alt="이미지">
+                    <div class="bg"></div>
+                    <div class="txt_box">
+                        테팔 심플리클린 프라이팬 20cm 외 에센스쿡 뉴컴포트그립
+                    </div>
+                </div>
+            </div>
+            <div class="contents_box">
+                <div class="contents small">
+                    <img src="./img/best_img_04.png" alt="이미지">
+                    <div class="bg"></div>
+                    <div class="txt_box">
+                        테팔 매직핸즈 인덕션 딜라이트 프라이팬
+                    </div>
+                </div>
+                <div class="contents large">
+                    <img src="./img/best_img_05.png" alt="이미지">
+                    <div class="bg"></div>
+                    <div class="txt_box">
+                        테팔 초고속 블렌더 퍼펙트믹스 플러스<br>
+                        트라이탄 믹서기 BL88ADKR
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <section class="sec sec_03 sale wrap">
+        <div class="tit">
+            SALE
+        </div>
+        <div class="swiper sale_slide">
+            <div class="swiper-wrapper">                  
+                <div class="swiper-slide slide_01">
+                <div class="img_box">
+                    <img src="./img/sale_img_01.png" alt="상품 이미지">
+                    <img class="on" src="./img/sale_img_01_on.jpg" alt="상품 사진">
+                    <div class="btn icon icon_heart">
+                        <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                        <img src="./img/icon_heart_max.png" alt="하트">
+                    </div>
+                </div>
+                <div class="txt_box">
+                    <a class="txt" href="#">
+                        테팔 티타늄 1X 퍼펙트 브라운 4종세트
+                    </a>
+                    <div class="price_box">
+                        <div class="percent">
+                            37%
+                        </div>
+                        <div class="price">
+                            <div class="before_price">
+                                90,800원
+                            </div>
+                            <div class="discount">
+                                56,680원
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide slide_02">
+                    <div class="img_box">
+                        <img src="./img/sale_img_02.png" alt="상품 이미지">
+                        <img class="on" src="./img/sale_img_02_on.png" alt="상품 사진">
+                        <div class="btn icon icon_heart">
+                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                            <img src="./img/icon_heart_max.png" alt="하트">
+                        </div>
+                    </div>
+                    <div class="txt_box">
+                        <a class="txt" href="#">
+                            테팔 인덕션 티타늄 블라썸 민트 편수 냄비
+                        </a>
+                        <div class="price_box">
+                            <div class="percent">
+                                31%
+                            </div>
+                            <div class="price">
+                                <div class="before_price">
+                                    119,600원
+                                </div>
+                                <div class="discount">
+                                    82,200원
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide_03">
+                    <div class="img_box">
+                        <img src="./img/sale_img_03.png" alt="상품 이미지">
+                        <img class="on" src="./img/sale_img_03_on.png" alt="상품 사진">
+                        <div class="btn icon icon_heart">
+                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                            <img src="./img/icon_heart_max.png" alt="하트">
+                        </div>
+                    </div>
+                    <div class="txt_box">
+                        <a class="txt" href="#">
+                            테팔 가먼스티머 퓨어 팝
+                        </a>
+                        <div class="price_box">
+                            <div class="percent">
+                                33%
+                            </div>
+                            <div class="price">
+                                <div class="before_price">
+                                    69,900원
+                                </div>
+                                <div class="discount">
+                                    45,900원
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide_04">
+                    <div class="img_box">
+                        <img src="./img/sale_img_04.png" alt="상품 이미지">
+                        <img class="on" src="./img/sale_img_04_on.jpg" alt="상품 사진">
+                        <div class="btn icon icon_heart">
+                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                            <img src="./img/icon_heart_max.png" alt="하트">
+                        </div>
+                    </div>
+                    <div class="txt_box">
+                        <a class="txt" href="#">
+                            테팔 매직핸즈 인덕션 로즈가메이
+                        </a>
+                        <div class="price_box">
+                            <div class="percent">
+                                43%
+                            </div>
+                            <div class="price">
+                                <div class="before_price">
+                                    156,900원
+                                </div>
+                                <div class="discount">
+                                    88,900원
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide_05">
+                    <div class="img_box">
+                        <img src="./img/sale_img_05.png" alt="상품 이미지">
+                        <img class="on" src="./img/sale_img_05_on.jpg" alt="상품 사진">
+                        <div class="btn icon icon_heart">
+                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                            <img src="./img/icon_heart_max.png" alt="하트">
+                        </div>
+                    </div>
+                    <div class="txt_box">
+                        <a class="txt" href="#">
+                            테팔 매직핸즈 인덕션 딜라이트 프라이팬 멀티 6종 세트
+                        </a>
+                        <div class="price_box">
+                            <div class="percent">
+                                42%
+                            </div>
+                            <div class="price">
+                                <div class="before_price">
+                                    173,000원
+                                </div>
+                                <div class="discount">
+                                    99,000원
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide_06">
+                    <div class="img_box">
+                        <img src="./img/sale_img_06.png" alt="상품 이미지">
+                        <img class="on" src="./img/sale_img_06_on.png" alt="상품 사진">
+                        <div class="btn icon icon_heart">
+                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                            <img src="./img/icon_heart_max.png" alt="하트">
+                        </div>
+                    </div>
+                    <div class="txt_box">
+                        <a class="txt" href="#">
+                            테팔 블렌더 블렌드포스 플러스 블랙 BL4258KR 믹서기
+                        </a>
+                        <div class="price_box">
+                            <div class="percent">
+                                39%
+                            </div>
+                            <div class="price">
+                                <div class="before_price">
+                                    73,000원
+                                </div>
+                                <div class="discount">
+                                    43,900원
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide_07">
+                    <div class="img_box">
+                        <img src="./img/sale_img_07.png" alt="상품 이미지">
+                        <img class="on" src="./img/sale_img_07_on.png" alt="상품 사진">
+                        <div class="btn icon icon_heart">
+                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                            <img src="./img/icon_heart_max.png" alt="하트">
+                        </div>
+                    </div>
+                    <div class="txt_box">
+                        <a class="txt" href="#">
+                            테팔 티타늄 2X 세라믹 레지스트 인텐스 프라이팬 24cm 외
+                        </a>
+                        <div class="price_box">
+                            <div class="percent">
+                                47%
+                            </div>
+                            <div class="price">
+                                <div class="before_price">
+                                    67,800원
+                                </div>
+                                <div class="discount">
+                                    35,800원
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide_08">
+                    <div class="img_box">
+                        <img src="./img/sale_img_08.png" alt="상품 이미지">
+                        <img class="on" src="./img/sale_img_08_on.png" alt="상품 사진">
+                        <div class="btn icon icon_heart">
+                            <img class="active" src="./img/icon_heart_blank.png" alt="빈하트">
+                            <img src="./img/icon_heart_max.png" alt="하트">
+                        </div>
+                    </div>
+                    <div class="txt_box">
+                        <a class="txt" href="#">
+                            테팔 무선 스팀다리미 프리무브 미니 FV6230K0
+                        </a>
+                        <div class="price_box">
+                            <div class="percent">
+                                33%
+                            </div>
+                            <div class="price">
+                                <div class="before_price">
+                                    99,000원
+                                </div>
+                                <div class="discount">
+                                    65,900원
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <script>
+        new Swiper('.sale_slide', {
+        direction: 'horizontal',
+        loop: false,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        slidesPerView: 1.4,
+        spaceBetween: 20,
+        // 반응형 옵션
+        breakpoints: {
+            769: {
+            slidesPerView: 3,
+            spaceBetween: 20
+            },
+            1025: {
+            slidesPerView: 4,
+            spaceBetween: 20
+            }
+        }
+        });
+
+
+
+        $('.icon_heart').click(function(){
+            $(this).toggleClass("active");
+            $(this).children("img").toggleClass("active");
+        });
+    
+    </script>
+    <section class="sec sec_04 global">
+        <div class="wrap">
+            <div class="logo_box">
+                <div class="logo">
+                    <img src="./img/tefal_logo.svg" alt="로고">
+                </div>
+                <div class="france">
+                    <div class="mark">
+                        <div class="box blue"></div>
+                        <div class="box white"></div>
+                        <div class="box red"></div>
+                    </div>
+                    <div class="txt">
+                        MADE IN FRANCE
+                    </div>
+                </div>
+                <div class="txt">
+                    <h2>
+                        Groupe SEB의 글로벌 대표 브랜드 테팔
+                    </h2>
+                </div>
+            </div>
+            <div class="img_box">
+                <img src="./img/global_img.svg" alt="지구 이미지">
+            </div>
+        </div>
+    </section>
+    <section class="sec sec_05 products wrap">
+        <div class="tit">
+            Products
+        </div>
+        <ul class="tab_menu">
+            <li class="active">
+                주방용품
+            </li>
+            <li>
+                주방가전
+            </li>
+            <li>
+                생활가전
+            </li>
+        </ul>
+        <ul class="list_box">
+            <li class="list list_01">
+
+            </li>
+            <li class="list list_02">
+
+            </li>
+            <li class="list list_03">
+
+            </li>
+        </ul>
+    </section>
+    <section class="sec sec_06 tema">
+
+    </section>
+    <section class="sec sec_07 SNS wrap">
+
+    </section>
+    <footer class="footer">
+        <div class="footer_wrap wrap">
+            <div class="txt_box">
+                <ul class="site_list">
+                    <li>
+                        <a href="#">
+                            홈으로
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            회사소개
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            이용약관
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <strong>
+                                개인정보 취급 방침
+                            </strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            이용안내
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            고객안내
+                        </a>
+                    </li>
+                </ul>
+                <ul class="address">
+                    <li>
+                        사업장주소 : 서울 특별시 ㅁㅁ구 ㅁㅁ로 123
+                    </li>
+                    <li>
+                        사업자등록번호 : 123 -1234 -45678
+                    </li>
+                    <li>
+                        통신판매번호 2012 - 경기ㅁㅁ - 1234
+                    </li>
+                </ul>
+                <ul class="info">
+                    <li>
+                        대표이사 : 홍길동
+                    </li>
+                    <li>
+                        개인정보관리 책임자 : 홍길동
+                    </li>
+                    <li>
+                        TEL : 테팔온라인 고객 지원센터 1588 - 1234
+                    </li>
+                </ul>
+                <div class="copyright">
+                    Copyright 2024. 유지환. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

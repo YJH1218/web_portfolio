@@ -8,8 +8,66 @@ body{
 .wrap{
     max-width: 1440px;
     padding: 0 20px;
+    margin: 0 auto;
 }
+img{width: 100%;}
+strong{
+    font-weight: bold;
+}
+.mobile{
+    display: none;
+}
+/* header st */
 header{
     width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
     border-bottom: 2px solid #eee;
+    z-index: 999;
 }
+header .header_wrap{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header_wrap .left_menu{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    font-size: 24px;
+    font-weight: 600;
+}
+header .header_wrap .left_menu .logo{
+    width: 110px;
+}
+header .header_wrap .right_menu{
+    display: flex;
+    gap: 20px;
+    color: #666;
+}
+/* header ed */
+/* footer st */
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #eee;
+}
+footer .footer_wrap{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+footer .footer_wrap .txt_box ul{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+footer .footer_wrap .txt_box .site_list{
+    font-size: 20px;
+}
+
+/* footer ed */

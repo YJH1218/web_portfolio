@@ -1,0 +1,171 @@
+@media screen and (max-width: 1025px){
+    /* header */
+    header{
+        background: none;
+        border: none;
+    }
+    header nav{
+        display: none;
+    }
+    header .mob_hamburger{
+        display: block;
+    }
+    .mob_menu ul li{
+        padding: 20px 0;
+        font-size: 32px;
+    }
+    /* visual */
+    .intro_line{
+        display: none;
+    }
+    .visual .tit_box h1{
+        font-size: 128px;
+    }
+    .visual .txt_box{
+        padding: 0;
+        bottom: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+    .visual .txt_box .right{
+        display: none;
+    }
+    /* works */
+    .works .content .info{
+        padding: 120px 40px;
+    }
+    .works .content .info .left{
+        justify-content: space-between;
+    }
+    .works .content .info .left .txt_box h1{
+        font-size: 80px;
+    }
+    .works .content .info .left .txt_box h2{
+        font-size: 52px;
+    } 
+    .works .content .info .left .txt_box p{
+        font-size: 22px;
+    }
+    .works .content .info .left .btn_box{
+        margin: 0;
+        justify-content: center;
+    }
+    .works .content .info .right .logo{
+        display: none;
+    }
+    /* pratice */
+    .pratice .horizon_container .content_box{
+        height: calc(100% - 280px);
+    }
+    /* design */
+    .design .item_box .item{
+        width: calc((100% - 32px)/2);
+    }
+
+    /* footer */
+    footer .contact{
+        height: auto;
+        padding: 80px 80px 0px 80px;
+        flex-direction: column;
+        gap: 32px;
+    }
+    footer .copyright{
+        height: 100px;
+        padding: 0 80px;
+    }
+}
+@media screen and (max-width: 768px){
+    .mob_menu ul li{
+        padding: 16px 0;
+        font-size: 20px;
+    }
+    .visual .tit_box h1{
+        font-size: 72px;
+    }
+    .visual .txt_box{
+        bottom: 15%;
+    }
+    /* introduction */
+    .introduction .marquee_box{
+        height: 25vh;
+    }
+    .marquee_text{
+        padding: 20px 0;
+        font-size: 3rem;
+    }
+    .marquee_r{
+        -webkit-text-stroke: 1px #fff;
+    }
+    /* wroks */
+    .sec > .tit_box > h1{
+        font-size: 64px;
+        -webkit-text-stroke: 1px #fff;
+    }
+    .works .content .img_box .desktop{
+        display: none;
+    }
+    .works .content .img_box .mobile{
+        display: block;
+    }
+    .works .content .info{
+        padding: 80px 20px 120px 20px;
+    }
+    .works .content .info .left .txt_box{
+        width: 100%;
+    }
+    .works .content .info .left .txt_box h1{
+        font-size: 40px;
+        margin-bottom: 4px;
+    }
+    .works .content .info .left .txt_box h2{
+        font-size: 32px;
+        margin-bottom: 4px;
+    } 
+    .works .content .info .left .txt_box p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .works .content .info .left .btn_box{
+        margin: 0;
+        justify-content: center;
+    }
+    /* pratice */
+    .pratice{
+        display: none;
+    }
+    .mob_pratice{
+        display: block;
+    }
+    /* design */
+    .design .item_box{
+        width: calc(100% - 40px);
+    }
+    .design .item_box .item{
+        width: 100%;
+    }
+    /* footer */
+    footer .contact{
+        padding: 80px 20px 20px 20px;
+    }
+    footer .contact .txt_box .txt h3{
+        width: 60px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    footer .contact .txt_box .txt h4{
+        padding-top: 2px;
+        font-size: 12px;
+    }
+    footer .contact .icon_box{
+        justify-content: center;
+    }
+    footer .contact .icon_box .icon{
+        width: 72px;
+        height: 72px;
+    }
+    footer .copyright{
+        padding: 0 20px;
+    }
+}
+
+
