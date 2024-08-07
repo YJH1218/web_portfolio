@@ -14,6 +14,9 @@ img{width: 100%;}
 strong{
     font-weight: bold;
 }
+.responsive{
+    display: none;
+}
 .mobile{
     display: none;
 }
@@ -33,6 +36,7 @@ header .header_wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    white-space: nowrap;
 }
 header .header_wrap .left_menu{
     display: flex;
@@ -49,7 +53,80 @@ header .header_wrap .right_menu{
     gap: 20px;
     color: #666;
 }
+header .header_wrap .responsive_menu{
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header_wrap .responsive_menu .logo{
+    width: 80px;
+}
+header .header_wrap .responsive_menu .btn{
+    width: 32px;
+    height: 20px;
+    position: relative;
+    display: none;
+}
+header .header_wrap .responsive_menu .btn .line{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    background-color: #222;
+    border-radius: 1px;
+}
+header .header_wrap .responsive_menu .btn.hamburger .line:nth-child(1){
+    top: 0;
+}
+header .header_wrap .responsive_menu .btn.hamburger .line:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .header_wrap .responsive_menu .btn.hamburger .line:nth-child(3){
+    bottom: 0;
+}
+header .header_wrap .responsive_menu .btn.X-mark .line:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+header .header_wrap .responsive_menu .btn.X-mark .line:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+
+header .header_wrap .responsive_menu .btn.active{
+    display: block;
+}
 /* header ed */
+/* mobile menu */
+.mobile_menu_wrap{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    z-index: 99;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+.mobile_menu_wrap.active{
+    left: 0;
+}
+.mobile_menu_wrap .mobile_menu{
+    padding: 60px 20px 0 20px;
+}
+.mobile_menu_wrap .mobile_menu li a{
+    width: 100%;
+    padding: 28px 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+
 /* footer st */
 footer{
     width: 100%;
