@@ -136,6 +136,7 @@ footer{
 footer .footer_wrap{
     height: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 footer .footer_wrap .txt_box ul{
@@ -146,5 +147,7 @@ footer .footer_wrap .txt_box ul{
 footer .footer_wrap .txt_box .site_list{
     font-size: 20px;
 }
-
+footer .footer_wrap .logo_box{
+    width: 120px;
+}
 /* footer ed */

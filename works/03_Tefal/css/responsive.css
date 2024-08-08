@@ -25,6 +25,7 @@
     /* best */
     .best .contents_container .contents_box .contents .txt_box{
         font-size: 14px;
+        line-height: 16px;
     }
     /* products */
     .products .list_box .list .contents_box{
@@ -53,6 +54,9 @@
     .tema .tema_silde .swiper-wrapper .swiper-slide .img_contents .sub_img_box .contents .txt_box{
         height: auto;
         padding: 4px;
+    }
+    .tema .tema_silde .swiper-wrapper .swiper-slide .img_contents .sub_img_box .contents .txt_box .txt{
+        line-height: 16px;
     }
     .tema .tema_silde .swiper-wrapper .swiper-slide .img_contents .sub_img_box .contents .txt_box .price_box .price{
         font-size: 16px;
@@ -95,6 +99,7 @@
     }
     .best .contents_container .contents_box .contents .txt_box{
         font-size: 13px;
+        line-height: 14px;
     }
     /* sale */
     .sale{
@@ -208,7 +213,7 @@
     /* SNS */
     .SNS{
         margin: 100px 0;
-        height: 800px;
+        /* height: 800px; */
     }
     .SNS .SNS_tit h1{
         white-space: nowrap;
@@ -222,6 +227,11 @@
         gap: 8px;
         padding-bottom: 12px;
         font-size: 12px;
+    }
+    footer .footer_wrap{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 40px;
     }
     footer .footer_wrap .txt_box .site_list{
         font-size: 13px;

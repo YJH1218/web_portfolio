@@ -64,6 +64,7 @@
     bottom: 0;
     color: #fff;
     font-size: 20px;
+    line-height: 24px;
     font-weight: 600;
     word-break: keep-all;
 }
@@ -98,6 +99,10 @@
 /* sale st */
 .sale{
     margin-top: 200px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-use-select: none;
+    user-select: none;
 }
 .sale .sale_slide{
     width: 100%;
@@ -276,6 +281,7 @@
 .products .tab_menu{
     display: flex;
     gap: 20px;
+    color: #999;
     font-size: 24px;
     font-weight: 500;
 }
@@ -375,6 +381,11 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.products .list_box .list .contents_box .contents.hide{
+    display: none;
+}
+
+
 .products .list_box .list .btn_box{
     width: 100%;
     padding: 80px 0;
@@ -389,6 +400,10 @@
     border: 2px solid #eee;
     border-radius: 30px;
     font-size: 28px;
+    cursor: pointer;
+}
+.products .list_box .list .btn_box .btn_desk.direct{
+    display: none;
 }
 .products .list_box .list .btn_box .btn::before{
     content: "";
@@ -410,8 +425,6 @@
     transform: translateY(-50%) rotate(90deg);
     background-color: #ccc;
 }
-
-
 /* products ed */
 /* tema st */
 .tema{
@@ -543,6 +556,7 @@
     border-left: 1px solid #eee;
 }
 .tema .tema_silde .swiper-wrapper .swiper-slide .img_contents .sub_img_box .contents .txt_box .txt{
+    line-height: 24px;
     font-size: 20px;
     font-weight: bold;
     word-break: keep-all;
@@ -572,7 +586,7 @@
 /* SNS st */
 .SNS{
     margin: 200px auto;
-    height: 1000px;
+    height: 100vh;
     position: relative;
     overflow: hidden;
     -webkit-user-select: none;
@@ -582,7 +596,7 @@
 }
 .SNS .SNS_tit{
     position: absolute;
-    top: 10%;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -593,7 +607,7 @@
 .SNS .SNS_contents_box{
     width: 100%;
     position: absolute;
-    top: 25%;
+    top: 12.5%;
     left: 0;
 }
 .SNS .SNS_contents_box .contents_box{
@@ -638,8 +652,7 @@
 }
 .SNS .SNS_contents_box .contents_box .SNS_slide .swiper-wrapper .swiper-slide .txt_box{
     width: 100%;
-    padding: 0 12px;
-    height: 400px;
+    padding: 0 12px 40px 12px;
 }
 .SNS .SNS_contents_box .contents_box .SNS_slide .swiper-wrapper .swiper-slide .txt_box .tit{
     padding: 0;
@@ -659,11 +672,11 @@
 }
 .SNS .SNS_contents_box .contents_box:nth-child(2){
     left: 50%;
-    top: 120px;
+    top: 100px;
 }
 .SNS .SNS_contents_box .contents_box:nth-child(3){
     left: 50%;
-    top: 120px;
+    top: 100px;
     transform: translateX(-100%);
 }
 /* SNS ed */
