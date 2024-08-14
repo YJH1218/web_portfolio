@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.css"/>
+    <!-- jq, swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"/>
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>SHOWBOX</title>
+</head>
+<body>
+    <header>
+            <div class="header_wrap wrap">
+                <div class="logo">
+                    <img src="./img/shobox_logo.svg" alt="로고">
+                </div>
+                <ul class="desk menu">
+                    <li>
+                        <a href="#">
+                            Movie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Series
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Notice
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            News
+                        </a>
+                    </li>
+                </ul>            
+            </div>
+    </header>
+    <section class="sec sec_01 visual">
+        <div class="swiper visual_slide_desk">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video class="desk_visual" src="./video/visual_video_desk_01.mp4" muted autoplay playsinline loop=""></video>
+                </div>
+                <div class="swiper-slide">
+                    <video class="desk_visual" src="./video/visual_video_desk_02.mp4" muted autoplay playsinline loop=""></video>
+                </div>
+                <div class="swiper-slide">
+                    <video class="desk_visual" src="./video/visual_video_desk_03.mp4" muted autoplay playsinline loop=""></video>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <script>
+        const swiper = new Swiper('.visual_slide_desk', {
+        loop: true,
+        effect:'fade',
+        speed: 1500,
+        autoplay: {
+            delay: 30000,
+        },
+        allowTouchMove: false,
+        });
+    </script>
+    <section class="sec sec_02 brand"></section>
+    <section class="sec sec_03 about"></section>
+    <section class="sec sec_04 movie"></section>
+    <section class="sec sec_05 series"></section>
+    <section class="sec sec_06 line_up"></section>
+    <section class="sec sec_07 notice_area"></section>
+    <footer>
+        <div class="footer_wrap">
+            <ul>
+                <li class="logo">
+                    <a href="#">
+                        <img src="./img/shobox_logo.svg" alt="로고">
+                    </a>
+                </li>
+                <li>
+                    대표이사 : 홍길동
+                </li>
+                <li>
+                    사업장주소 : 서울 특별시 ㅁㅁ구 ㅁㅁ로 123
+                </li>
+                <li>
+                    사업자등록번호 : 123 -1234 -45678
+                </li>
+                <li>
+                    고객 지원센터 : 1588 - 1234
+                </li>
+                <li class="copyright">
+                    Copyright 2024. 유지환. All rights reserved.
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
