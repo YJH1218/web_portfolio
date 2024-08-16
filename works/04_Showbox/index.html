@@ -52,7 +52,7 @@
             </div>
     </header>
     <section class="sec sec_01 visual">
-        <div class="swiper visual_slide_desk">
+        <div class="swiper visual_slide_desk desk">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <video class="desk_visual" src="./video/visual_video_desk_01.mp4" muted autoplay playsinline loop=""></video>
@@ -77,12 +77,606 @@
         allowTouchMove: false,
         });
     </script>
-    <section class="sec sec_02 brand"></section>
-    <section class="sec sec_03 about"></section>
-    <section class="sec sec_04 movie"></section>
-    <section class="sec sec_05 series"></section>
-    <section class="sec sec_06 line_up"></section>
-    <section class="sec sec_07 notice_area"></section>
+    <section class="sec sec_02 brand wrap">
+        <div class="tit">
+            SHOWBOX
+        </div>
+        <div class="contents_box">
+            <div class="swiper brand_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/brand_img_01.webp" alt="슬라이드 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/brand_img_02.webp" alt="슬라이드 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/brand_img_03.webp" alt="슬라이드 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/brand_img_04.webp" alt="슬라이드 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/brand_img_05.webp" alt="슬라이드 이미지">
+                    </div>
+                </div>    
+            </div>
+            <div class="txt_box">
+                <h1>
+                    쇼박스는 독보적인 기획력과 인사이트로 한국 영화를 리드합니다.
+                </h1>
+                <h3>
+                    창작자에게는 믿음직한 제작 기반과 서비스를, 관객에게는 최고의 즐거움을 선사하는 기업입니다.
+                </h3>
+            </div>
+        </div>
+    </section>
+    <script>
+        new Swiper('.brand_slide', {
+        loop: true,
+        effect:'fade',
+        speed: 3000,
+        autoplay: {
+            delay: 5000,
+        },
+        allowTouchMove: false,
+        });
+    </script>
+    <section class="sec sec_03 about">
+        <div class="tit">
+            What we do
+        </div>
+        <div class="contents_box">
+            <div class="content">
+                <div class="bg black"></div>
+                <div class="bg translucent"></div>
+                <div class="con">
+                    <div class="img_box">
+                        <img src="./img/icon_films.svg" alt="아이콘 이미지">
+                    </div>
+                    <div class="txt_box">
+                        <h3>
+                            콘텐츠 투자 및 제작
+                        </h3>
+                        <p>
+                            주요 제작사 및 두자사와의 전략적 제휴를 통한 영화 투자를 계획하고 제작관리를 실행합니다
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="bg black"></div>
+                <div class="bg translucent"></div>
+                <div class="con">
+                    <div class="img_box">
+                        <img src="./img/icon_movies.svg" alt="아이콘 이미지">
+                    </div>
+                    <div class="txt_box">
+                        <h3>
+                            국내 배급
+                        </h3>
+                        <p>
+                            전국에 영화를 공급하며 IPTV/디지털케이블, 온라인/모바일 OTT등 뉴 미디어에 디지털 VOD를 제공합니다
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="bg black"></div>
+                <div class="bg translucent"></div>
+                <div class="con">
+                    <div class="img_box">
+                        <img src="./img/icon_notice.svg" alt="아이콘 이미지">
+                    </div>
+                    <div class="txt_box">
+                        <h3>
+                            콘텐츠 홍보 / 마케팅
+                        </h3>
+                        <p>
+                            영화의 인지/선호도를 높이기 위한 홍보/마케팅 활동을 진행합니다
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="bg black"></div>
+                <div class="bg translucent"></div>
+                <div class="con">
+                    <div class="img_box">
+                        <img src="./img/icon_world.svg" alt="아이콘 이미지">
+                    </div>
+                    <div class="txt_box">
+                        <h3>
+                            콘텐츠 수출
+                        </h3>
+                        <p>
+                            해외 영화제 및 영화마켓 등에서 해외 홍보/마케팅/세일즈 활동을 통하여 국가별 해외배급을 진행합니다
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec sec_04 movie wrap">
+        <div class="tit">
+            Movie
+        </div>
+        <div class="swiper contents_slide movie_fade">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="txt_box">
+                        <h1 class="tit_name">
+                            파묘 破墓
+                        </h1>
+                        <h2 class="genre">
+                            Occult, Mystery
+                        </h2>
+                        <p class="txt">
+                            “전부 잘 알 거야… 묘 하나 잘못 건들면 어떻게 되는지”<br>
+                            절대 사람이 묻힐 수 없는 악지에 자리한 기이한 묘.<br>
+                            ‘상덕’은 불길한 기운을 느끼고 제안을 거절하지만,<br>
+                            ‘화림’의 설득으로 결국 파묘가 시작되고…
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/movie_img_01.png" alt="영화 이미지">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="txt_box">
+                        <h1 class="tit_name">
+                            사랑의 하츄핑
+                        </h1>
+                        <h2 class="genre">
+                            Animation
+                        </h2>
+                        <p class="txt">
+                            처음 본 순간, 한눈에 반해버렸어!<br>
+                            설레는 운명이 시작된 우리의 첫 만남!<br>
+                            인생의 소울메이트를 꼭 만나길 바라는 ‘로미’<br>
+                            우연한 기회에 ‘하츄핑’을 처음 본 뒤,<br>
+                            운명의 인연임을 알아본다.
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/movie_img_02.png" alt="영화 이미지">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="txt_box">
+                        <h1 class="tit_name">
+                            시민덕희
+                        </h1>
+                        <h2 class="genre">
+                            Drama, Crime, Comedy
+                        </h2>
+                        <p class="txt">
+                            내 돈을 사기 친 그 놈이 구조 요청을 해왔다!<br>
+                            세탁소 화재로 인해 대출상품을 알아보던 생활력 만렙 덕희에게 어느 날,<br>
+                            거래은행의 손대리가 합리적인 대출상품을 제안하겠다며 전화를 걸어온다.<br>
+                            대출에 필요하다며 이런저런 수수료를 요구한 손대리에게 돈을 보낸 덕희는<br>
+                            이 모든 과정이 보이스피싱이었음을 뒤늦게 인지하고 충격에 빠진다
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/movie_img_03.png" alt="영화 이미지">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="txt_box">
+                        <h1 class="tit_name">
+                            살인자의 기억법
+                        </h1>
+                        <h2 class="genre">
+                            Mystery, Crime, Thriller
+                        </h2>
+                        <p class="txt">
+                            예전에는 연쇄살인범이었지만 지금은 알츠하이머에 걸린 병수.<br>
+                            우연히 접촉사고로 만나게 된 남자 태주에게서 자신과 같은 눈빛을 발견하고<br>
+                            그 역시 살인자임을 직감한다.<br>
+                            병수는 경찰에 그를 연쇄살인범으로 신고하지만 태주가 그 경찰이었고,<br>
+                            아무도 병수의 말을 믿지 않는다.
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/movie_img_04.png" alt="영화 이미지">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="txt_box">
+                        <h1 class="tit_name">
+                            택시운전사
+                        </h1>
+                        <h2 class="genre">
+                            Drama, Adventure, Action
+                        </h2>
+                        <p class="txt">
+                            택시운전사 만섭은 외국손님을 태우고 광주에 갔다<br>
+                            통금 전에 돌아오면 밀린 월세를 갚을 수 있는 거금 10만원을 준다는 말에<br>
+                            독일기자 피터를 태우고 영문도 모른 채 길을 나선다.<br>
+                            광주 그리고 사람들. “모르겄어라, 우덜도 우덜한테 와 그라는지…”<br>
+                            어떻게든 택시비를 받아야 하는 만섭의 기지로 검문을 뚫고 겨우 들어선 광주. 
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/movie_img_05.png" alt="영화 이미지">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        new Swiper('.movie_fade', {
+        loop: true,
+        effect:'fade',
+        speed: 1500,
+        autoplay: {
+            delay: 8000,
+        },
+        allowTouchMove: false,
+        });
+
+    </script>
+    <section class="sec sec_05 series wrap">
+        <div class="tit">
+            Series
+        </div>
+        <div class="swiper contents_slide series_fade">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="txt_box">
+                        <h1 class="tit_name">
+                            살인자ㅇ난감
+                        </h1>
+                        <h2 class="genre">
+                            Crime, Thriller
+                        </h2>
+                        <p class="txt">
+                            우발저인 첫 살인 후 연이어 사람을 죽이게 된 평범한 청년,<br>
+                            자신을 끈질기게 추저하는 형사와 끝없이 쫒고 쫒기는 게임을 시작한다.
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/series_img_01.png" alt="시리즈 이미지">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="txt_box">
+                        <h1 class="tit_name">
+                            이태원 클라쓰
+                        </h1>
+                        <h2 class="genre">
+                            Animation
+                        </h2>
+                        <p class="txt">
+                            불합리한 세상 속, 고집과 객기로 뭉친 청춘들의 '힙'한 반란이 시작된다.<br>
+                            세계를 압축해 놓은 듯한 이태원.<br>
+                            이 작은 거리, 각자의 가치관으로 자유를 쫓는 그들의 창업 신화                            
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/series_img_02.png" alt="시리즈 이미지">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="txt_box">
+                        <h1 class="tit_name">
+                            배우는 여행중
+                        </h1>
+                        <h2 class="genre">
+                            Trip, Variety
+                        </h2>
+                        <p class="txt">
+                            88년생 동갑내기 임시완과 정해인이 위스키와 함께<br>
+                            스코틀랜드 곳곳을 여행하는 프로그램
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/series_img_03.png" alt="시리즈 이미지">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="txt_box">
+                        <h1 class="tit_name">
+                            어나더 레코더
+                        </h1>
+                        <h2 class="genre">
+                            Documentary
+                        </h2>
+                        <p class="txt">
+                            모두가 잘 알고 있는 배우 신세경<br>
+                            다양한 사람들과 먹고 마시고 이야기하는 시간 속에서<br>
+                            진짜 '신세경'의 모습을 독보적인 감성의 김종관 감독이 담아내다!<br>
+                            모두가 아는 신세경의 아무도 몰랐던 이야기
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/series_img_04.png" alt="시리즈 이미지">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="txt_box">
+                        <h1 class="tit_name">
+                            어나더 레코더 : 이제훈
+                        </h1>
+                        <h2 class="genre">
+                            Documentary
+                        </h2>
+                        <p class="txt">
+                            배우가 되지 않았다면 어떤 모습일까?<br>
+                            이제훈의 상상은 현실이 된다!<br>
+                            잊고있던 꿈 배우의 리얼한 모습과 영화적 엉뚱한 상상을<br>
+                            오가며 그의 상상이 현실이 된다.<br>
+                            상상을 하며 살아가는 우리 모두를 위한 이야기
+                        </p>
+                    </div>
+                    <div class="img_box">
+                        <img src="./img/series_img_05.png" alt="시리즈 이미지">
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <script>
+        new Swiper('.series_fade', {
+        loop: true,
+        effect:'fade',
+        speed: 1500,
+        autoplay: {
+            delay: 8000,
+        },
+        allowTouchMove: false,
+        });
+    </script>
+    <section class="sec sec_06 line_up wrap">
+        <div class="tit">
+            Line-up
+        </div>
+        <div class="contents_box contents_box_01 active">
+            <div class="con con_01">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_01-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_01-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+            <div class="con con_02">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_02-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_02-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+            <div class="con con_03">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_03-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_03-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+            <div class="con con_04">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_04-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_04-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+            <div class="con con_05">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_05-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_05-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+            <div class="con con_06">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_06-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_06-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+        </div>
+        <div class="contents_box contents_box_02">
+            <div class="con con_07">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_07-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_07-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+            <div class="con con_08">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_08-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_08-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+            <div class="con con_09">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_09-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_09-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+            <div class="con con_10">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_10-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_10-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+            <div class="con con_11">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_11-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_11-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+            <div class="con con_12">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_12-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_12-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+        </div>
+        <div class="contents_box contents_box_03">
+            <div class="con con_13">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_13-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_13-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+            <div class="con con_14">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_14-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_14-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+            <div class="con con_15">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_15-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_15-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+            <div class="con con_16">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_16-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_16-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+            <div class="con con_17">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_17-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_17-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+            <div class="con con_18">
+                <div class="img_box main_img_box">
+                    <img src="./img/line-up_img_18-01.png" alt="메인 이미지">
+                </div>
+                <div class="img_box sub_img_box">
+                    <img src="./img/line-up_img_18-02.png" alt="서브 이미지">
+                </div>            
+            </div>
+        </div>
+        <div class="btn_box">
+            <div class="btn plus plus_01"></div>
+            <div class="btn plus plus_02"></div>
+        </div>
+    </section>
+    <script>
+        $('.plus_01').click(function(){
+            $('.contents_box_02').addClass("active");
+            $('.contents_box_02 .con').css('display','block');
+            $('.plus_01').css('display','none');
+            $('.plus_02').css('display','block');
+        });
+        $('.plus_02').click(function(){
+            $('.contents_box_03').addClass("active");
+            $('.contents_box_03 .con').css('display','block');
+            $('.plus_02').css('display','none');
+        });
+    </script>
+    <section class="sec sec_07 notice_area">        
+        <div class="bg"></div>
+        <div class="notice_box">
+            <div class="contents notice">
+                <div class="tit_box">
+                    <div class="tit">
+                        Notice
+                    </div>
+                    <a class="btn plus" href="#">
+                        더보기
+                    </a>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a class="txt" href="#">
+                            <사랑의 하츄핑> 개봉 주 동시기 박스오피스 1위 등극! 신드롬 시작 됐다!
+                        </a>
+                        <div class="date">
+                            2024.08.14
+                        </div>
+                    </li>
+                    <li>
+                        <a class="txt" href="#">
+                            <사랑의 하츄핑> 올여름 드디어 일냈다! <파일럿> 제치고 전체 영화 예매율 1위 등극!
+                        </a>
+                        <div class="date">
+                            2024.08.12
+                        </div>
+                    </li>
+                    <li>
+                        <a class="txt" href="#">
+                            쇼박스 공식 홈페이지 재단장 안내
+                        </a>
+                        <div class="date">
+                            2024.07.28
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="contents news">
+                <div class="tit_box">
+                    <div class="tit">
+                        News
+                    </div>
+                    <a class="btn plus" href="#">
+                        더보기
+                    </a>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a class="txt" href="#">
+                            쇼박스, “2023년 코스닥시장 공시우수법인” 선정
+                        </a>
+                        <div class="date">
+                            2024.05.12
+                        </div>
+                    </li>
+                    <li>
+                        <a class="txt" href="#">
+                            2024년 1분기 쇼박스 IR자료
+                        </a>
+                        <div class="date">
+                            2024.04.22
+                        </div>
+                    </li>
+                    <li>
+                        <a class="txt" href="#">
+                            2023년 4분기 쇼박스 IR자료
+                        </a>
+                        <div class="date">
+                            2024.01.21
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="footer_wrap">
             <ul>
