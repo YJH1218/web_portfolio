@@ -4,6 +4,9 @@
 img{
     width: 100%;
 }
+video{
+    width: 100%;
+}
 body{
     background-color: #000;
     color: #fff;
@@ -13,6 +16,12 @@ body{
     max-width: 1440px;
     padding: 0 20px;
     margin: 0 auto;
+}
+.responsive{
+    display: none;
+}
+.mobile{
+    display: none;
 }
 /* header st */
 header{
@@ -40,7 +49,69 @@ header{
     font-size: 20px;
     font-weight: 600;
 }
+.header_wrap .responsive.menu{
+    width: 32px;
+    height: 24px;
+}
+.header_wrap .responsive.menu .btn{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.header_wrap .responsive.menu .btn .line{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    border-radius: 1px;
+}
+.header_wrap .responsive.menu .btn.hamburger .line:nth-child(1){
+    top: 0;
+}
+.header_wrap .responsive.menu .btn.hamburger .line:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header_wrap .responsive.menu .btn.hamburger .line:nth-child(3){
+    bottom: 0;
+}
+.header_wrap .responsive.menu .btn.X-mark{
+    display: none;
+}
+.header_wrap .responsive.menu .btn.X-mark .line:nth-child(1){
+    top: 50%;
+    transform: translateY(50%) rotate(45deg);
+}
+.header_wrap .responsive.menu .btn.X-mark .line:nth-child(2){
+    top: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
 /* header ed */
+/* responsive_menu st */
+.responsive_menu{
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    right: 100%;
+    display: none;
+    background-color: #000;
+    transition: all 0.5s;
+    z-index: 99;
+}    
+.responsive_menu.active{
+    right: 0;
+}
+.responsive_menu ul li{
+    width: 100%;
+    padding: 28px 0;
+    font-size: 24px;
+    text-align: center;
+}
+/* responsive_menu ed */
 /* footer st */
 footer{
     width: 100%;

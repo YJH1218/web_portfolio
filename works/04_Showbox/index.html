@@ -18,39 +18,91 @@
 </head>
 <body>
     <header>
-            <div class="header_wrap wrap">
-                <div class="logo">
-                    <img src="./img/shobox_logo.svg" alt="로고">
-                </div>
-                <ul class="desk menu">
-                    <li>
-                        <a href="#">
-                            Movie
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Series
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            About us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Notice
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            News
-                        </a>
-                    </li>
-                </ul>            
+        <div class="header_wrap wrap">
+            <div class="logo">
+                <img src="./img/shobox_logo.svg" alt="로고">
             </div>
+            <ul class="desk menu">
+                <li>
+                    <a href="#">
+                        Movie
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Series
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Notice
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        News
+                    </a>
+                </li>
+            </ul>
+            <ul class="responsive menu">
+                <li class="btn hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </li>
+                <li class="btn X-mark">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </li>
+            </ul>            
+        </div>
     </header>
+    <div class="responsive_menu">
+        <ul>
+            <li>
+                <a href="#">
+                    Movie
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Series
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    About us
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Notice
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    News
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $('.header_wrap .responsive.menu .btn.hamburger').click(function(){
+            $(this).css("display","none");
+            $(".header_wrap .responsive.menu .btn.X-mark").css("display","block");
+            $(".responsive_menu").addClass("active");
+        });
+        $('.header_wrap .responsive.menu .btn.X-mark').click(function(){
+            $(this).css("display","none");
+            $(".header_wrap .responsive.menu .btn.hamburger").css("display","block");
+            $(".responsive_menu").removeClass("active");
+        });
+    </script>
     <section class="sec sec_01 visual">
         <div class="swiper visual_slide_desk desk">
             <div class="swiper-wrapper">
@@ -65,9 +117,31 @@
                 </div>
             </div>    
         </div>
+        <div class="swiper visual_slide_mobile mobile">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video class="mobile_visual" src="./video/visual_video_mobile_01.mp4" muted autoplay playsinline loop=""></video>
+                </div>
+                <div class="swiper-slide">
+                    <video class="mobile_visual" src="./video/visual_video_mobile_02.mp4" muted autoplay playsinline loop=""></video>
+                </div>
+                <div class="swiper-slide">
+                    <video class="mobile_visual" src="./video/visual_video_mobile_03.mp4" muted autoplay playsinline loop=""></video>
+                </div>
+            </div>    
+        </div>
     </section>
     <script>
         const swiper = new Swiper('.visual_slide_desk', {
+        loop: true,
+        effect:'fade',
+        speed: 1500,
+        autoplay: {
+            delay: 30000,
+        },
+        allowTouchMove: false,
+        });
+        new Swiper('.visual_slide_mobile', {
         loop: true,
         effect:'fade',
         speed: 1500,

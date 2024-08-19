@@ -15,7 +15,6 @@ section > .tit{
     text-align: center;
     font-weight: 900;
 }
-
 /* brand st */
 .brand{
     margin-top: 200px;    
@@ -200,10 +199,16 @@ section > .tit{
 .line_up .contents_box{   
     display: flex;
     flex-wrap: wrap;
-    gap: 0 80px;
+    gap: 40px 80px;
     visibility: hidden;
     opacity: 0;
     transition: all 2s;
+}
+.line_up .contents_box_02{
+    margin-top: 40px;
+}
+.line_up .contents_box_03{
+    margin-top: 40px;
 }
 .line_up .contents_box.active{    
     visibility: visible;
