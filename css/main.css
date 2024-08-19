@@ -482,7 +482,6 @@ header .X_mark .X_line.right{
     font-size: 36px;
     font-weight: bold;
 }
-
 .pratice .horizon_container .content_box .chrome_img{
     width: 1280px;
     height: 720px;
@@ -497,8 +496,8 @@ header .X_mark .X_line.right{
     width: 100%;
 }
 .pratice .horizon_container .content_box .chrome_mob{
-    width: 220px;
-    height: 420px;
+    width: 320px;
+    height: 600px;
     position: absolute;
     bottom: 10%;
     left: 0%;
@@ -602,7 +601,7 @@ header .X_mark .X_line.right{
 }
 .mob_pratice .content_box .btn_box{
     position: absolute;
-    bottom: 0;
+    bottom: 20%;
     left: 20px;
     display: flex;
     flex-direction: column;

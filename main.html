@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.css"/>
+    <!-- jq, gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">    
+    <title>Portfolio</title>
+    <meta property="og:url" content="http://willow-as-strong.com/" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Web_portfolio, Portfolio" />
+    <meta property="og:description" content="포트폴리오용으로 제작된 페이지 입니다."/>
+    <meta property="og:image" content="./img/Protfoilo_eg_img.png"/>
+    <link rel="icon" href="./img/favicon_portfolio.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#visual">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="#works">
+                        Works
+                    </a>
+                </li>
+                <li>
+                    <a href="#pratice">
+                        Pratice
+                    </a>
+                </li>
+                <li>
+                    <a href="#design">
+                        Design
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mob_hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="X_mark">
+            <div class="X_line left"></div>
+            <div class="X_line right"></div>
+        </div>
+    </header>
+    <div class="mob_menu">
+        <div class="bg"></div>
+        <ul>
+            <li>
+                <a href="#visual">
+                    HOME
+                </a>
+            </li>
+            <li>
+                <a href="#works">
+                    Works
+                </a>
+            </li>
+            <li>
+                <a href="#mob_pratice">
+                    Pratice
+                </a>
+            </li>
+            <li>
+                <a href="#design">
+                    Design
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    contact
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+            $('.mob_hamburger').click(function(){
+            $('.mob_menu, .X_mark, .mob_hamburger').addClass("active");
+        });
+        $('.mob_menu .bg, .mob_menu ul li, .X_mark').click(function(){
+            $('.mob_menu, .X_mark, .mob_hamburger').removeClass("active");
+        });
+        gsap.to("header", {
+        scrollTrigger: {
+            trigger: "body",
+            start: "60px",
+            toggleActions: "restart pause resume reverse",
+            toggleClass:{targets:'header',className:'active'},
+        },
+        })
+    </script>
+    <section class="sec visual w_100" id="visual">
+        <a class="intro_line" href="./intro.html">
+            intro
+        </a>
+        <div class="tit_box">
+            <h1 class="typing">              
+            </h1>
+        </div>
+        <div class="typing-txt"> 
+            <ul>
+              <li>POSITIVE</li>
+              <li>CREATIVE</li>
+              <li>INTUITIVE</li>
+              <li>OBJECTIVE</li>
+          </ul>          
+        </div> 
+        <div class="txt_box">
+            <div class="left">
+                Web Design<br>
+                UI/UX Design<br>
+                Web Publishing
+            </div>
+            <div class="right">
+                I have specialized in developing and managing web content using Html 5, Css and JavaScript.
+I excel in creating intuitive designs and implementing ersponsive web pages that enhance user experience.
+            </div>
+        </div>
+    </section>
+    <script>
+        var typingBool = false; 
+        var typingIdx=0; 
+        var liIndex = 0;
+        var liLength = $(".typing-txt>ul>li").length;
+        
+        var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
+        typingTxt=typingTxt.split("");
+        if(typingBool==false){
+            typingBool=true; 
+            var tyInt = setInterval(typing,200);
+        } 
+            
+        function typing(){ 
+        if(typingIdx<typingTxt.length){
+            $(".typing").append(typingTxt[typingIdx]);
+            typingIdx++; 
+        } else{
+            if(liIndex>=liLength-1){
+            liIndex=0;
+            }else{
+            liIndex++; 
+            }
+            
+                typingIdx=0;
+                typingBool = false; 
+                typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
+            
+                clearInterval(tyInt);
+                setTimeout(function(){
+                    $(".typing").html('');
+                tyInt = setInterval(typing,200);
+                },4000);
+            } 
+        }
+
+        gsap.to(".visual .txt_box .left", {
+        y: -20,
+        opacity: 1,
+        duration: 1,
+        delay:2,
+      });
+      gsap.to(".visual .txt_box .right", {
+        y: -20,
+        opacity: 1,
+        duration: 1,
+        delay:3,
+      });
+
+    </script>
+    <section class="sec introduction w_100" id="introduction">
+        <div class="bg_b_w"></div>
+        <div class="marquee_box">
+            <div class="marquee_wrap">
+                <div class="marquee_text">
+                    <div class="marquee">#Web Design #UI/UX Design #Web Publishing </div>
+                    <div class="marquee">#Web Design #UI/UX Design #Web Publishing </div>
+                    <div class="marquee">#Web Design #UI/UX Design #Web Publishing </div>
+                    <div class="marquee">#Web Design #UI/UX Design #Web Publishing </div>
+                </div>
+            </div>
+            <div class="marquee_wrap">
+                <div class="marquee_text">
+                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prosprective</div>
+                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prosprective</div>
+                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prosprective</div>
+                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prosprective</div>
+                </div>
+            </div>
+            <div class="marquee_wrap">
+                <div class="marquee_text">
+                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuray #PhotoShop</div>
+                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuray #PhotoShop</div>
+                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuray #PhotoShop</div>
+                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuray #PhotoShop</div>
+                </div>
+            </div>
+        </div>
+        <div class="bg_w_b"></div>
+    </section>
+    <section class="sec works w_100" id="works">
+        <div class="tit_box">
+            <h1>WORKS</h1>
+        </div>
+        <div class="content pascucci">
+            <div class="img_box">
+                <img class="desktop" src="./img/works_01_desk.png" alt="파스쿠찌 사이트 이미지">
+                <img class="mobile" src="./img/works_01_mobile.png" alt="파스쿠찌 모바일 사이트">
+            </div>
+            <div class="bg"></div>
+            <div class="info">
+                <div class="left">
+                    <div class="txt_box">
+                        <h1>PASCUCCI</h1>
+                        <h2>REDESIGN</h2>
+                        <p>
+                            카페 파스쿠찌의 홈페이지를 리디자인 했습니다.
+                            기존 사이트의 디자인을 전체적으로 눈에 잘 보이게 디자인을 했습니다
+                            모바일 반응형을 고려하여 제작하였습니다.
+                        </p>
+                    </div>
+                    <div class="btn_box">
+                        <a class="btn" href="./works/01_Pascucci/index.html" target="_blank">
+                            사이트 보기
+                        </a>
+                        <a class="btn" href="https://github.com/YJH1218/web_portfolio/tree/master/works/01_Pascucci" target="_blank">
+                            코드 보기
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="logo">
+                        <img src="./img/pascucci_logo_white.svg" alt="파스쿠찌 로고">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content sony">
+            <div class="img_box">
+                <img class="desktop" src="./img/works_02_desk.png" alt="소니 코리아 사이트 이미지">
+                <img class="mobile" src="./img/works_02_mobile.png" alt="소니 코리아 모바일 사이트">
+            </div>
+            <div class="bg"></div>
+            <div class="info">
+                <div class="left">
+                    <div class="txt_box">
+                        <h1>SONY</h1>
+                        <h2>REDESIGN</h2>
+                        <p>
+                            소니 코리아의 홈페이지를 리디자인 했습니다.
+                            기존 사이트의 디자인과 다르게 배경을 블랙으로 하고
+                            이미지가 눈에 잘 보이게 디자인을 했습니다
+                            모바일 반응형을 고려하여 제작하였습니다.
+                        </p>
+                    </div>
+                    <div class="btn_box">
+                        <a class="btn" href="./works/02_Sony/index.html" target="_blank">
+                            사이트 보기
+                        </a>
+                        <a class="btn" href="https://github.com/YJH1218/web_portfolio/tree/master/works/02_Sony" target="_blank">
+                            코드 보기
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="logo">
+                        <img src="./img/Sony_logo.svg" alt="소니 로고">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content tefal">
+            <div class="img_box">
+                <img class="desktop" src="./img/works_03_desk.png" alt="테팔 판매 사이트 이미지">
+                <img class="mobile" src="./img/works_03_mobile.png" alt="테팔 판매 모바일 사이트">
+            </div>
+            <div class="bg"></div>
+            <div class="info">
+                <div class="left">
+                    <div class="txt_box">
+                        <h1>Tefal</h1>
+                        <h2>REDESIGN</h2>
+                        <p>
+                            테팔 판매 사이트를 리디자인 했습니다.
+                            기존 사이트의 디자인과 다르게 가로를 넓게 잡고
+                            이미지가 눈에 잘 보이게 디자인을 했습니다.
+                            모바일 반응형을 고려하여 제작하였습니다.                            
+                        </p>
+                    </div>
+                    <div class="btn_box">
+                        <a class="btn" href="./works/03_Tefal/index.html" target="_blank">
+                            사이트 보기
+                        </a>
+                        <a class="btn" href="https://github.com/YJH1218/web_portfolio/tree/master/works/03_Tefal" target="_blank">
+                            코드 보기
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="logo">
+                        <img src="./img/tefal_logo_white.svg" alt="테팔 로고">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="img_box">
+                <img class="desktop" src="./img/works_04_desk.png" alt="쇼박스 사이트 이미지">
+                <img class="mobile" src="./img/works_04_mobile.png" alt="쇼박스 모바일 사이트">
+            </div>
+            <div class="bg"></div>
+            <div class="info">
+                <div class="left">
+                    <div class="txt_box">
+                        <h1>SHOWBOX</h1>
+                        <h2>REDESIGN</h2>
+                        <p>
+                            쇼박스 사이트를 리디자인 했습니다.
+                            기존 사이트의 디자인과 다르게 동영상을 활용하고
+                            이미지가 눈에 잘 보이게 새롭게 디자인을 했습니다.
+                            모바일 반응형을 고려하여 제작하였습니다.                            
+                        </p>
+                    </div>
+                    <div class="btn_box">
+                        <a class="btn" href="./works/04_Showbox/index.html" target="_blank">
+                            사이트 보기
+                        </a>
+                        <a class="btn" href="https://github.com/YJH1218/web_portfolio/tree/master/works/04_Showbox" target="_blank">
+                            코드 보기
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="logo">
+                        LOGO-LOGO
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content blank"></div>
+    </section>
+    <script>
+        gsap.to(".works .tit_box", {
+        scrollTrigger: {
+            trigger: ".works",
+            start: "0% 50%",
+            toggleActions: "restart pause resume reverse"
+        },
+        y: -40,
+        opacity: 1,
+        duration: 0.5,
+        })
+        gsap.utils.toArray(".content").forEach((div, i) => {
+            ScrollTrigger.create({
+            trigger: div,
+            start: "top top", 
+            pin: true,
+            pinSpacing: false,
+            });
+        });
+    </script>
+    <section class="sec pratice w_100" id="pratice">
+        <div class="tit_box">
+            <h1>PRATICE</h1>
+        </div>
+        <div class="horizon_container">
+            <div class="content_box blank"></div>
+            <div class="content_box content_01">
+                <div class="txt_box">
+                    <h1>
+                        NAVER
+                    </h1>
+                    <h2>
+                        Clone Coding
+                    </h2>
+                </div>
+                <div class="chrome_img">
+                    <img src="./img/pratice_desk_01.png" alt="네이버 웹 사이트">
+                </div>                
+                <div class="btn_box">
+                    <a class="btn" href="./pratice/01_Naver/index.html" target="_blank">
+                        사이트 방문
+                    </a>
+                    <a class="btn" href="https://github.com/YJH1218/web_portfolio/tree/master/pratice/01_Naver" target="_blank">
+                        코드 보기
+                    </a>
+                </div>
+            </div>
+            <div class="content_box blank"></div>
+            <div class="content_box content_02">
+                <div class="txt_box">
+                    <h1>
+                        WATCHA
+                    </h1>
+                    <h2>
+                        Clone Coding
+                    </h2>
+                </div>
+                <div class="chrome_img">
+                    <img src="./img/pratice_desk_02.png" alt="왓챠 웹 사이트">
+                </div>
+                <div class="chrome_mob">
+                    <img src="./img/pratice_mobile_02.png" alt="왓챠 모바일 사이트">
+                </div>
+                <div class="btn_box">
+                    <a class="btn" href="./pratice/02_Watcha/index.html" target="_blank">
+                        사이트 방문
+                    </a>
+                    <a class="btn" href="https://github.com/YJH1218/web_portfolio/tree/master/pratice/02_Watcha" target="_blank">
+                        코드 보기
+                    </a>
+                </div>
+            </div>
+            <div class="content_box blank"></div>
+            <div class="content_box content_03">
+                <div class="txt_box">
+                    <h1>
+                        Hanwha Tech One
+                    </h1>
+                    <h2>
+                        Clone Coding
+                    </h2>
+                </div>
+                <div class="chrome_img">
+                    <img src="./img/pratice_desk_03.png" alt="한화 테크 원 사이트">
+                </div>
+                <div class="btn_box">
+                    <a class="btn" href="./pratice/03_hanwha_tech_one/index.html" target="_blank">
+                        사이트 방문
+                    </a>
+                    <a class="btn" href="https://github.com/YJH1218/web_portfolio/tree/master/pratice/03_hanwha_tech_one" target="_blank">
+                        코드 보기
+                    </a>
+                </div>
+            </div>
+            <div class="content_box blank"></div>
+            <div class="content_box content_04">
+                <div class="txt_box">
+                    <h1>
+                        Holmes & Lupin
+                    </h1>
+                    <h2>
+                        ReDesign
+                    </h2>
+                </div>
+                <div class="chrome_img">
+                    <img src="./img/pratice_desk_04.png" alt="홈즈앤루팡 웹 사이트">
+                </div>            
+                <div class="btn_box">
+                    <a class="btn" href="./pratice/04_Holmes_&_Lupin/index.html" target="_blank">
+                        사이트 방문
+                    </a>
+                    <a class="btn" href="https://github.com/YJH1218/web_portfolio/tree/master/pratice/04_Holmes_&_Lupin" target="_blank">
+                        코드 보기
+                    </a>
+                </div>
+            </div>
+            <div class="content_box blank"></div>
+            <div class="content_box content_05">
+                <div class="txt_box">
+                    <h1>
+                        SPC Samlip
+                    </h1>
+                    <h2>
+                        ReDesign
+                    </h2>
+                </div>
+                <div class="chrome_img">
+                    <img src="./img/pratice_desk_05.png" alt="삼립 웹 사이트">
+                </div>
+                <div class="chrome_mob">
+                    <img src="./img/pratice_mobile_05.png" alt="삼립 모바일 사이트">
+                </div>
+                <div class="btn_box">
+                    <a class="btn" href="./pratice/05_SPC/index.html" target="_blank">
+                        사이트 방문
+                    </a>
+                    <a class="btn" href="https://github.com/YJH1218/web_portfolio/tree/master/pratice/05_SPC" target="_blank">
+                        코드 보기
+                    </a>
+                </div>
+            </div>
+            <div class="content_box blank"></div>
+        </div>
+    </section>
+    <script>
+    gsap.to(".pratice .tit_box", {
+        scrollTrigger: {
+            trigger: ".pratice",
+            start: "0% 50%",
+            toggleActions: "restart pause resume reverse"
+        },
+        y: -40,
+        opacity: 1,
+        duration: 0.5,
+        })     
+    let horizon = gsap.utils.toArray(".content_box");
+
+        gsap.to(horizon, {
+        xPercent: -100 * ( horizon.length -1 ),
+        ease: "none",
+        scrollTrigger: {
+            trigger: '.horizon_container',
+            end: ()=> "+=" + document.querySelector(".horizon_container").offsetWidth,
+            pin: true,
+            scrub: 1,
+        }
+    });
+    </script>
+    <section class="sec mob_pratice w_100" id="mob_pratice">
+        <div class="tit_box">
+            <h1>PRATICE</h1>
+        </div>
+        <div class="content_box content_01">
+            <div class="txt_box">
+                <h1>
+                    Naver
+                </h1>
+                <h2>
+                    Clone Coding
+                </h2>
+            </div>
+            <div class="chrome_img">
+                <img src="./img/pratice_desk_01.png" alt="네이버 웹 사이트">
+            </div>
+            <div class="btn_box">
+                <a class="btn" href="./pratice/01_Naver/index.html" target="_blank">
+                    사이트 방문
+                </a>
+                <a class="btn" href="https://github.com/YJH1218/web_portfolio/tree/master/pratice/01_Naver" target="_blank">
+                    코드 보기
+                </a>
+            </div>
+        </div>
+        <div class="content_box content_02">
+            <div class="txt_box">
+                <h1>
+                    WATCHA
+                </h1>
+                <h2>
+                    Clone Coding
+                </h2>
+            </div>
+            <div class="chrome_img">
+                <img src="./img/pratice_desk_02.png" alt="왓챠 웹 사이트">
+            </div>            
+            <div class="chrome_mob chrome_mob_01">
+                <img src="./img/pratice_mobile_02.png" alt="왓챠 모바일 사이트">
+            </div>
+            <div class="chrome_mob chrome_mob_02">
+                <img src="./img/pratice_mobile_02.png" alt="왓챠 모바일 사이트">
+            </div>
+            <div class="btn_box">
+                <a class="btn" href="./pratice/02_Watcha/index.html" target="_blank">
+                    사이트 방문
+                </a>
+                <a class="btn" href="https://github.com/YJH1218/web_portfolio/tree/master/pratice/02_Watcha" target="_blank">
+                    코드 보기
+                </a>
+            </div>
+        </div>
+        <div class="content_box content_03">
+            <div class="txt_box">
+                <h1>
+                    WATCHA
+                </h1>
+                <h2>
+                    Clone Coding
+                </h2>
+            </div>
+            <div class="chrome_img">
+                <img src="./img/pratice_desk_03.png" alt="한화 테크 원 사이트">
+            </div>
+            <div class="btn_box">
+                <a class="btn" href="./pratice/03_hanwha_tech_one/index.html" target="_blank">
+                    사이트 방문
+                </a>
+                <a class="btn" href="https://github.com/YJH1218/web_portfolio/tree/master/pratice/03_hanwha_tech_one" target="_blank">
+                    코드 보기
+                </a>
+            </div>
+        </div>
+        <div class="content_box content_04">
+            <div class="txt_box">
+                <h1>
+                    Holmes & Lupin
+                </h1>
+                <h2>
+                    ReDesign
+                </h2>
+            </div>
+            <div class="chrome_img">
+                <img src="./img/pratice_desk_04.png" alt="홈즈 앤 루팡 웹 사이트">
+            </div>
+            <div class="chrome_mob chrome_mob_01">
+                <img src="./img/pratice_mobile_04.png" alt="삼립 모바일 사이트">
+            </div>
+            <div class="chrome_mob chrome_mob_02">
+                <img src="./img/pratice_mobile_04.png" alt="삼립 모바일 사이트">
+            </div>
+            <div class="btn_box">
+                <a class="btn" href="./pratice/04_Holmes_&_Lupin/index.html" target="_blank">
+                    사이트 방문
+                </a>
+                <a class="btn" href="https://github.com/YJH1218/web_portfolio/tree/master/pratice/04_Holmes_&_Lupin" target="_blank">
+                    코드 보기
+                </a>
+            </div>
+        </div>
+        <div class="content_box content_05">
+            <div class="txt_box">
+                <h1>
+                    SPC Samlip
+                </h1>
+                <h2>
+                    ReDesign
+                </h2>
+            </div>
+            <div class="chrome_img">
+                <img src="./img/pratice_desk_05.png" alt="삼립 웹 사이트">
+            </div>
+            <div class="chrome_mob chrome_mob_01">
+                <img src="./img/pratice_mobile_05.png" alt="삼립 모바일 사이트">
+            </div>
+            <div class="chrome_mob chrome_mob_02">
+                <img src="./img/pratice_mobile_05.png" alt="삼립 모바일 사이트">
+            </div>
+            <div class="btn_box">
+                <a class="btn" href="./pratice/05_SPC/index.html" target="_blank">
+                    사이트 방문
+                </a>
+                <a class="btn" href="https://github.com/YJH1218/web_portfolio/tree/master/pratice/05_SPC" target="_blank">
+                    코드 보기
+                </a>
+            </div>
+        </div>
+    </section>
+    <script>
+        gsap.to(".mob_pratice .tit_box", {
+        scrollTrigger: {
+            trigger: ".mob_pratice",
+            start: "0% 60%",
+            toggleActions: "restart pause resume reverse"
+        },
+        y: -40,
+        opacity: 1,
+        duration: 0.5,
+        })
+    </script>
+    <section class="sec design w_100" id="design">
+        <div class="tit_box">
+            <h1>DESIGN</h1>
+        </div>
+        <div class="item_box">
+            <div class="item item_01">
+                <div class="bg"></div>
+            </div>
+            <div class="item item_02">
+                <div class="bg"></div>
+            </div>
+            <div class="item item_03">
+                <div class="bg"></div>
+            </div>
+            <div class="item item_04">
+                <div class="bg"></div>
+            </div>
+            <div class="item item_05">
+                <div class="bg"></div>
+            </div>
+            <div class="item item_06">
+                <div class="bg"></div>
+            </div>
+        </div>
+    </section>
+    <script>
+        gsap.to(".design .tit_box", {
+        scrollTrigger: {
+            trigger: ".design",
+            start: "0% 60%",
+            toggleActions: "restart pause resume reverse"
+        },
+        y: -40,
+        opacity: 1,
+        duration: 0.5,
+        })     
+        gsap.to(".item_01", {
+        scrollTrigger: {
+            trigger: ".design",
+            start: "0% 80%",
+            toggleActions: "restart pause resume reverse"
+        },
+        opacity: 1,
+        y: -40,
+    })
+    gsap.to(".item_02", {
+        scrollTrigger: {
+            trigger: ".design",
+            start: "0% 80%",
+            toggleActions: "restart pause resume reverse"
+        },
+        opacity: 1,
+        y: -40,
+        delay: 0.2,
+    })
+    gsap.to(".item_03", {
+        scrollTrigger: {
+            trigger: ".design",
+            start: "0% 80%",
+            toggleActions: "restart pause resume reverse"
+        },
+        opacity: 1,
+        y: -40,
+        delay: 0.4,
+    })
+    gsap.to(".item_04", {
+        scrollTrigger: {
+            trigger: ".design",
+            start: "0% 80%",
+            toggleActions: "restart pause resume reverse"
+        },
+        opacity: 1,
+        y: -40,
+        delay: 0.6,
+    })
+    gsap.to(".item_05", {
+        scrollTrigger: {
+            trigger: ".design",
+            start: "0% 80%",
+            toggleActions: "restart pause resume reverse"
+        },
+        opacity: 1,
+        y: -40,
+        delay: 0.8,
+    })
+    gsap.to(".item_06", {
+        scrollTrigger: {
+            trigger: ".design",
+            start: "0% 80%",
+            toggleActions: "restart pause resume reverse"
+        },
+        opacity: 1,
+        y: -40,
+        delay: 1,
+    })
+    </script>
+    <div class="pop_up_wrap">
+        <div class="bg"></div>
+        <div class="X_mark">
+            <div class="X_line left"></div>
+            <div class="X_line right"></div>
+        </div>
+        <div class="pop_up pop_up_01">
+            팝업 이미지 추가 예정 1
+        </div>
+        <div class="pop_up pop_up_02">
+            팝업 이미지 추가 예정 2
+        </div>
+        <div class="pop_up pop_up_03">
+            팝업 이미지 추가 예정 3
+        </div>
+        <div class="pop_up pop_up_04">
+            팝업 이미지 추가 예정 4
+        </div>
+        <div class="pop_up pop_up_05">
+            팝업 이미지 추가 예정 5
+        </div>
+        <div class="pop_up pop_up_06">
+            팝업 이미지 추가 예정 6
+        </div>
+    </div>
+    <script>
+
+
+        $('.design .item_box .item').click(function(){
+            let idx = $(this).index();
+            
+            $('.pop_up_wrap').addClass("active");
+            $('.pop_up_wrap .pop_up').eq(idx).addClass("active");
+        })
+
+        $('.pop_up_wrap .X_mark, .pop_up_wrap .bg').click(function(){
+    
+            $('.pop_up_wrap, .pop_up').removeClass("active");
+        })
+
+    </script>
+    <footer class="footer w_100">
+        <div class="contact" id="contact">
+            <div class="tit_box">
+                Contact Me
+            </div>
+            <div class="txt_box">
+                <div class="txt">
+                    <h3>
+                        E-mail
+                    </h3>
+                    <h4>
+                        roo1218@naver.com
+                    </h4>
+                </div>
+                <div class="txt">
+                    <h3>
+                        Kakao
+                    </h3>
+                    <h4>
+                        Open chat
+                    </h4>
+                </div>
+                <div class="txt">
+                    <h3>
+                        Github
+                    </h3>
+                    <h4>
+                        https://github.com/YJH1218/web_portfolio.git
+                    </h4>
+                </div>
+            </div>
+            <div class="icon_box">
+                <a class="icon icon_01" href="#">
+                    <img src="./img/icon_Email.png" alt="이메일">
+                </a>
+                <a class="icon icon_02" href="#">
+                    <img src="./img/icon_kakaoTalk.png" alt="카카오 오픈 채팅">
+                </a>
+                <a class="icon icon_03" href="https://github.com/YJH1218/web_portfolio.git" target="_blank">
+                    <img src="./img/icon_github.png" alt="깃허브">
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright 2023. Yoo Ji Hwan. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script>
+        gsap.to(".icon_01", {
+            scrollTrigger: {
+                trigger: "footer",
+                start: "0% 80%",
+                toggleActions: "restart pause resume reverse"
+            },
+            opacity: 1,
+            y: -40,
+        })
+        gsap.to(".icon_02", {
+            scrollTrigger: {
+                trigger: "footer",
+                start: "0% 80%",
+                toggleActions: "restart pause resume reverse"
+            },
+            opacity: 1,
+            y: -40,
+            delay: 0.2,
+        })
+        gsap.to(".icon_03", {
+            scrollTrigger: {
+                trigger: "footer",
+                start: "0% 80%",
+                toggleActions: "restart pause resume reverse"
+            },
+            opacity: 1,
+            y: -40,
+            delay: 0.4,
+        })
+    </script>
+</body>
+<!-- js -->
+<script src="./js/main.js"></script>
+</html>
