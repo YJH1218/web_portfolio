@@ -1,0 +1,291 @@
+/* 추천 컨텐츠 영역 */
+h3{
+    color: #fff;
+}
+.visual{
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+}
+.visual_slide{
+    width: 100%;
+    /* height: 600px; */
+}
+.visual_slide .swiper-slide{
+    position: relative;
+    background-color: #000;
+}
+.visual_slide .swiper-slide a{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.visual_slide .swiper-slide a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.visual_slide .swiper-slide .txt_box{
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.visual_slide .swiper-slide .txt_box .logo{
+    margin-bottom: 8px;
+}
+.visual_slide .swiper-slide .txt_box h4{
+    letter-spacing: 0.5px;
+    color: #fff;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.sldie_logo_01{
+    width: 192px;
+}
+.sldie_logo_02{
+    width: 400px;
+}
+.sldie_logo_03{
+    width: 420px;
+}
+.sldie_logo_04{
+    width: 440px;
+}
+.sldie_logo_05{
+    width: 120px;
+}
+.sldie_logo_06{
+    width: 200px;
+}
+.visual_slide .swiper-slide > img{
+    border-radius: 10px;
+    width: 100%;
+    object-position: center;
+}
+.swiper-button-prev:after{
+    position: absolute;
+    left: 0;
+    color: #fff;
+    opacity: 0;
+}
+.swiper-button-next:after{
+    position: absolute;
+    right: 0;
+    color: #fff;
+    opacity: 0;
+}
+.visual:hover .swiper-button-prev:after, .visual:hover .swiper-button-next:after{
+    opacity: 1;
+}
+/* banner */
+.banner{
+    position: relative;
+    margin: 80px 0;
+    width: 100%;
+    height: 80px;
+    background-color: #415161;
+}
+.banner .img_box{
+    position: absolute;
+    width: 720px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner .img_box img{
+    width: 300px;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* slide_01 */
+.slide_01{
+    margin-top: 12px;
+    width: 100%;
+    max-height: 160px;
+}
+.slide_01 .swiper-wrapper .swiper-slide{
+    display: flex;
+}
+.slide_01 .swiper-wrapper .swiper-slide .txt_box{
+    position: relative;
+    width: 20%;
+}
+.slide_01 .swiper-wrapper .swiper-slide .txt_box h2{
+    position: absolute;
+    bottom: -12px;
+    right: -4px;
+    font-size: 72px;
+    letter-spacing: -4px;
+    color: #fff;
+}
+.slide_01 .swiper-wrapper .swiper-slide .img_box{
+    width: 80%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.slide_box .swiper-button-prev:after{
+    position: absolute;
+    left: -40px;
+    color: #fff;
+    opacity: 0;
+}
+.slide_box .swiper-button-next:after{
+    position: absolute;
+    right: -40px;
+    color: #fff;
+    opacity: 0;
+}
+.slide_box:hover .swiper-button-prev:after, .slide_box:hover .swiper-button-next:after{
+    opacity: 1;
+}
+/* 왓고리즘 */
+.sec_05 .tit_box .watgorithm{
+    width: 100px;
+}
+/* 왓챠 파티 */
+.sec_08{
+    width: 100%;
+}
+.sec_08 .tit_box{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec_08 .tit_box .txt_box{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.sec_08 .tit_box .txt_box i{
+    font-size: 20px;
+    padding-left: 8px;
+}
+.sec_08 .tit_box a{
+    color: #666;
+}
+.sec_08 > .txt_box{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #141517;
+    color: #ccc;
+    font-size: 14px;
+}
+.sec_08 .item_box{
+    padding-top: 40px;
+    display: flex;
+}
+.sec_08 .item_box .item{
+    width: 360px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: #141517;
+    overflow: hidden;
+    margin-right: 24px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.sec_08 .item_box .item .img_box{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+.sec_08 .item_box .item .img_box img{
+    width: 100%;
+    object-position: center;
+}
+.sec_08 .item_box .item .img_box .bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+}
+.sec_08 .item_box .item .txt_box{
+    width: 100%;
+    height: 30%;
+    padding: 8px;
+}
+.sec_08 .item_box .item .txt_box h4{
+    font-size: 12px;
+    font-weight: normal;
+    color: #ddd;
+    padding-bottom: 8px;
+}
+.sec_08 .item_box .item .txt_box h4 span{
+    color: #f82f62;
+    margin-right: 12px;
+}
+.sec_08 .item_box .item .txt_box h3{
+    font-weight: normal;
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+.sec_08 .item_box .item .txt_box h5{
+    color: #aaa;
+    font-weight: normal;
+    font-size: 12px;
+}
+/* 숏드라마 컨텐츠 영역 */
+.content_02{
+    padding-top: 32px;
+}
+.content_02 .tit_box{
+    padding-bottom: 12px;
+}
+.content_02 .img_list{
+    display: flex;
+    gap: 20px;
+}
+.content_02 .img_list .img{
+    position: relative;
+    width: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.content_02 .img_list .img .bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s;
+}
+.content_02 .img_list .img:hover .bg{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/* 이미지 리스트 02 */
+.img_list_02{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.img_list_02 .img{
+    width: calc((100% - 80px) / 5);
+    border-radius: 8px;
+    overflow: hidden;
+}
+/* 왓챠의 발견 컨텐츠 영역 */
+.con_list{
+    padding: 32px 40px;
+}
+
+
+
+
