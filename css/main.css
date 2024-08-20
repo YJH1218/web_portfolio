@@ -651,13 +651,13 @@ header .X_mark .X_line.right{
     background: url(../img/design_sns_02.png);
 }
 .design .item_box .item_03{
-    background: url(../img/design_sns_01.png);
+    background: url(../img/Design_img_03.png);
 }
 .design .item_box .item_04{
-    background: url(../img/design_sns_02.png);
+    background: url(../img/design_img_04.png);
 }
 .design .item_box .item_05{
-    background: url(../img/design_sns_01.png);
+    background: url(../img/Design_img_05.png);
 }
 .design .item_box .item_06{
     background: url(../img/design_sns_02.png);
@@ -702,8 +702,10 @@ header .X_mark .X_line.right{
     background-color: rgba(0, 0, 0, 0.7);
 }
 .pop_up_wrap .pop_up{
-    width: 80%;
-    height: 80%;
+    max-width: 90%;
+    min-width: 360px;
+    max-height: 90%;
+    padding: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -714,6 +716,7 @@ header .X_mark .X_line.right{
     display: none;
     background-color: #fff;
     color: #000;
+    border-radius: 12px;
 }
 .pop_up_wrap .pop_up.active{
     display: block;
@@ -747,6 +750,42 @@ header .X_mark .X_line.right{
 .pop_up_wrap .pop_up img{
     width: 100%;
 }
+.pop_up_wrap .pop_up .pop_up_box{
+    max-width: 600px;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pop_up_wrap .pop_up .pop_up_box .img_slide_wrap{
+    width: 100%;
+    height: auto;
+} 
+.pop_up_wrap .pop_up .pop_up_box .img_slide_wrap .tit{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    white-space: nowrap;
+}
+.pop_up_wrap .pop_up .pop_up_box .img_slide_wrap .SNS_slide{
+    margin: 0 20px;
+}
+.pop_up_wrap .pop_up .pop_up_box .img_slide_wrap .txt_box{
+    padding-top: 20px;    
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.pop_up_wrap .pop_up .pop_up_box .img_slide_wrap .txt_box h3{
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+}
+
 /* pop_up ed */
 /* footer st */
 footer{
