@@ -856,7 +856,7 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                     <h3>
                         E-mail
                     </h3>
-                    <h4>
+                    <h4 id="E-mail">
                         roo1218@naver.com
                     </h4>
                 </div>
@@ -878,10 +878,10 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                 </div>
             </div>
             <div class="icon_box">
-                <a class="icon icon_01" href="#">
+                <a class="icon icon_01" onclick="copy('E-mail');return false;">
                     <img src="./img/icon_Email.png" alt="이메일">
                 </a>
-                <a class="icon icon_02" href="#">
+                <a class="icon icon_02" href="https://open.kakao.com/me/yjh_kakao_open" target="_blank">
                     <img src="./img/icon_kakaoTalk.png" alt="카카오 오픈 채팅">
                 </a>
                 <a class="icon icon_03" href="https://github.com/YJH1218/web_portfolio.git" target="_blank">
@@ -925,6 +925,16 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
             y: -40,
             delay: 0.4,
         })
+        function copy(id)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(id));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert("이메일 주소가 복사 되었습니다.");
+        }
     </script>
 </body>
 <!-- js -->
