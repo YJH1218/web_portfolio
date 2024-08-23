@@ -78,35 +78,3 @@ footer ul li {float: left; padding-left: 35px; font-weight: bold;}
 footer .add {position: absolute; left: 200px; line-height: 25px;}
 footer .add address {font-style: normal;}
 
-/* 모바일 환경 */
-@media (max-width:1000px){
-header nav ul li {padding-left: 45px; transition: 0.7s;}
-#container_01 article {width: 50%;}
-
-}
-
-@media (max-width:920px){
-    header h1 {padding-left: 10px; transition: 1s;}
-    header h1 a {width: 120px; height: 50px;}
-    header nav {display: none;}
-    header .snb a {display: none;}
-    .visual {top: 75%; transform: translateY(0); background: url(../images/main_visual.jpg)no-repeat center; background-size: cover; height: 450px;}
-    .visual video {display: none;}
-
-    .visual .visual_text {line-height: 30px; min-width: 300px;}
-    .visual .visual_text img {max-width: 100%;}
-    .visual .visual_text p {font-size: 20px;}
-    .visual .visual_text span {font-size: 18px;}
-    .visual .visual_text p span {color: #f78f31; font-size: 28px; line-height: 35px;}
-
-    #container_01 h3 img {max-width: 100%;}
-    #container_01 article {width: 100%; float: none;}
-    #container_01 article div img {height: 365px;}
-
-    #container_02 article {width: 100%; float: none;}
-    
-    #container_03 .container_wrap article {width: 100%; float: none;}
-    #container_03 .container_wrap article img {height: 350px;}
-    
-    footer {padding-bottom: 120px;}
-}

@@ -202,18 +202,18 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
             </div>
             <div class="marquee_wrap">
                 <div class="marquee_text">
-                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prosprective</div>
-                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prosprective</div>
-                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prosprective</div>
-                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prosprective</div>
+                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prospective</div>
+                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prospective</div>
+                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prospective</div>
+                    <div class="marquee_r">#INTP #Positive #Creative #Intuitive #Objective #Prospective</div>
                 </div>
             </div>
             <div class="marquee_wrap">
                 <div class="marquee_text">
-                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuray #PhotoShop</div>
-                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuray #PhotoShop</div>
-                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuray #PhotoShop</div>
-                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuray #PhotoShop</div>
+                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuery #PhotoShop</div>
+                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuery #PhotoShop</div>
+                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuery #PhotoShop</div>
+                    <div class="marquee">#HTML5 #CSS #JAVAscript #JQuery #PhotoShop</div>
                 </div>
             </div>
         </div>
@@ -691,9 +691,9 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
             <div class="item item_05">
                 <div class="bg"></div>
             </div>
-            <div class="item item_06">
+            <!-- <div class="item item_06">
                 <div class="bg"></div>
-            </div>
+            </div> -->
         </div>
     </section>
     <script>
@@ -824,18 +824,11 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
         <div class="pop_up pop_up_05">
             <img src="./img/design_img_05_info.png" alt="3D 디자인 상세">
         </div>
-        <div class="pop_up pop_up_06">
+        <!-- <div class="pop_up pop_up_06">
             팝업 이미지 추가 예정 6
-        </div>
+        </div> -->
     </div>
     <script>
-        new Swiper('.SNS_slide', {
-        loop: true,
-        direction: 'horizontal',
-        autoplay: {
-            delay: 5000,
-        },        
-        });
         $('.design .item_box .item').click(function(){
             let idx = $(this).index();            
             $('.pop_up_wrap').addClass("active");
@@ -844,6 +837,15 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
         $('.pop_up_wrap .X_mark, .pop_up_wrap .bg').click(function(){
     
             $('.pop_up_wrap, .pop_up').removeClass("active");
+        });
+        $('.design .item_box .item:nth-child(2)').click(function(){
+            new Swiper('.SNS_slide', {
+            loop: true,
+            direction: 'horizontal',
+            autoplay: {
+                delay: 5000,
+            },        
+            });
         });
     </script>
     <footer class="footer w_100">
@@ -865,7 +867,7 @@ I excel in creating intuitive designs and implementing ersponsive web pages that
                         Kakao
                     </h3>
                     <h4>
-                        Open chat
+                        https://open.kakao.com/me/yjh_kakao_open
                     </h4>
                 </div>
                 <div class="txt">

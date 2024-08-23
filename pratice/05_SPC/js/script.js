@@ -30,16 +30,17 @@ $(document).ready(function(){
       $('.section03 > .content-box > .slider-wrap > .slider').slick('slickNext');
     })
 
-    let indexNum = $(this).index()
+    
 
 // 브랜드 리스트
 $('.section05 > .content-box > .right-content > .nav-box > .btn').click(function(){
-    
-    $(this).addClass("active")
-    $(this).siblings().removeClass("active")
+    let indexNum = $(this).index();
 
-  $('.section05 > .content-box > .right-content > .logo-list-box').eq(indexNum).addClass("active")
-  $('.section05 > .content-box > .right-content > .logo-list-box').eq(indexNum).siblings().removeClass("active")
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+
+  $('.section05 > .content-box > .right-content > .logo-list-box').eq(indexNum).addClass("active");
+  $('.section05 > .content-box > .right-content > .logo-list-box').eq(indexNum).siblings().removeClass("active");
 })
 
 // 모바일 메뉴
@@ -61,10 +62,8 @@ $(".mobile-top-bar-wrap > .service-box .fa-bars").click(function(){
   // 메뉴박스 리스트 아이템(li)을 클릭했을 때
   $(".menu-box ul > li ").click(function(){
     
-    // 여러 li 중에서 내가 클릭한 li를 찾아내는 $(this)
     let $this = $(this);
 
-    // 클릭한 li의 형제 중 열려 있는 메뉴(ul)를 모두 닫는다. (안에 있는 메뉴까지)
     $this.siblings(".active").find("ul").stop().slideUp(300);
     
     // 클릭한 li의 형제의 active 클래스를 제거
