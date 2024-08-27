@@ -20,8 +20,15 @@
 .visual .visual_slide_desk .swiper-pagination-bullet-active{
     background-color: #fff;
 }
-
-
+.visual .visual_slide_mobile .swiper-pagination-bullet{
+    width: 60px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: rgba(255, 255, 255, .8);
+}
+.visual .visual_slide_mobile .swiper-pagination-bullet-active{
+    background-color: #fff;
+}
 /* visual ed */
 /* best st */
 .best{
@@ -103,14 +110,30 @@
 /* franchise st */
 .franchise{
     margin-top: 200px;
-    padding: 140px 0;
+    padding: 140px 40px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.txt_box.responsive{
+    text-align: center;        
+}
+.txt_box.responsive h3{
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 8px;
+}
+.txt_box.responsive h2{
+    font-size: 20px;
+    letter-spacing: -1px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+}
 .franchise .franchise_btn{
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     padding: 60px 0;
     background-color: #fff;
     text-align: center;
@@ -159,10 +182,148 @@
 }
 /* franchise ed */
 /* notice st */
+.notice{
+    margin-top: 200px;
+    padding: 0 40px;
+}
+.notice .news_wrap{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+}
+.notice .news_wrap .logo_box{
+    width: 30%;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF8022;
+}
+.notice .news_wrap .logo_box .tit{
+    padding-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: bold;
+}
+.notice .news_wrap .logo_box .img_box{
+    width: 50%;
+}
+.notice .news_wrap .news_box{
+    width: 70%;
+    height: auto;
+}
+.notice .news_wrap .news_box li{
+    width: 100%;
+    height: 25%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFE078;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+.notice .news_wrap .news_box li:first-child{
+    border-top: none;
+}
+.notice .news_wrap .news_box li:last-child{
+    border-bottom: none;
+}
+.notice .news_wrap .news_box li h3{
+    width: 80%;
+    word-break: keep-all;
+    white-space: nowrap;
+    font-size: 24px;
+    font-weight: 600;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.notice .news_wrap .news_box li span{
+    width: 32px;
+}
+.notice .event_slide{
+    margin-top: 100px;
+    max-width: 1280px;
+    aspect-ratio: 2/1;
+    border-radius: 20px;
+}
+.notice .event_slide .swiper-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.notice .event_slide .event_pagination{
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.notice .event_slide .event_pagination .swiper-pagination-bullet{
+    width: 24px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #fff;
+}
 
 
 /* notice ed */
 /* app st */
-
-
+.app{
+    margin-top: 200px;
+    width: 100%;
+    height: 500px;
+    background-color: #914F1E;
+    position: relative;
+    overflow: hidden;
+}
+.app .txt_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.app .txt_box h4{
+    font-size: 24px;
+    color: #eee;
+    white-space: nowrap;
+}
+.app .txt_box h3{
+    margin-top: 20px;
+    font-size: 32px;
+    color: #fff;
+    white-space: nowrap;
+}
+.app .txt_box .app_btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 16px 48px;
+    font-size: 28px;
+    background-color: #fff;
+    border: 2px solid #eee;
+    border-radius: 32px;
+    white-space: nowrap;
+}
+.app .app_slide{
+    width: 240px;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.app > .img_box{
+    width: 30%;
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+}
 /* app ed */

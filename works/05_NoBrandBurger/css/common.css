@@ -48,6 +48,9 @@ header ul{
     justify-content: space-between;
     align-items: center;
 }
+header ul .logo.responsive{
+    width: 160px;
+}
 header ul .btn_box .hamburger{
     width: 42px;
     height: 32px;
@@ -148,10 +151,18 @@ header ul .helper a{
 footer{
     width: 100%;
     height: 600px;
+    position: relative;
+    background-color: #6F4E37;
+}
+footer .footer_wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #6F4E37;
 }
 footer .footer_wrap .logo{
     width: 360px;
@@ -164,6 +175,7 @@ footer .footer_wrap .txt_box li{
     font-size: 20px;
     text-align: center;
     color: #fff;
+    white-space: nowrap;
 }
 footer .footer_wrap .txt_box .copyright{
     font-size: 16px;

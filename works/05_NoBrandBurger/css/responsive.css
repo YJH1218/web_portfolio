@@ -1,0 +1,193 @@
+@media screen and (max-width: 1440px){
+    .app .app_slide{
+        left: 40px;
+    }
+}
+@media screen and (max-width: 1025px){
+    .app .txt_box{
+        top: 10%;
+        transform: translateX(-50%);
+    }
+    .app .app_slide{
+        width: 320px;
+        left: 50%;
+        top: 45%;
+        transform: translateX(-50%);
+    }
+    .app > .img_box{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .desk{
+        display: none;
+    }
+    .responsive{
+        display: block;
+    }
+    .mobile{
+        display: block;
+    }
+    /* header */
+    header{
+        padding: 0 20px;
+        height: 60px;
+        background-color: #fff;
+    }
+    header ul .btn_box .hamburger{
+        width: 24px;
+        height: 20px;
+    }
+    header ul .btn_box .hamburger .line{
+        height: 2px;
+        border-radius: 1px;
+        background-color: #999;    
+    }
+    header ul .btn_box .X-mark{
+        width: 24px;
+        height: 20px;
+    } 
+    header ul .btn_box .X-mark .line{
+        height: 2px;
+        position: absolute;
+        border-radius: 1px;
+    }
+    /* menu */
+    .menu_wrap{
+        padding-top: 60px;
+    }
+    .menu_wrap .menu li a{
+        font-size: 24px;
+    }
+    /* visual */
+    .visual{        
+        aspect-ratio: 8/16;     
+    }
+    /* best */
+    .best{
+        margin-top: 100px;
+        padding: 20px;     
+    }
+    .best .best_slide .swiper-wrapper .swiper-slide {
+        aspect-ratio: 1 / 1.25;
+        padding: 20px 0;                
+        border: 1px solid #eee;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    .best .best_slide .swiper-wrapper .swiper-slide::before{        
+        width: 6px;
+        top: 7px;
+        right: -7px;
+        border-top-right-radius: 8px;
+    }
+    .best .best_slide .swiper-wrapper .swiper-slide::after{                
+        height: 6px;
+        bottom: -7px;
+        right: -7px;
+        border-bottom-left-radius: 8px;
+    }
+    .best .best_slide .swiper-wrapper .swiper-slide .txt_box .name{
+        font-size: 16px;
+    }
+    .best .best_slide .swiper-wrapper .swiper-slide .txt_box .en_name {
+        padding-top: 4px;
+        font-size: 14px;     
+        letter-spacing: -1px;
+    }
+    /* franchise */
+    .franchise{
+        margin: 100px 20px 0 20px;
+        padding: 200px 0;
+        flex-direction: column;
+    } 
+    .franchise .franchise_btn{        
+        padding: 20px 0;
+        border: 2px solid #eee;
+    }
+    .franchise .franchise_btn:hover{
+        background-color: #fff;
+        border: 2px solid #eee;
+    }
+    .franchise .img_box.mascot{
+        width: 160px;
+        left: 20px;
+        top: 0;
+    }
+    .franchise .img_box.picture{
+        width: 200px;
+        right: 20px;
+        bottom: 0;
+    }
+    /* notice */
+    .notice{
+        margin-top: 100px;
+        padding: 0 20px;
+    }
+    .notice .news_wrap{
+        flex-direction: column;
+    }
+    .notice .news_wrap .logo_box{
+        width: 100%;
+        aspect-ratio: 1/1;  
+    }
+    .notice .news_wrap .news_box{
+        width: 100%;
+    }
+    .notice .news_wrap .news_box li{
+        width: 100%;
+        padding: 16px;
+    }
+    .notice .news_wrap .news_box li h3{
+        font-size: 16px;
+    }
+    .notice .news_wrap .news_box li span{
+        width: 18px;
+    }
+    .notice .event_slide{
+        margin-top: 40px;        
+        border-radius: 8px;
+    }
+    .notice .event_slide .event_pagination{
+        left: 4px;
+        gap: 12px;
+    }
+    .notice .event_slide .event_pagination .swiper-pagination-bullet{
+        width: 20px;
+    }
+    /* app */
+    .app{
+        margin-top: 100px;
+    }
+    .app .txt_box h4{
+        font-size: 18px;             
+    }
+    .app .txt_box h3{
+        margin-top: 12px;
+        font-size: 20px;        
+    }
+    .app .txt_box .app_btn{        
+        padding: 12px 24px;
+        font-size: 20px;        
+        border: 1px solid #eee;
+        border-radius: 23px;
+    }
+    .app .app_slide{
+        top: 40%;
+    }
+    /* footer */
+    footer .footer_wrap .logo{
+        width: 240px;
+    }
+    footer .footer_wrap .txt_box{
+        padding-top: 12px;
+    }
+    footer .footer_wrap .txt_box li{
+        padding: 6px 0;
+        font-size: 16px;
+    }
+    footer .footer_wrap .txt_box .copyright{
+        font-size: 14px;
+    }
+}
