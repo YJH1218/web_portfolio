@@ -396,12 +396,13 @@ header .X_mark .X_line.right{
     flex-direction: column;
 }
 .works .content .info .left .txt_box{
-    width: 50%;
+    width: 70%;
 }
 .works .content .info .left .txt_box h1{
     font-size: 96px;
     margin-bottom: 8px;
     font-weight: bold;
+    white-space: nowrap;
 }
 /* 타이틀 폰트 st */
 .works .pascucci .info .left .txt_box h1{
@@ -422,6 +423,7 @@ header .X_mark .X_line.right{
 .works .content .info .left .txt_box p{
     font-size: 24px;
     line-height: 28px;
+    word-break: keep-all;
 }
 .works .content .info .left .btn_box{
     margin-top: 20px;
